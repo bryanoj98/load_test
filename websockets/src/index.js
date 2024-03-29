@@ -4,18 +4,19 @@ import si from "systeminformation";
 const wss = new WebSocketServer({ port: 8080 });
 
 wss.on('connection', function connection(ws) {
+
   ws.on('message', function message(data) {
     console.log('received: %s', data);
+
+    ws.send('something');//Envia
+  });
+ 
+  ws.on('close', () => {
+    console.log('Conexión cerrada');
   });
 
-  const status = {
-    "Status": "Running"
- };
- 
-  ws.send('something');
+  ws.on('error', (error) => {
+    console.error('Error en la conexión:', error.message);
+  });
 
-  // setInterval(async () => {
-  //   const cpuTemp = JSON.stringify(await si.currentLoad()); //recoge informacion de la CPU
-  //   ws.send(cpuTemp);
-  // }, 1000);
 });

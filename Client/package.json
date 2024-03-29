@@ -1,0 +1,16 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "author": "bryan perez",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "ws": "^8.16.0",
+    "@grpc/grpc-js": "^1.9.14"
+  },
+  "description": ""
+}
