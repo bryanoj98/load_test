@@ -1,0 +1,19 @@
+{
+    "extends": ["eslint:recommended", "google","plugin:prettier/recommended"],
+    "rules": {
+         "prettier/prettier": "error",
+         "max-len": [2, 120, 8]
+    },
+    "env": { 
+         "amd": true,
+         "es6": true,
+         "node": true
+    },
+    "parserOptions": { 
+         "sourceType": "module",
+         "ecmaVersion": 8,
+         "ecmaFeatures": {
+            "jsx": true
+         }
+    }
+}

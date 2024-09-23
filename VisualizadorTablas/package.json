@@ -1,0 +1,12 @@
+{
+  "name": "VisualizadorTablas",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.4",
+    "express": "^4.21.0"
+  }
+}
