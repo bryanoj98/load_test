@@ -1,2368 +1,3152 @@
 [
   {
-    "timestamp": 1727127397499,
+    "timestamp": 1727133643371,
     "cpu": [
-      1.01,
-      1.06,
-      1.06
+      1.38,
+      1.53,
+      1.27
     ],
     "memory": {
-      "rss": 76128256,
-      "heapTotal": 18796544,
-      "heapUsed": 12667008,
-      "external": 2520308
+      "rss": 76943360,
+      "heapTotal": 19582976,
+      "heapUsed": 12292176,
+      "external": 2537261
     }
   },
   {
-    "timestamp": 1727127397999,
-    "cpu": [
-      1.01,
-      1.06,
-      1.06
-    ],
-    "memory": {
-      "rss": 84099072,
-      "heapTotal": 19320832,
-      "heapUsed": 10830120,
-      "external": 2520348
-    }
-  },
-  {
-    "timestamp": 1727127398499,
-    "cpu": [
-      1.01,
-      1.06,
-      1.06
-    ],
-    "memory": {
-      "rss": 90796032,
-      "heapTotal": 19320832,
-      "heapUsed": 11267024,
-      "external": 2528540
-    }
-  },
-  {
-    "timestamp": 1727127398999,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 94134272,
-      "heapTotal": 19320832,
-      "heapUsed": 11618816,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127399500,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11767592,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127400001,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11769000,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127400502,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11770000,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127401002,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11771000,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127401503,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11772000,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127402004,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11773096,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127402505,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11773992,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127403005,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11775176,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127403506,
-    "cpu": [
-      1.41,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11776200,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127404007,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 98979840,
-      "heapTotal": 19320832,
-      "heapUsed": 11777288,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127404508,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 102744064,
-      "heapTotal": 19320832,
-      "heapUsed": 12003696,
-      "external": 2536732
-    }
-  },
-  {
-    "timestamp": 1727127405008,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 109989888,
-      "heapTotal": 19320832,
-      "heapUsed": 12337976,
-      "external": 2544924
-    }
-  },
-  {
-    "timestamp": 1727127405508,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 107442176,
-      "heapTotal": 11788288,
-      "heapUsed": 9293880,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127406008,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 106463232,
-      "heapTotal": 10739712,
-      "heapUsed": 9218664,
-      "external": 1052270
-    }
-  },
-  {
-    "timestamp": 1727127406509,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9424512,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127407010,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9425536,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127407510,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9426688,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127408011,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9427712,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127408511,
-    "cpu": [
-      1.3,
-      1.13,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9428736,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127409012,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9429760,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127409513,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9430784,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127410013,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9431808,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127410513,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9432832,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127411014,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 106696704,
-      "heapTotal": 10739712,
-      "heapUsed": 9433856,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127411515,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 107454464,
-      "heapTotal": 10739712,
-      "heapUsed": 9631216,
-      "external": 1060462
-    }
-  },
-  {
-    "timestamp": 1727127412015,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 107720704,
-      "heapTotal": 10739712,
-      "heapUsed": 9928312,
-      "external": 1068654
-    }
-  },
-  {
-    "timestamp": 1727127412515,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 107589632,
-      "heapTotal": 10739712,
-      "heapUsed": 9322960,
-      "external": 1076846
-    }
-  },
-  {
-    "timestamp": 1727127413015,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 104714240,
-      "heapTotal": 10739712,
-      "heapUsed": 9611520,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127413516,
-    "cpu": [
-      1.19,
-      1.11,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9731664,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127414016,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9732688,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127414517,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9733712,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127415017,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9734736,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127415517,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9735760,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127416018,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9736784,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127416519,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9737808,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127417020,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9738832,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127417520,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9739856,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127418021,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 104980480,
-      "heapTotal": 10739712,
-      "heapUsed": 9740880,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127418523,
-    "cpu": [
-      1.18,
-      1.1,
-      1.08
-    ],
-    "memory": {
-      "rss": 99332096,
-      "heapTotal": 11001856,
-      "heapUsed": 10238872,
-      "external": 1085038
-    }
-  },
-  {
-    "timestamp": 1727127419023,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 107683840,
-      "heapTotal": 11001856,
-      "heapUsed": 9787336,
-      "external": 1093230
-    }
-  },
-  {
-    "timestamp": 1727127419523,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 122167296,
-      "heapTotal": 11001856,
-      "heapUsed": 10213832,
-      "external": 1109614
-    }
-  },
-  {
-    "timestamp": 1727127420023,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 125480960,
-      "heapTotal": 11526144,
-      "heapUsed": 9668184,
-      "external": 1117806
-    }
-  },
-  {
-    "timestamp": 1727127420523,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10229208,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127421024,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10230152,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127421524,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10231096,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127422025,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10232040,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127422525,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10232984,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127423026,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10233928,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127423526,
-    "cpu": [
-      1.32,
-      1.14,
-      1.09
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10234872,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127424025,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10235816,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127424526,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10236760,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127425027,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 135397376,
-      "heapTotal": 11788288,
-      "heapUsed": 10237704,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127425528,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 131616768,
-      "heapTotal": 11788288,
-      "heapUsed": 10375664,
-      "external": 1125998
-    }
-  },
-  {
-    "timestamp": 1727127426028,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 144896000,
-      "heapTotal": 11788288,
-      "heapUsed": 9817160,
-      "external": 1142382
-    }
-  },
-  {
-    "timestamp": 1727127426528,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 156155904,
-      "heapTotal": 11788288,
-      "heapUsed": 10266792,
-      "external": 1150574
-    }
-  },
-  {
-    "timestamp": 1727127427027,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 153608192,
-      "heapTotal": 11788288,
-      "heapUsed": 10612560,
-      "external": 1158766
-    }
-  },
-  {
-    "timestamp": 1727127427528,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9949880,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127428028,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9950824,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127428528,
-    "cpu": [
-      1.22,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9951768,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127429029,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9952712,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127429529,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9953656,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127430030,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9954600,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127430531,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9955544,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127431031,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9956488,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127431532,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9957432,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127432032,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 9958376,
-      "external": 1166958
-    }
-  },
-  {
-    "timestamp": 1727127432532,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 152780800,
-      "heapTotal": 11788288,
-      "heapUsed": 10079232,
-      "external": 1175150
-    }
-  },
-  {
-    "timestamp": 1727127433032,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 155308032,
-      "heapTotal": 11788288,
-      "heapUsed": 10537648,
-      "external": 1183342
-    }
-  },
-  {
-    "timestamp": 1727127433531,
-    "cpu": [
-      1.2,
-      1.12,
-      1.08
-    ],
-    "memory": {
-      "rss": 155795456,
-      "heapTotal": 11788288,
-      "heapUsed": 10029048,
-      "external": 1199726
-    }
-  },
-  {
-    "timestamp": 1727127434032,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156381184,
-      "heapTotal": 11788288,
-      "heapUsed": 10451256,
-      "external": 1207918
-    }
-  },
-  {
-    "timestamp": 1727127434532,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9866336,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127435033,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9867280,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127435534,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9868224,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127436035,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9869168,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127436535,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9870112,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127437036,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9871056,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127437537,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9872000,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127438037,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9872944,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127438537,
-    "cpu": [
-      1.9,
-      1.26,
-      1.13
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9873888,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127439038,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 156160000,
-      "heapTotal": 11788288,
-      "heapUsed": 9875968,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127439537,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 111943680,
-      "heapTotal": 11788288,
-      "heapUsed": 10004544,
-      "external": 1224302
-    }
-  },
-  {
-    "timestamp": 1727127440037,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 136691712,
-      "heapTotal": 11788288,
-      "heapUsed": 10339464,
-      "external": 1232494
-    }
-  },
-  {
-    "timestamp": 1727127440539,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 147857408,
-      "heapTotal": 11788288,
-      "heapUsed": 9704824,
-      "external": 1240686
-    }
-  },
-  {
-    "timestamp": 1727127441038,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 163958784,
-      "heapTotal": 11788288,
-      "heapUsed": 10112840,
-      "external": 1248878
-    }
-  },
-  {
-    "timestamp": 1727127441539,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 169844736,
-      "heapTotal": 11788288,
-      "heapUsed": 10618368,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127442039,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 169054208,
-      "heapTotal": 11788288,
-      "heapUsed": 9723136,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127442540,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 169054208,
-      "heapTotal": 11788288,
-      "heapUsed": 9724080,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127443041,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 169054208,
-      "heapTotal": 11788288,
-      "heapUsed": 9725024,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127443541,
-    "cpu": [
-      1.75,
-      1.24,
-      1.12
-    ],
-    "memory": {
-      "rss": 169054208,
-      "heapTotal": 11788288,
-      "heapUsed": 9725968,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127444041,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 169054208,
-      "heapTotal": 11788288,
-      "heapUsed": 9726912,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127444542,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 169054208,
-      "heapTotal": 11788288,
-      "heapUsed": 9727856,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127445043,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 169324544,
-      "heapTotal": 11788288,
-      "heapUsed": 9728800,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127445544,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 169324544,
-      "heapTotal": 11788288,
-      "heapUsed": 9729744,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127446044,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 169324544,
-      "heapTotal": 11788288,
-      "heapUsed": 9730688,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127446545,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 169324544,
-      "heapTotal": 11788288,
-      "heapUsed": 9731632,
-      "external": 1265262
-    }
-  },
-  {
-    "timestamp": 1727127447046,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 184623104,
-      "heapTotal": 11788288,
-      "heapUsed": 10114952,
-      "external": 1281646
-    }
-  },
-  {
-    "timestamp": 1727127447547,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 193679360,
-      "heapTotal": 11788288,
-      "heapUsed": 10619368,
-      "external": 1298030
-    }
-  },
-  {
-    "timestamp": 1727127448046,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 212774912,
-      "heapTotal": 11788288,
-      "heapUsed": 9980048,
-      "external": 1306222
-    }
-  },
-  {
-    "timestamp": 1727127448548,
-    "cpu": [
-      1.61,
-      1.22,
-      1.12
-    ],
-    "memory": {
-      "rss": 227807232,
-      "heapTotal": 11788288,
-      "heapUsed": 10452888,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127449048,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10490856,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127449549,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10491800,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127450049,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10492744,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127450549,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10493688,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127451049,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10494632,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127451550,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10495576,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127452051,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10496520,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127452551,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10497464,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127453052,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10498408,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127453553,
-    "cpu": [
-      1.48,
-      1.2,
-      1.11
-    ],
-    "memory": {
-      "rss": 220385280,
-      "heapTotal": 11788288,
-      "heapUsed": 10499352,
-      "external": 1322606
-    }
-  },
-  {
-    "timestamp": 1727127454052,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 220864512,
-      "heapTotal": 11788288,
-      "heapUsed": 9942736,
-      "external": 1330798
-    }
-  },
-  {
-    "timestamp": 1727127454552,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 221728768,
-      "heapTotal": 11788288,
-      "heapUsed": 10469872,
-      "external": 1347182
-    }
-  },
-  {
-    "timestamp": 1727127455052,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 222703616,
-      "heapTotal": 11788288,
-      "heapUsed": 9886880,
-      "external": 1363566
-    }
-  },
-  {
-    "timestamp": 1727127455552,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 218980352,
-      "heapTotal": 11788288,
-      "heapUsed": 10385064,
-      "external": 1371758
-    }
-  },
-  {
-    "timestamp": 1727127456053,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10451928,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127456553,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10452872,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127457053,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10453816,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127457554,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10454760,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127458055,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10455704,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127458554,
-    "cpu": [
-      2.16,
-      1.35,
-      1.16
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10456648,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127459055,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10457592,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127459555,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10458536,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127460055,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10459480,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127460556,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 221270016,
-      "heapTotal": 11788288,
-      "heapUsed": 10460424,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127461057,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 162209792,
-      "heapTotal": 11788288,
-      "heapUsed": 9908760,
-      "external": 1379950
-    }
-  },
-  {
-    "timestamp": 1727127461557,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 176410624,
-      "heapTotal": 11788288,
-      "heapUsed": 10424552,
-      "external": 1396334
-    }
-  },
-  {
-    "timestamp": 1727127462057,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 196018176,
-      "heapTotal": 11788288,
-      "heapUsed": 10211616,
-      "external": 1412718
-    }
-  },
-  {
-    "timestamp": 1727127462557,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 207826944,
-      "heapTotal": 11788288,
-      "heapUsed": 9906832,
-      "external": 1429102
-    }
-  },
-  {
-    "timestamp": 1727127463057,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10234160,
-      "external": 1437294
-    }
-  },
-  {
-    "timestamp": 1727127463558,
-    "cpu": [
-      1.99,
-      1.32,
-      1.15
-    ],
-    "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10235104,
-      "external": 1437294
-    }
-  },
-  {
-    "timestamp": 1727127464059,
+    "timestamp": 1727133643870,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10236048,
-      "external": 1437294
+      "rss": 82841600,
+      "heapTotal": 20107264,
+      "heapUsed": 11146128,
+      "external": 2561877
     }
   },
   {
-    "timestamp": 1727127464559,
+    "timestamp": 1727133644371,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10236992,
-      "external": 1437294
+      "rss": 84668416,
+      "heapTotal": 20107264,
+      "heapUsed": 14304184,
+      "external": 2619221
     }
   },
   {
-    "timestamp": 1727127465060,
+    "timestamp": 1727133644870,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10237936,
-      "external": 1437294
+      "rss": 85598208,
+      "heapTotal": 20107264,
+      "heapUsed": 14675248,
+      "external": 2692949
     }
   },
   {
-    "timestamp": 1727127465561,
+    "timestamp": 1727133645371,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10238880,
-      "external": 1437294
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12334512,
+      "external": 2717525
     }
   },
   {
-    "timestamp": 1727127466061,
+    "timestamp": 1727133645872,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10239824,
-      "external": 1437294
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12335920,
+      "external": 2717525
     }
   },
   {
-    "timestamp": 1727127466561,
+    "timestamp": 1727133646373,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10240768,
-      "external": 1437294
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12336920,
+      "external": 2717525
     }
   },
   {
-    "timestamp": 1727127467062,
+    "timestamp": 1727133646875,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10241712,
-      "external": 1437294
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12337920,
+      "external": 2717525
     }
   },
   {
-    "timestamp": 1727127467562,
+    "timestamp": 1727133647376,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 213860352,
-      "heapTotal": 11788288,
-      "heapUsed": 10242656,
-      "external": 1437294
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12338920,
+      "external": 2717525
     }
   },
   {
-    "timestamp": 1727127468070,
+    "timestamp": 1727133647876,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 221364224,
-      "heapTotal": 11788288,
-      "heapUsed": 10521424,
-      "external": 1445486
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12340016,
+      "external": 2717525
     }
   },
   {
-    "timestamp": 1727127468571,
+    "timestamp": 1727133648377,
     "cpu": [
       1.83,
-      1.3,
-      1.15
+      1.62,
+      1.3
     ],
     "memory": {
-      "rss": 227631104,
-      "heapTotal": 11788288,
-      "heapUsed": 9978848,
-      "external": 1461870
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12340912,
+      "external": 2717525
     }
   },
   {
-    "timestamp": 1727127469071,
+    "timestamp": 1727133648878,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12342096,
+      "external": 2717525
+    }
+  },
+  {
+    "timestamp": 1727133649378,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12343120,
+      "external": 2717525
+    }
+  },
+  {
+    "timestamp": 1727133649878,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 88289280,
+      "heapTotal": 20107264,
+      "heapUsed": 12344208,
+      "external": 2717525
+    }
+  },
+  {
+    "timestamp": 1727133650378,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 85762048,
+      "heapTotal": 12767232,
+      "heapUsed": 11101384,
+      "external": 2766677
+    }
+  },
+  {
+    "timestamp": 1727133650878,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 87355392,
+      "heapTotal": 13815808,
+      "heapUsed": 11067200,
+      "external": 2832213
+    }
+  },
+  {
+    "timestamp": 1727133651378,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 87355392,
+      "heapTotal": 13815808,
+      "heapUsed": 11114880,
+      "external": 2897749
+    }
+  },
+  {
+    "timestamp": 1727133651878,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 10791896,
+      "external": 2987861
+    }
+  },
+  {
+    "timestamp": 1727133652379,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11015728,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133652879,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11016752,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133653379,
+    "cpu": [
+      1.77,
+      1.61,
+      1.3
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11017904,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133653879,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11018928,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133654379,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11019952,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133654879,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11020976,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133655379,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11022000,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133655880,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11023024,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133656381,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11024048,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133656881,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 87617536,
+      "heapTotal": 13815808,
+      "heapUsed": 11025072,
+      "external": 3012437
+    }
+  },
+  {
+    "timestamp": 1727133657381,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 87932928,
+      "heapTotal": 13815808,
+      "heapUsed": 10967224,
+      "external": 1080673
+    }
+  },
+  {
+    "timestamp": 1727133657882,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 88203264,
+      "heapTotal": 13815808,
+      "heapUsed": 11013440,
+      "external": 1121633
+    }
+  },
+  {
+    "timestamp": 1727133658382,
+    "cpu": [
+      1.62,
+      1.58,
+      1.29
+    ],
+    "memory": {
+      "rss": 88203264,
+      "heapTotal": 13815808,
+      "heapUsed": 10749304,
+      "external": 1129825
+    }
+  },
+  {
+    "timestamp": 1727133658881,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 88784896,
+      "heapTotal": 13815808,
+      "heapUsed": 11195184,
+      "external": 1154401
+    }
+  },
+  {
+    "timestamp": 1727133659382,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11098096,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133659883,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11099120,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133660384,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11100144,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133660885,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11101168,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133661385,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11102192,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133661885,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11103216,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133662385,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11104240,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133662885,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11105264,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133663386,
+    "cpu": [
+      2.37,
+      1.74,
+      1.34
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11106288,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133663887,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 89030656,
+      "heapTotal": 13815808,
+      "heapUsed": 11107312,
+      "external": 1170785
+    }
+  },
+  {
+    "timestamp": 1727133664388,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 88686592,
+      "heapTotal": 13815808,
+      "heapUsed": 11183024,
+      "external": 1187169
+    }
+  },
+  {
+    "timestamp": 1727133664888,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 88686592,
+      "heapTotal": 13815808,
+      "heapUsed": 10826024,
+      "external": 1244513
+    }
+  },
+  {
+    "timestamp": 1727133665388,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 88686592,
+      "heapTotal": 13815808,
+      "heapUsed": 11318944,
+      "external": 1293665
+    }
+  },
+  {
+    "timestamp": 1727133665888,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 88686592,
+      "heapTotal": 13815808,
+      "heapUsed": 11239984,
+      "external": 1342817
+    }
+  },
+  {
+    "timestamp": 1727133666388,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11256480,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133666889,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11257504,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133667390,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11258696,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133667891,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11259720,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133668392,
+    "cpu": [
+      2.18,
+      1.71,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11260744,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133668893,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11261768,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133669394,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11262792,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133669894,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11263816,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133670394,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11264840,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133670895,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 88739840,
+      "heapTotal": 13815808,
+      "heapUsed": 11265864,
+      "external": 1359201
+    }
+  },
+  {
+    "timestamp": 1727133671394,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 101167104,
+      "heapTotal": 13029376,
+      "heapUsed": 11440336,
+      "external": 1375585
+    }
+  },
+  {
+    "timestamp": 1727133671894,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 107380736,
+      "heapTotal": 13029376,
+      "heapUsed": 11924936,
+      "external": 1432929
+    }
+  },
+  {
+    "timestamp": 1727133672394,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 109699072,
+      "heapTotal": 14077952,
+      "heapUsed": 11865392,
+      "external": 1531233
+    }
+  },
+  {
+    "timestamp": 1727133672895,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 110088192,
+      "heapTotal": 14077952,
+      "heapUsed": 11432608,
+      "external": 1662305
+    }
+  },
+  {
+    "timestamp": 1727133673395,
+    "cpu": [
+      2.01,
+      1.68,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11813552,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133673896,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11814496,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133674397,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11815440,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133674897,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11816384,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133675397,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11817496,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133675898,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11818440,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133676399,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11819384,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133676900,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11820328,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133677401,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11821272,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133677901,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 111030272,
+      "heapTotal": 14077952,
+      "heapUsed": 11822216,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133678401,
+    "cpu": [
+      2.09,
+      1.7,
+      1.33
+    ],
+    "memory": {
+      "rss": 118059008,
+      "heapTotal": 13029376,
+      "heapUsed": 11597104,
+      "external": 1785185
+    }
+  },
+  {
+    "timestamp": 1727133678901,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125300736,
+      "heapTotal": 14077952,
+      "heapUsed": 11327720,
+      "external": 1916257
+    }
+  },
+  {
+    "timestamp": 1727133679401,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125546496,
+      "heapTotal": 14077952,
+      "heapUsed": 11670024,
+      "external": 2055521
+    }
+  },
+  {
+    "timestamp": 1727133679901,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11380560,
+      "external": 2202977
+    }
+  },
+  {
+    "timestamp": 1727133680402,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11807112,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133680901,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11808056,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133681402,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11809000,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133681903,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11809944,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133682403,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11810888,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133682903,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11811832,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133683403,
+    "cpu": [
+      2.56,
+      1.81,
+      1.37
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11812944,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133683903,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11813888,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133684403,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11814832,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133684904,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 125775872,
+      "heapTotal": 14077952,
+      "heapUsed": 11816912,
+      "external": 2268513
+    }
+  },
+  {
+    "timestamp": 1727133685403,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 125976576,
+      "heapTotal": 14077952,
+      "heapUsed": 11229256,
+      "external": 1375585
+    }
+  },
+  {
+    "timestamp": 1727133685903,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11127968,
+      "external": 1416545
+    }
+  },
+  {
+    "timestamp": 1727133686403,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11217576,
+      "external": 1473889
+    }
+  },
+  {
+    "timestamp": 1727133686903,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11878256,
+      "external": 1523041
+    }
+  },
+  {
+    "timestamp": 1727133687403,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11834560,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133687904,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11835504,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133688405,
+    "cpu": [
+      2.36,
+      1.78,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11836448,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133688906,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11837392,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133689406,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11838336,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133689907,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11839280,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133690407,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11840224,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133690908,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11841168,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133691409,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11842112,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133691910,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 126771200,
+      "heapTotal": 14077952,
+      "heapUsed": 11843224,
+      "external": 1555809
+    }
+  },
+  {
+    "timestamp": 1727133692410,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 126570496,
+      "heapTotal": 14077952,
+      "heapUsed": 11649920,
+      "external": 1572193
+    }
+  },
+  {
+    "timestamp": 1727133692910,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11161616,
+      "external": 1662305
+    }
+  },
+  {
+    "timestamp": 1727133693410,
+    "cpu": [
+      2.17,
+      1.75,
+      1.36
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11615520,
+      "external": 1752417
+    }
+  },
+  {
+    "timestamp": 1727133693910,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11734688,
+      "external": 1858913
+    }
+  },
+  {
+    "timestamp": 1727133694411,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11516424,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133694911,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11517368,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133695411,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11518312,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133695912,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11519256,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133696413,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11520200,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133696913,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11521144,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133697414,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11522088,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133697915,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11523032,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133698416,
+    "cpu": [
+      2.47,
+      1.82,
+      1.38
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11523976,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133698917,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 128040960,
+      "heapTotal": 14077952,
+      "heapUsed": 11524920,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133699418,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 122904576,
+      "heapTotal": 14077952,
+      "heapUsed": 11659328,
+      "external": 1932641
+    }
+  },
+  {
+    "timestamp": 1727133699918,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 138584064,
+      "heapTotal": 13029376,
+      "heapUsed": 11898192,
+      "external": 2006369
+    }
+  },
+  {
+    "timestamp": 1727133700418,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 143532032,
+      "heapTotal": 14077952,
+      "heapUsed": 11593336,
+      "external": 2112865
+    }
+  },
+  {
+    "timestamp": 1727133700918,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 144191488,
+      "heapTotal": 14077952,
+      "heapUsed": 11815384,
+      "external": 2260321
+    }
+  },
+  {
+    "timestamp": 1727133701418,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 145010688,
+      "heapTotal": 14077952,
+      "heapUsed": 11642904,
+      "external": 2456929
+    }
+  },
+  {
+    "timestamp": 1727133701919,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11434608,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133702419,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11435552,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133702919,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11436496,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133703419,
+    "cpu": [
+      2.28,
+      1.79,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11437440,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133703920,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11438384,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133704421,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11439328,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133704921,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11440272,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133705422,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11441216,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133705923,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11442160,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133706423,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 145190912,
+      "heapTotal": 14077952,
+      "heapUsed": 11443104,
+      "external": 2473313
+    }
+  },
+  {
+    "timestamp": 1727133706922,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 164823040,
+      "heapTotal": 14077952,
+      "heapUsed": 11292408,
+      "external": 2571617
+    }
+  },
+  {
+    "timestamp": 1727133707422,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 166150144,
+      "heapTotal": 14077952,
+      "heapUsed": 11365312,
+      "external": 2743649
+    }
+  },
+  {
+    "timestamp": 1727133707922,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 166658048,
+      "heapTotal": 14077952,
+      "heapUsed": 11199992,
+      "external": 2923873
+    }
+  },
+  {
+    "timestamp": 1727133708422,
+    "cpu": [
+      2.09,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11494472,
+      "external": 3087713
+    }
+  },
+  {
+    "timestamp": 1727133708923,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11400096,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133709424,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11401040,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133709925,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11401984,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133710426,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11402928,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133710927,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11403872,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133711427,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11404816,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133711928,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11405760,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133712429,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11406704,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133712929,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11407648,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133713430,
+    "cpu": [
+      1.93,
+      1.73,
+      1.36
+    ],
+    "memory": {
+      "rss": 166924288,
+      "heapTotal": 14077952,
+      "heapUsed": 11408592,
+      "external": 3104097
+    }
+  },
+  {
+    "timestamp": 1727133713931,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 238911488,
-      "heapTotal": 11788288,
-      "heapUsed": 10466920,
-      "external": 1470062
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11560008,
+      "external": 1981793
     }
   },
   {
-    "timestamp": 1727127469571,
+    "timestamp": 1727133714430,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 262746112,
-      "heapTotal": 11788288,
-      "heapUsed": 9965504,
-      "external": 1486446
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11281232,
+      "external": 2014561
     }
   },
   {
-    "timestamp": 1727127470071,
+    "timestamp": 1727133714931,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10230920,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11585888,
+      "external": 2063713
     }
   },
   {
-    "timestamp": 1727127470572,
+    "timestamp": 1727133715430,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10231864,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11664744,
+      "external": 2121057
     }
   },
   {
-    "timestamp": 1727127471072,
+    "timestamp": 1727133715931,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10232808,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11828288,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127471573,
+    "timestamp": 1727133716431,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10233752,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11829232,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127472074,
+    "timestamp": 1727133716932,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10234696,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11830176,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127472574,
+    "timestamp": 1727133717433,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10235640,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11831120,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127473075,
+    "timestamp": 1727133717934,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10236592,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11832064,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127473575,
+    "timestamp": 1727133718434,
     "cpu": [
       2.33,
-      1.41,
-      1.18
+      1.82,
+      1.39
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10237536,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11833008,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127474076,
+    "timestamp": 1727133718934,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10238480,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11833952,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127474577,
+    "timestamp": 1727133719434,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 269901824,
-      "heapTotal": 11788288,
-      "heapUsed": 10239424,
-      "external": 1494638
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11834896,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127475076,
+    "timestamp": 1727133719933,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 280502272,
-      "heapTotal": 11788288,
-      "heapUsed": 10523144,
-      "external": 1502830
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11835840,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127475576,
+    "timestamp": 1727133720434,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 282013696,
-      "heapTotal": 11788288,
-      "heapUsed": 10008928,
-      "external": 1519214
+      "rss": 167952384,
+      "heapTotal": 14077952,
+      "heapUsed": 11836784,
+      "external": 2137441
     }
   },
   {
-    "timestamp": 1727127476077,
+    "timestamp": 1727133720934,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 277835776,
-      "heapTotal": 11788288,
-      "heapUsed": 10551440,
-      "external": 1535598
+      "rss": 169414656,
+      "heapTotal": 14077952,
+      "heapUsed": 11981944,
+      "external": 2202977
     }
   },
   {
-    "timestamp": 1727127476578,
+    "timestamp": 1727133721434,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 277356544,
-      "heapTotal": 11788288,
-      "heapUsed": 10117136,
-      "external": 1551982
+      "rss": 171147264,
+      "heapTotal": 14077952,
+      "heapUsed": 11725112,
+      "external": 2301281
     }
   },
   {
-    "timestamp": 1727127477078,
+    "timestamp": 1727133721934,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10432216,
-      "external": 1560174
+      "rss": 171147264,
+      "heapTotal": 14077952,
+      "heapUsed": 12120808,
+      "external": 2415969
     }
   },
   {
-    "timestamp": 1727127477578,
+    "timestamp": 1727133722434,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10433160,
-      "external": 1560174
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11569248,
+      "external": 2514273
     }
   },
   {
-    "timestamp": 1727127478079,
+    "timestamp": 1727133722935,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10434104,
-      "external": 1560174
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11405840,
+      "external": 2530657
     }
   },
   {
-    "timestamp": 1727127478580,
+    "timestamp": 1727133723436,
     "cpu": [
-      2.38,
-      1.44,
-      1.19
+      2.15,
+      1.79,
+      1.38
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10435048,
-      "external": 1560174
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11406784,
+      "external": 2530657
     }
   },
   {
-    "timestamp": 1727127479080,
+    "timestamp": 1727133723936,
     "cpu": [
-      2.19,
-      1.42,
-      1.19
+      1.97,
+      1.76,
+      1.37
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10435992,
-      "external": 1560174
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11407896,
+      "external": 2530657
     }
   },
   {
-    "timestamp": 1727127479581,
+    "timestamp": 1727133724437,
     "cpu": [
-      2.19,
-      1.42,
-      1.19
+      1.97,
+      1.76,
+      1.37
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10436936,
-      "external": 1560174
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11408840,
+      "external": 2530657
     }
   },
   {
-    "timestamp": 1727127480081,
+    "timestamp": 1727133724938,
     "cpu": [
-      2.19,
-      1.42,
-      1.19
+      1.97,
+      1.76,
+      1.37
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10437880,
-      "external": 1560174
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11409784,
+      "external": 2530657
     }
   },
   {
-    "timestamp": 1727127480582,
+    "timestamp": 1727133725438,
     "cpu": [
-      2.19,
-      1.42,
-      1.19
+      1.97,
+      1.76,
+      1.37
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10438824,
-      "external": 1560174
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11410728,
+      "external": 2530657
     }
   },
   {
-    "timestamp": 1727127481081,
+    "timestamp": 1727133725938,
     "cpu": [
-      2.19,
-      1.42,
-      1.19
+      1.97,
+      1.76,
+      1.37
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10439768,
-      "external": 1560174
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11411672,
+      "external": 2530657
     }
   },
   {
-    "timestamp": 1727127481582,
+    "timestamp": 1727133726439,
     "cpu": [
-      2.19,
-      1.42,
-      1.19
+      1.97,
+      1.76,
+      1.37
     ],
     "memory": {
-      "rss": 278003712,
-      "heapTotal": 11788288,
-      "heapUsed": 10440712,
-      "external": 1560174
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11412632,
+      "external": 2530657
+    }
+  },
+  {
+    "timestamp": 1727133726940,
+    "cpu": [
+      1.97,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11413576,
+      "external": 2530657
+    }
+  },
+  {
+    "timestamp": 1727133727441,
+    "cpu": [
+      1.97,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 171413504,
+      "heapTotal": 14077952,
+      "heapUsed": 11414520,
+      "external": 2530657
+    }
+  },
+  {
+    "timestamp": 1727133727940,
+    "cpu": [
+      1.97,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 163475456,
+      "heapTotal": 13029376,
+      "heapUsed": 11699432,
+      "external": 2571617
+    }
+  },
+  {
+    "timestamp": 1727133728440,
+    "cpu": [
+      1.97,
+      1.76,
+      1.37
+    ],
+    "memory": {
+      "rss": 176594944,
+      "heapTotal": 14077952,
+      "heapUsed": 11807568,
+      "external": 2669921
+    }
+  },
+  {
+    "timestamp": 1727133728940,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177098752,
+      "heapTotal": 14077952,
+      "heapUsed": 11981240,
+      "external": 2784609
+    }
+  },
+  {
+    "timestamp": 1727133729440,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177717248,
+      "heapTotal": 14077952,
+      "heapUsed": 11216664,
+      "external": 2882913
+    }
+  },
+  {
+    "timestamp": 1727133729940,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11609904,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133730441,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11610848,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133730942,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11611792,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133731442,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11612736,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133731943,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11613680,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133732444,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11614792,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133732944,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11615736,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133733445,
+    "cpu": [
+      2.46,
+      1.86,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11616680,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133733946,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11617624,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133734447,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 177885184,
+      "heapTotal": 14077952,
+      "heapUsed": 11618568,
+      "external": 2973025
+    }
+  },
+  {
+    "timestamp": 1727133734946,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 150548480,
+      "heapTotal": 14077952,
+      "heapUsed": 11840328,
+      "external": 3038561
+    }
+  },
+  {
+    "timestamp": 1727133735446,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 153190400,
+      "heapTotal": 14077952,
+      "heapUsed": 11899368,
+      "external": 3169633
+    }
+  },
+  {
+    "timestamp": 1727133735946,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 153411584,
+      "heapTotal": 14077952,
+      "heapUsed": 11916040,
+      "external": 3325281
+    }
+  },
+  {
+    "timestamp": 1727133736446,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 153411584,
+      "heapTotal": 14077952,
+      "heapUsed": 11772504,
+      "external": 3480929
+    }
+  },
+  {
+    "timestamp": 1727133736946,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11364296,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133737447,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11365240,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133737948,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11366184,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133738449,
+    "cpu": [
+      2.34,
+      1.85,
+      1.41
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11367128,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133738949,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11368072,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133739450,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11369016,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133739950,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11369960,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133740450,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11371072,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133740949,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11372016,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133741450,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 153616384,
+      "heapTotal": 14077952,
+      "heapUsed": 11372960,
+      "external": 3587425
+    }
+  },
+  {
+    "timestamp": 1727133741950,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 151740416,
+      "heapTotal": 14077952,
+      "heapUsed": 11578800,
+      "external": 2571617
+    }
+  },
+  {
+    "timestamp": 1727133742450,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 154497024,
+      "heapTotal": 14077952,
+      "heapUsed": 11767160,
+      "external": 2579809
+    }
+  },
+  {
+    "timestamp": 1727133742950,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 12053856,
+      "external": 2637153
+    }
+  },
+  {
+    "timestamp": 1727133743450,
+    "cpu": [
+      2.23,
+      1.83,
+      1.4
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11478640,
+      "external": 2661729
+    }
+  },
+  {
+    "timestamp": 1727133743951,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11288464,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133744451,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11289408,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133744952,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11290352,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133745453,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11291296,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133745953,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11292240,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133746454,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11293184,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133746955,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11294128,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133747456,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11295072,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133747957,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11296016,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133748457,
+    "cpu": [
+      2.53,
+      1.9,
+      1.43
+    ],
+    "memory": {
+      "rss": 154755072,
+      "heapTotal": 14077952,
+      "heapUsed": 11297128,
+      "external": 2686305
+    }
+  },
+  {
+    "timestamp": 1727133748956,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 154034176,
+      "heapTotal": 14077952,
+      "heapUsed": 11346160,
+      "external": 2719073
+    }
+  },
+  {
+    "timestamp": 1727133749458,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 155086848,
+      "heapTotal": 14077952,
+      "heapUsed": 12216584,
+      "external": 2792801
+    }
+  },
+  {
+    "timestamp": 1727133749957,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 157683712,
+      "heapTotal": 14077952,
+      "heapUsed": 12041888,
+      "external": 2882913
+    }
+  },
+  {
+    "timestamp": 1727133750457,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 161705984,
+      "heapTotal": 14077952,
+      "heapUsed": 11597352,
+      "external": 2956641
+    }
+  },
+  {
+    "timestamp": 1727133750958,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11389248,
+      "external": 3030369
+    }
+  },
+  {
+    "timestamp": 1727133751458,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11390192,
+      "external": 3030369
+    }
+  },
+  {
+    "timestamp": 1727133751958,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11391136,
+      "external": 3030369
+    }
+  },
+  {
+    "timestamp": 1727133752459,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11392080,
+      "external": 3030369
+    }
+  },
+  {
+    "timestamp": 1727133752960,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11393024,
+      "external": 3030369
+    }
+  },
+  {
+    "timestamp": 1727133753461,
+    "cpu": [
+      2.65,
+      1.94,
+      1.44
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11393968,
+      "external": 3030369
+    }
+  },
+  {
+    "timestamp": 1727133753962,
+    "cpu": [
+      2.44,
+      1.91,
+      1.43
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11394912,
+      "external": 3030369
+    }
+  },
+  {
+    "timestamp": 1727133754463,
+    "cpu": [
+      2.44,
+      1.91,
+      1.43
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11395856,
+      "external": 3030369
+    }
+  },
+  {
+    "timestamp": 1727133754963,
+    "cpu": [
+      2.44,
+      1.91,
+      1.43
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11396800,
+      "external": 3030369
+    }
+  },
+  {
+    "timestamp": 1727133755464,
+    "cpu": [
+      2.44,
+      1.91,
+      1.43
+    ],
+    "memory": {
+      "rss": 163282944,
+      "heapTotal": 14077952,
+      "heapUsed": 11397744,
+      "external": 3030369
     }
   }
 ]

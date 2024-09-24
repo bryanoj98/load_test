@@ -25,42 +25,74 @@
 
         function drawLatenciaChart(data) {
             const ctx = document.getElementById('latenciaChart').getContext('2d');
-            
-            const labels = [];
-            const latencias = [];
 
-            data.forEach(item => {
+            let labels = [];
+            const datasets = [];
+
+            // Función para generar un color en formato rgba
+            function getColor(index) {
+                const hue = (index * 360 / data.length) % 360; // Cambiar el matiz basado en el índice
+                return `hsl(${hue}, 100%, 50%)`; // Color en HSL
+            }
+
+            // Procesar los datos
+            data.forEach((item, index) => {
                 const key = Object.keys(item)[0];
-                labels.push(key);
+                let latencias = [];
+                
+                // Recorrer variable1 y extraer llaves y valores
+                labels = [];
+                item[key].forEach(latenciaKV => {
+                    const keyL = Object.keys(latenciaKV)[0];
+                    const valueL = latenciaKV[keyL];
+                    labels.push(keyL); 
+                    latencias.push(valueL); 
+                });
 
-                const latenciaArray = item[key];
-                const latencia2000 = latenciaArray.find(lat => lat[2000]);
-                latencias.push(latencia2000 ? latencia2000[2000] : 0);
+                // Crear un dataset para cada hilo
+                datasets.push({
+                    label: `${key} Hilos`,
+                    data: latencias,
+                    backgroundColor: getColor(index),
+                    borderColor: getColor(index).replace('0.5', '1'), // Color más oscuro para el borde
+                    borderWidth: 1,
+                    fill: false,
+                });
             });
 
+            console.log("labels: ", labels);
+
             new Chart(ctx, {
-                type: 'bar',
+                type: 'line', // Cambiar a gráfico de líneas
                 data: {
                     labels: labels,
-                    datasets: [{
-                        label: 'Latencia Promedio para 2000 bytes',
-                        data: latencias,
-                        backgroundColor: 'rgba(75, 192, 192, 0.5)',
-                        borderColor: 'rgba(75, 192, 192, 1)',
-                        borderWidth: 1,
-                    }]
+                    datasets: datasets,
                 },
                 options: {
                     responsive: true,
                     scales: {
                         y: {
-                            beginAtZero: true
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Latencia Promedio (ms)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Hilo'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
                         }
                     }
                 }
             });
         }
-
         function drawCpuMemoryChart(cpuData, memoryData) {
             const ctxCpu = document.getElementById('cpuChart').getContext('2d');
             const ctxMemory = document.getElementById('memoryChart').getContext('2d');

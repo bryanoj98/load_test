@@ -1,5 +1,8 @@
 {
   "type": "module",
+  "scripts": {
+    "test": "node src/index.js"
+  },
   "dependencies": {
     "systeminformation": "^5.21.24",
     "ws": "^8.16.0"
