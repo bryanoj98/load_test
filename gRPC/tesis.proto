@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+service CommunicationService {
+  rpc transferInformation(Data) returns (Data);
+}
+
+message Data {
+  string payload = 1;
+}

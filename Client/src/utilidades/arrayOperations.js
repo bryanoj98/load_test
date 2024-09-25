@@ -1,17 +1,33 @@
-//Suma de promedios con arrays
-exports.sumAverages = (...avgArrays) => {
-  const summedAverages = {};
+exports.addPartialValues = (var1, var2) => {
+  const acumulador = {};
 
-  avgArrays.forEach((avgArray) => {
-    avgArray.forEach((obj) => {
-      const key = Object.keys(obj)[0];
-      const value = obj[key];
-      summedAverages[key] = (summedAverages[key] || 0) + value;
-    });
-  });
+  const sumarElemento = (element) => {
+    const clave = Object.keys(element)[0];
+    if (!acumulador[clave]) {
+      acumulador[clave] = { sumLatencias: 0, numMuestras: 0 };
+    }
+    acumulador[clave].sumLatencias += element[clave].sumLatencias;
+    acumulador[clave].numMuestras += element[clave].numMuestras;
+  };
 
-  // Convertir el objeto de resultados de nuevo a un array
-  return Object.entries(summedAverages).map(([key, value]) => ({
-    [key]: value,
+  // Sumar elementos de variable1
+  var1.forEach(sumarElemento);
+  // Sumar elementos de variable2
+  var2.forEach(sumarElemento);
+
+  // Convertir el acumulador de objeto a array
+  return Object.keys(acumulador).map((clave) => ({
+    [clave]: acumulador[clave],
   }));
+};
+
+exports.calculateAverages = (resultado) => {
+  return resultado.map((element) => {
+    const clave = Object.keys(element)[0];
+    const { sumLatencias, numMuestras } = element[clave];
+
+    return {
+      [clave]: sumLatencias / numMuestras,
+    };
+  });
 };

@@ -28,25 +28,10 @@ app.listen(PORT, function () {
   console.log(`Your node.js server is running on http://${localIp}:${PORT}`);
 })
 
-// app.get("/status", async (request, response) => {
-//   console.log("llega:",request.query)
-//   // await sleep(10000)
-//   const status = {
-//      "Status": "Running"
-//   };
-//   response.status(200).send(status);
-//   // response.send(status);
-// });
-
 app.post("/status", async (request, response) => {
-  // console.log("request.body:",request.body);
   console.log("request.body:",request.body.length);
-  // await sleep(10000)
-  // const status = {
-  //    "Status": "Running"
-  // };
+
   response.status(200).send(request.body);
-  // response.send(status);
 });
 
 
