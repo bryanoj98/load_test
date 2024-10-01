@@ -81,7 +81,7 @@
                         x: {
                             title: {
                                 display: true,
-                                text: 'Hilo'
+                                text: 'Variación Carga Util'
                             }
                         }
                     },
@@ -99,7 +99,9 @@
 
             // Extraer los datos de CPU
             const cpuTimestamps = cpuData.map(entry => new Date(entry.timestamp).toLocaleTimeString());
-            const cpuValues = cpuData.map(entry => entry.cpu[0]);
+            const cpuValues = cpuData.map(entry => entry.cpu);
+            console.log("cpuData: ", cpuData);
+            
 
             // Extraer los datos de memoria (rss)
             const memoryTimestamps = memoryData.map(entry => new Date(entry.timestamp).toLocaleTimeString());
@@ -124,7 +126,17 @@
                     responsive: true,
                     scales: {
                         y: {
-                            beginAtZero: true
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Uso de CPU (%)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Tiempo'
+                            }
                         }
                     }
                 }
@@ -148,7 +160,17 @@
                     responsive: true,
                     scales: {
                         y: {
-                            beginAtZero: true
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Memoria ocupada por el proceso (bytes)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Tiempo'
+                            }
                         }
                     }
                 }

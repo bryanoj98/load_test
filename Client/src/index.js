@@ -9,8 +9,12 @@ const {
   workerData,
 } = require("worker_threads");
 const { log } = require("console");
-const payload = require("./mensages/payload");
+// const payload = require("./mensages/payload");
+const payload = require("./mensages/payload100kB");
 const arrayOperations = require("./utilidades/arrayOperations");
+const systemInfo = require("./utilidades/systemInfo");
+const restCall = require("./service/restCall");
+
 const os = require("os");
 const fs = require("fs");
 
@@ -23,13 +27,17 @@ const CommunicationService =
 */
 const tipoDePeticion = "REST";
 const duracionTest = 2000;
-// const maxPayloadSize = 500000;
-const maxPayloadSize = 6000;
+const maxPayloadSize = 500000;
+// const maxPayloadSize = 6000;
 const maxNumThreads = 3;
-// const numeroDeHilos = 3;
-const cycleSleepTime = 5000;
+// const maxNumThreads = 1;
+const cycleSleepTime = 2000;
+const decrement = 2000;
 
-const urlRest = "http://localhost:4000/status";
+const monitorTime = 1000;
+
+const urlRest = "http://localhost:4000";
+// const urlRest = "http://10.42.0.40:4000";
 const urlWSocket = "ws://localhost:8080";
 const urlgRPC = "localhost:50000";
 
@@ -41,28 +49,42 @@ let monitoringInterval;
 if (isMainThread) {
   // Flujo de trabajo hilo padre
   (async () => {
-    // Comienza a monitorear CPU y memoria
-    monitorUsage();
+    // Inicia monitoreo servidor
+    if (tipoDePeticion == "REST") {
+      await restCall.serverMonitorON(urlRest);
+    }
 
-    let numeroDeHilos = 1;
+    // Comienza a monitorear CPU y memoria
+    monitorUsage(monitorTime);
+
+    let numeroDeHilos = 1; //Ascendente
+    // let numeroDeHilos = maxNumThreads; //Descendente
     while (numeroDeHilos <= maxNumThreads) {
+      //Ascendente
+      // while (numeroDeHilos > 0) { //Descendente
       console.log("numeroDeHilos: ", numeroDeHilos);
 
       await lanzarHilos(numeroDeHilos);
 
-      const latenciaAVG = arrayOperations.calculateAverages(latenciaAVGRonda);
+      let latenciaAVG = arrayOperations.calculateAverages(latenciaAVGRonda);
+
       latenciaAVGTotal.push({ [numeroDeHilos]: latenciaAVG });
-      console.log(
-        "latenciaAVGTotal: ",
-        JSON.stringify(latenciaAVGTotal, null, 2),
-      );
+      // console.log(
+      //   "latenciaAVGTotal: ",
+      //   JSON.stringify(latenciaAVGTotal, null, 2),
+      // );
       latenciaAVGRonda = [];
 
       numeroDeHilos++;
+      // numeroDeHilos--; //DEcremento
     }
 
     // Detener el monitoreo al finalizar
     clearInterval(monitoringInterval);
+
+    if (tipoDePeticion == "REST") {
+      await restCall.serverMonitorOFF(urlRest);
+    }
 
     // console.log(
     //   "Final final latenciaAVGTotal: ",
@@ -83,6 +105,15 @@ if (isMainThread) {
       JSON.stringify(cpuMemoryUsage, null, 2),
     );
 
+    // fs.writeFileSync(
+    //   `../latenciaAVGTotal-${tipoDePeticion}.json`,
+    //   JSON.stringify(latenciaAVGTotal, null, 2),
+    // );
+    // fs.writeFileSync(
+    //   `../cpuMemoryUsage-${tipoDePeticion}.json`,
+    //   JSON.stringify(cpuMemoryUsage, null, 2),
+    // );
+
     console.log("Fin del proceso... ");
   })();
 } else {
@@ -100,14 +131,14 @@ function lanzarHilos(numeroDeHilos) {
 
       worker.on("message", (resultado) => {
         if (resultado.latenciaAVG) {
-          console.log("resultado.latenciaAVG: ", resultado.latenciaAVG);
+          // console.log("resultado.latenciaAVG: ", resultado.latenciaAVG);
 
           latenciaAVGRonda = arrayOperations.addPartialValues(
             latenciaAVGRonda,
             resultado.latenciaAVG,
           );
 
-          console.log("latenciaAVGRonda: ", latenciaAVGRonda);
+          // console.log("latenciaAVGRonda: ", latenciaAVGRonda);
           hilosActivos = hilosActivos - 1;
 
           if (hilosActivos <= 0) {
@@ -120,22 +151,21 @@ function lanzarHilos(numeroDeHilos) {
 }
 
 // Función para monitorear el uso de CPU y memoria
-function monitorUsage() {
+function monitorUsage(monitorTime) {
   monitoringInterval = setInterval(() => {
-    const cpuUsage = os.loadavg(); // Promedio de carga del CPU
+    const cpuUsage = os.loadavg(); // Promedio de carga del CPU por nucleos
+    const cpuPorcen = systemInfo.getCpuUsage(); // porcentaje total de uso de CPU
     const memoryUsage = process.memoryUsage(); // Uso de memoria
 
     cpuMemoryUsage.push({
       timestamp: Date.now(),
-      cpu: cpuUsage,
+      cpu: cpuPorcen,
+      cpuNucleos: cpuUsage,
       memory: {
         rss: memoryUsage.rss, // Resident Set Size
-        heapTotal: memoryUsage.heapTotal,
-        heapUsed: memoryUsage.heapUsed,
-        external: memoryUsage.external,
       },
     });
-  }, 500); // Monitorea en milisegundos
+  }, monitorTime); // Monitorea en milisegundos
 }
 
 // Función para el hilo del trabajador
@@ -162,6 +192,7 @@ function ejecutarHilo(workerData) {
 
 // Función para realizar la petición REST
 async function rest(url, hiloId) {
+  const urlMsg = `${url}/status`;
   let dataToSend = "";
   let latenciaAVG = [];
   while (dataToSend.length <= maxPayloadSize) {
@@ -169,13 +200,10 @@ async function rest(url, hiloId) {
     let latenciaList = [];
     while (Date.now() - tiempoInicio < duracionTest) {
       try {
-        // parentPort.postMessage({ hiloId, mensaje: "Lanza peticion" });
-        // const respuesta = await axios.get(url+"?ID="+hiloId);
-
         console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
 
         const inicio = performance.now();
-        const respuesta = await axios.post(url, dataToSend);
+        const respuesta = await axios.post(urlMsg, dataToSend);
         const fin = performance.now();
 
         const latencia = fin - inicio;
@@ -188,9 +216,9 @@ async function rest(url, hiloId) {
     }
     const sumLatencias = latenciaList.reduce((acc, val) => acc + val, 0);
 
-    let payloadSize2 = dataToSend.length;
+    let byteLength = dataToSend.length;
     latenciaAVG.push({
-      [payloadSize2]: {
+      [byteLength]: {
         sumLatencias: sumLatencias,
         numMuestras: latenciaList.length,
       },

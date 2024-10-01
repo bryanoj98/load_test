@@ -1,3 +1,4 @@
 node_modules/*
 cpuMemoryUsage.json
 latenciaAVGTotal.json
+cpuMemoryUsage-REST-Server.json

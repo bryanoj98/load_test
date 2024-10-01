@@ -31,3 +31,12 @@ exports.calculateAverages = (resultado) => {
     };
   });
 };
+
+//Si es descendente
+// Ordenar el array en orden descendente según la clave
+// latenciaAVG = latenciaAVG.sort((a, b) => {
+//   const claveA = parseInt(Object.keys(a)[0], 10); // Convertir a número
+//   const claveB = parseInt(Object.keys(b)[0], 10); // Convertir a número
+
+//   return claveB - claveA; // Descendente
+// });
