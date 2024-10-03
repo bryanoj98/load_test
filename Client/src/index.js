@@ -10,7 +10,8 @@ const {
 } = require("worker_threads");
 const { log } = require("console");
 // const payload = require("./mensages/payload");
-const payload = require("./mensages/payload100kB");
+const payload = require("./mensages/payload5000");
+// const payload = require("./mensages/payload4000");
 const arrayOperations = require("./utilidades/arrayOperations");
 const systemInfo = require("./utilidades/systemInfo");
 const restCall = require("./service/restCall");
@@ -29,15 +30,15 @@ const tipoDePeticion = "REST";
 const duracionTest = 2000;
 const maxPayloadSize = 500000;
 // const maxPayloadSize = 6000;
-const maxNumThreads = 3;
+const maxNumThreads = 50;
 // const maxNumThreads = 1;
 const cycleSleepTime = 2000;
 const decrement = 2000;
 
 const monitorTime = 1000;
 
-const urlRest = "http://localhost:4000";
-// const urlRest = "http://10.42.0.40:4000";
+// const urlRest = "http://localhost:4000";
+const urlRest = "http://10.42.0.40:4000";
 const urlWSocket = "ws://localhost:8080";
 const urlgRPC = "localhost:50000";
 
