@@ -10,11 +10,13 @@ const {
 } = require("worker_threads");
 const { log } = require("console");
 // const payload = require("./mensages/payload");
-const payload = require("./mensages/payload5000");
+// const payload = require("./mensages/payload5000");
 // const payload = require("./mensages/payload4000");
+const payload = require("./mensages/payload100kB");
 const arrayOperations = require("./utilidades/arrayOperations");
 const systemInfo = require("./utilidades/systemInfo");
 const restCall = require("./service/restCall");
+const gRPCCall = require("./service/gRPCCall");
 
 const os = require("os");
 const fs = require("fs");
@@ -26,11 +28,11 @@ const CommunicationService =
 /* Tipos de peticiones posibles:
   "REST" "WEBSOCKET" "gRPC"
 */
-const tipoDePeticion = "REST";
+const tipoDePeticion = "gRPC";
 const duracionTest = 2000;
 const maxPayloadSize = 500000;
 // const maxPayloadSize = 6000;
-const maxNumThreads = 50;
+const maxNumThreads = 3;
 // const maxNumThreads = 1;
 const cycleSleepTime = 2000;
 const decrement = 2000;
@@ -51,9 +53,7 @@ if (isMainThread) {
   // Flujo de trabajo hilo padre
   (async () => {
     // Inicia monitoreo servidor
-    if (tipoDePeticion == "REST") {
-      await restCall.serverMonitorON(urlRest);
-    }
+    await adminMonitorOnServer(true);
 
     // Comienza a monitorear CPU y memoria
     monitorUsage(monitorTime);
@@ -83,9 +83,8 @@ if (isMainThread) {
     // Detener el monitoreo al finalizar
     clearInterval(monitoringInterval);
 
-    if (tipoDePeticion == "REST") {
-      await restCall.serverMonitorOFF(urlRest);
-    }
+    await adminMonitorOnServer(false);
+
 
     // console.log(
     //   "Final final latenciaAVGTotal: ",
@@ -97,23 +96,23 @@ if (isMainThread) {
     // );
 
     // Guardar los resultados en archivos JSON
-    fs.writeFileSync(
-      "../latenciaAVGTotal.json",
-      JSON.stringify(latenciaAVGTotal, null, 2),
-    );
-    fs.writeFileSync(
-      "../cpuMemoryUsage.json",
-      JSON.stringify(cpuMemoryUsage, null, 2),
-    );
-
     // fs.writeFileSync(
-    //   `../latenciaAVGTotal-${tipoDePeticion}.json`,
+    //   "../latenciaAVGTotal.json",
     //   JSON.stringify(latenciaAVGTotal, null, 2),
     // );
     // fs.writeFileSync(
-    //   `../cpuMemoryUsage-${tipoDePeticion}.json`,
+    //   "../cpuMemoryUsage.json",
     //   JSON.stringify(cpuMemoryUsage, null, 2),
     // );
+
+    fs.writeFileSync(
+      `../latenciaAVGTotal-${tipoDePeticion}.json`,
+      JSON.stringify(latenciaAVGTotal, null, 2),
+    );
+    fs.writeFileSync(
+      `../cpuMemoryUsage-${tipoDePeticion}.json`,
+      JSON.stringify(cpuMemoryUsage, null, 2),
+    );
 
     console.log("Fin del proceso... ");
   })();
@@ -184,6 +183,33 @@ function ejecutarHilo(workerData) {
     case "gRPC":
       console.log("Inicio Cliente gRPC");
       gRPC(urlgRPC, hiloId);
+      break;
+    default:
+      console.log("Tipo de peticion invalida");
+      break;
+  }
+}
+
+// Funcion Iniciar el monitor en el servidor
+async function adminMonitorOnServer(isStart) {
+  
+  switch (tipoDePeticion) {
+    case "REST":
+      if (isStart) {
+        await restCall.serverMonitorON(urlRest);
+      }else{
+        await restCall.serverMonitorOFF(urlRest);
+      }
+      break;
+    case "WEBSOCKET":
+      //TODO: realizar
+      break;
+    case "gRPC":
+      if (isStart) {
+        await gRPCCall.serverMonitorON(urlgRPC);
+      }else{
+        await gRPCCall.serverMonitorOFF(urlgRPC);
+      }
       break;
     default:
       console.log("Tipo de peticion invalida");
@@ -327,7 +353,7 @@ async function gRPC(url, hiloId) {
     const tiempoInicio = Date.now();
     let latenciaList = [];
     while (Date.now() - tiempoInicio < duracionTest) {
-      console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
+      // console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
       const inicio = performance.now();
 
       const respuesta = await new Promise((resolve, reject) => {
