@@ -42,8 +42,8 @@ const monitorTime = 1000;
 // const urlRest = "http://localhost:4000";
 const urlRest = "http://10.42.0.40:4000";
 const urlWSocket = "ws://localhost:8080";
-const urlgRPC = "localhost:50000";
-// const urlgRPC = "10.42.0.40:50000";
+// const urlgRPC = "localhost:50000";
+const urlgRPC = "10.42.0.40:50000";
 
 let latenciaAVGRonda = [];
 let latenciaAVGTotal = [];
