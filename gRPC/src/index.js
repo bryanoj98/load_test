@@ -80,7 +80,14 @@ function monitorUsage(monitorTime) {
   }, monitorTime); // Monitorea en milisegundos
 }
 
+//Local
 server.bindAsync("127.0.0.1:50000", grpc.ServerCredentials.createInsecure(), (error, port) => {
   server.start();
   console.log(`listening on port ${port}`);
   });
+
+//Server
+// server.bindAsync("10.42.0.40:50000", grpc.ServerCredentials.createInsecure(), (error, port) => {
+//   server.start();
+//   console.log(`listening on port ${port}`);
+//   });

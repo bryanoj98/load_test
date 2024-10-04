@@ -1,13 +1,6 @@
 const grpc = require("@grpc/grpc-js");
-const protoLoader = require("@grpc/proto-loader");
 
-const packageDef = protoLoader.loadSync("tesisMonitor.proto", {});
-const CommunicationService =
-  grpc.loadPackageDefinition(packageDef).CommunicationService;
-
-
-
-exports.serverMonitorOFF = async (url) => {
+exports.serverMonitorOFF = async (url, CommunicationService) => {
   const client = new CommunicationService(
     url,
     grpc.credentials.createInsecure(),
@@ -27,7 +20,7 @@ exports.serverMonitorOFF = async (url) => {
   console.log("respuesta Monitor: ", respuesta);
 };
 
-exports.serverMonitorON = async (url) => {
+exports.serverMonitorON = async (url, CommunicationService) => {
   const client = new CommunicationService(
     url,
     grpc.credentials.createInsecure(),

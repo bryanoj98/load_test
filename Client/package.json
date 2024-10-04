@@ -11,7 +11,7 @@
   "author": "bryan perez",
   "license": "ISC",
   "dependencies": {
-    "@grpc/grpc-js": "^1.9.14",
+    "@grpc/grpc-js": "1.10.4",
     "axios": "^1.6.7",
     "systeminformation": "^5.21.24",
     "ws": "^8.16.0"
