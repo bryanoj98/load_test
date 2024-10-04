@@ -10,13 +10,14 @@ const {
 } = require("worker_threads");
 const { log } = require("console");
 // const payload = require("./mensages/payload");
-// const payload = require("./mensages/payload5000");
 // const payload = require("./mensages/payload4000");
-const payload = require("./mensages/payload100kB");
+const payload = require("./mensages/payload5000");
+// const payload = require("./mensages/payload100kB");
 const arrayOperations = require("./utilidades/arrayOperations");
 const systemInfo = require("./utilidades/systemInfo");
 const restCall = require("./service/restCall");
 const gRPCCall = require("./service/gRPCCall");
+const websocketCall = require("./service/websocketCall");
 
 const os = require("os");
 const fs = require("fs");
@@ -28,7 +29,7 @@ const CommunicationService =
 /* Tipos de peticiones posibles:
   "REST" "WEBSOCKET" "gRPC"
 */
-const tipoDePeticion = "gRPC";
+const tipoDePeticion = "WEBSOCKET";
 const duracionTest = 2000;
 const maxPayloadSize = 500000;
 // const maxPayloadSize = 6000;
@@ -40,10 +41,14 @@ const decrement = 2000;
 const monitorTime = 1000;
 
 // const urlRest = "http://localhost:4000";
-const urlRest = "http://10.42.0.40:4000";
-const urlWSocket = "ws://localhost:8080";
 // const urlgRPC = "localhost:50000";
+// const ipWSocket = "ws://localhost"
+const urlRest = "http://10.42.0.40:4000";
 const urlgRPC = "10.42.0.40:50000";
+const ipWSocket = "ws://10.42.0.40";
+
+const urlWSocket = `${ipWSocket}:8080`;
+const urlWSocketMonitor = `${ipWSocket}:8585`;
 
 let latenciaAVGRonda = [];
 let latenciaAVGTotal = [];
@@ -96,15 +101,6 @@ if (isMainThread) {
     // );
 
     // Guardar los resultados en archivos JSON
-    // fs.writeFileSync(
-    //   "../latenciaAVGTotal.json",
-    //   JSON.stringify(latenciaAVGTotal, null, 2),
-    // );
-    // fs.writeFileSync(
-    //   "../cpuMemoryUsage.json",
-    //   JSON.stringify(cpuMemoryUsage, null, 2),
-    // );
-
     fs.writeFileSync(
       `../latenciaAVGTotal-${tipoDePeticion}.json`,
       JSON.stringify(latenciaAVGTotal, null, 2),
@@ -201,7 +197,11 @@ async function adminMonitorOnServer(isStart) {
       }
       break;
     case "WEBSOCKET":
-      //TODO: realizar
+      if (isStart) {
+        await websocketCall.serverMonitorON(urlWSocketMonitor);
+      } else {
+        await websocketCall.serverMonitorOFF(urlWSocketMonitor);
+      }
       break;
     case "gRPC":
       if (isStart) {
@@ -264,10 +264,10 @@ function websocket(url, hiloId) {
   const ws = new WebSocket(url);
 
   ws.on("open", () => {
-    parentPort.postMessage({
-      hiloId,
-      mensaje: "Conexión WebSocket abierta...",
-    });
+    // parentPort.postMessage({
+    //   hiloId,
+    //   mensaje: "Conexión WebSocket abierta...",
+    // });
 
     const peticionesW = async () => {
       let dataToSend = "";
@@ -284,7 +284,7 @@ function websocket(url, hiloId) {
 
             const inicio = performance.now();
 
-            ws.send(JSON.stringify(dataToSend));
+            ws.send(dataToSend);
 
             await esperarRespuesta(); // Esperar la respuesta del servidor
 
@@ -331,7 +331,7 @@ function websocket(url, hiloId) {
   });
 
   ws.on("close", () => {
-    parentPort.postMessage({ hiloId, mensaje: "Conexión WebSocket cerrada." });
+    // parentPort.postMessage({ hiloId, mensaje: "Conexión WebSocket cerrada." });
   });
 
   ws.on("error", (error) => {
