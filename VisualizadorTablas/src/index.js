@@ -12,19 +12,53 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'))
 });
 
-// Ruta para leer latenciaAVGTotal.json
-app.get("/latencia", (req, res) => {
-  fs.readFile("../latenciaAVGTotal.json", "utf8", (err, data) => {
+// REST
+app.get("/latenciaREST", (req, res) => {
+  fs.readFile("../latenciaAVGTotal-REST.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de latencia.");
     }
     res.json(JSON.parse(data));
   });
 });
+app.get("/cpu-memoryREST", (req, res) => {
+  fs.readFile("../cpuMemoryUsage-REST.json", "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).send("Error al leer el archivo de CPU y memoria.");
+    }
+    res.json(JSON.parse(data));
+  });
+});
 
-// Ruta para leer cpuMemoryUsage.json
-app.get("/cpu-memory", (req, res) => {
-  fs.readFile("../cpuMemoryUsage.json", "utf8", (err, data) => {
+// WEBSOCKET
+app.get("/latenciaWebsocket", (req, res) => {
+  fs.readFile("../latenciaAVGTotal-WEBSOCKET.json", "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).send("Error al leer el archivo de latencia.");
+    }
+    res.json(JSON.parse(data));
+  });
+});
+app.get("/cpu-memoryWebsocket", (req, res) => {
+  fs.readFile("../cpuMemoryUsage-WEBSOCKET.json", "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).send("Error al leer el archivo de CPU y memoria.");
+    }
+    res.json(JSON.parse(data));
+  });
+});
+
+// gRPC
+app.get("/latenciaGRPC", (req, res) => {
+  fs.readFile("../latenciaAVGTotal-gRPC.json", "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).send("Error al leer el archivo de latencia.");
+    }
+    res.json(JSON.parse(data));
+  });
+});
+app.get("/cpu-memoryGRPC", (req, res) => {
+  fs.readFile("../cpuMemoryUsage-gRPC.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de CPU y memoria.");
     }

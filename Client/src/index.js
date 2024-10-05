@@ -9,10 +9,12 @@ const {
   workerData,
 } = require("worker_threads");
 const { log } = require("console");
+
 // const payload = require("./mensages/payload");
 // const payload = require("./mensages/payload4000");
-const payload = require("./mensages/payload5000");
-// const payload = require("./mensages/payload100kB");
+// const payload = require("./mensages/payload5000");
+const payload = require("./mensages/payload100kB");
+
 const arrayOperations = require("./utilidades/arrayOperations");
 const systemInfo = require("./utilidades/systemInfo");
 const restCall = require("./service/restCall");
@@ -29,7 +31,7 @@ const CommunicationService =
 /* Tipos de peticiones posibles:
   "REST" "WEBSOCKET" "gRPC"
 */
-const tipoDePeticion = "WEBSOCKET";
+const tipoDePeticion = "REST";
 const duracionTest = 2000;
 const maxPayloadSize = 500000;
 // const maxPayloadSize = 6000;
@@ -102,11 +104,11 @@ if (isMainThread) {
 
     // Guardar los resultados en archivos JSON
     fs.writeFileSync(
-      `../latenciaAVGTotal-${tipoDePeticion}.json`,
+      `../latenciaAVGTotal-${tipoDePeticion}-corto.json`,
       JSON.stringify(latenciaAVGTotal, null, 2),
     );
     fs.writeFileSync(
-      `../cpuMemoryUsage-${tipoDePeticion}.json`,
+      `../cpuMemoryUsage-${tipoDePeticion}-corto.json`,
       JSON.stringify(cpuMemoryUsage, null, 2),
     );
 
@@ -127,14 +129,14 @@ function lanzarHilos(numeroDeHilos) {
 
       worker.on("message", (resultado) => {
         if (resultado.latenciaAVG) {
-          // console.log("resultado.latenciaAVG: ", resultado.latenciaAVG);
+          console.log("resultado.latenciaAVG: ", resultado.latenciaAVG);
 
           latenciaAVGRonda = arrayOperations.addPartialValues(
             latenciaAVGRonda,
             resultado.latenciaAVG,
           );
 
-          // console.log("latenciaAVGRonda: ", latenciaAVGRonda);
+          console.log("latenciaAVGRonda: ", latenciaAVGRonda);
           hilosActivos = hilosActivos - 1;
 
           if (hilosActivos <= 0) {
@@ -226,7 +228,7 @@ async function rest(url, hiloId) {
     let latenciaList = [];
     while (Date.now() - tiempoInicio < duracionTest) {
       try {
-        console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
+        // console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
 
         const inicio = performance.now();
         const respuesta = await axios.post(urlMsg, dataToSend);
@@ -278,9 +280,9 @@ function websocket(url, hiloId) {
         let latenciaList = [];
         while (Date.now() - tiempoInicio < duracionTest) {
           try {
-            console.log(
-              `uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `,
-            );
+            // console.log(
+            //   `uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `,
+            // );
 
             const inicio = performance.now();
 
@@ -318,10 +320,10 @@ function websocket(url, hiloId) {
     const esperarRespuesta = () => {
       return new Promise((resolve, reject) => {
         ws.once("message", (mensaje) => {
-          parentPort.postMessage({
-            hiloId,
-            mensaje: `Respuesta del servidor: ${mensaje}`,
-          });
+          // parentPort.postMessage({
+          //   hiloId,
+          //   mensaje: `Respuesta del servidor: ${mensaje}`,
+          // });
           resolve();
         });
       });
@@ -395,44 +397,3 @@ function sleep(ms) {
     setTimeout(resolve, ms);
   });
 }
-
-//gRPC
-// async function serverMonitorOFFgRPC(url) {
-//   const client = new CommunicationService(
-//     url,
-//     grpc.credentials.createInsecure(),
-//   );
-
-//   const respuesta = await new Promise((resolve, reject) => {
-//     const message = { payload: "ON" };
-
-//     client.monotorOFF(message, (err, response) => {
-//       if (err) {
-//         reject(err);
-//       } else {
-//         resolve(response);
-//       }
-//     });
-//   });
-//   console.log("respuesta Monitor: ", respuesta);
-// }
-
-// async function serverMonitorONgRPC(url) {
-//   const client = new CommunicationService(
-//     url,
-//     grpc.credentials.createInsecure(),
-//   );
-
-//   const respuesta = await new Promise((resolve, reject) => {
-//     const message = { payload: "OFF" };
-
-//     client.monotorON(message, (err, response) => {
-//       if (err) {
-//         reject(err);
-//       } else {
-//         resolve(response);
-//       }
-//     });
-//   });
-//   console.log("respuesta Monitor: ", respuesta);
-// }

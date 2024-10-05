@@ -5,42 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráficas de Latencia y Uso de CPU/Memoria</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li button {
+            background: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        nav ul li button:hover {
+            text-decoration: underline;
+        }
+        canvas {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Gráficas de Latencia y Uso de CPU/Memoria</h1>
+    <nav>
+        <ul>
+            <li><button onclick="callDataOfProtocol('REST')">REST</button></li>
+            <li><button onclick="callDataOfProtocol('WebSocket')">WebSocket</button></li>
+            <li><button onclick="callDataOfProtocol('gRPC')">gRPC</button></li>
+        </ul>
+    </nav>
+
+    <h1 id="mainTitle">Gráficas de Latencia y Uso de CPU/Memoria - Protocolo: REST</h1>
     <canvas id="latenciaChart" width="400" height="200"></canvas>
     <canvas id="cpuChart"></canvas>
     <canvas id="memoryChart"></canvas>
 
     <script>
-        async function fetchLatencia() {
-            const response = await fetch('/latencia');
+        let latenciaChartInstance = null; // Variable para almacenar la instancia del gráfico de latencia
+        let cpuChartInstance = null; // Variable para almacenar la instancia del gráfico de CPU
+        let memoryChartInstance = null; // Variable para almacenar la instancia del gráfico de memoria
+
+        async function fetchLatencia(protocolo) {
+            let response;
+            switch (protocolo) {
+                case 'REST':
+                    response = await fetch('/latenciaREST');
+                    break;
+                case 'WebSocket':
+                    response = await fetch('/latenciaWebsocket');
+                    break;
+                case 'gRPC':
+                    response = await fetch('/latenciaGRPC');
+                    break;
+                default:
+                    break;
+            }
             return await response.json();
         }
 
-        async function fetchCpuMemory() {
-            const response = await fetch('/cpu-memory');
+        async function fetchCpuMemory(protocolo) {
+            let response;
+            switch (protocolo) {
+                case 'REST':
+                    response = await fetch('/cpu-memoryREST');
+                    break;
+                case 'WebSocket':
+                    response = await fetch('/cpu-memoryWebsocket');
+                    break;
+                case 'gRPC':
+                    response = await fetch('/cpu-memoryGRPC');
+                    break;
+                default:
+                    break;
+            }
             return await response.json();
+        }
+
+        function callDataOfProtocol(protocol) {
+            console.log(`Fetching data for: ${protocol}`);
+            updateTitle(protocol); // Actualizar el título
+            init(protocol); 
+        }
+
+        function updateTitle(protocol) {
+            const titleElement = document.getElementById('mainTitle');
+            titleElement.textContent = `Gráficas de Latencia y Uso de CPU/Memoria - Protocolo: ${protocol}`;
+        }
+
+        function destroyChart(chartInstance) {
+            if (chartInstance) {
+                chartInstance.destroy();
+            }
         }
 
         function drawLatenciaChart(data) {
             const ctx = document.getElementById('latenciaChart').getContext('2d');
 
+            destroyChart(latenciaChartInstance); // Destruir el gráfico anterior
+
             let labels = [];
             const datasets = [];
 
-            // Función para generar un color en formato rgba
             function getColor(index) {
-                const hue = (index * 360 / data.length) % 360; // Cambiar el matiz basado en el índice
-                return `hsl(${hue}, 100%, 50%)`; // Color en HSL
+                const hue = (index * 360 / data.length) % 360;
+                return `hsl(${hue}, 100%, 50%)`;
             }
 
-            // Procesar los datos
             data.forEach((item, index) => {
                 const key = Object.keys(item)[0];
                 let latencias = [];
                 
-                // Recorrer variable1 y extraer llaves y valores
                 labels = [];
                 item[key].forEach(latenciaKV => {
                     const keyL = Object.keys(latenciaKV)[0];
@@ -49,21 +134,18 @@
                     latencias.push(valueL); 
                 });
 
-                // Crear un dataset para cada hilo
                 datasets.push({
                     label: `${key} Hilos`,
                     data: latencias,
                     backgroundColor: getColor(index),
-                    borderColor: getColor(index).replace('0.5', '1'), // Color más oscuro para el borde
+                    borderColor: getColor(index).replace('0.5', '1'),
                     borderWidth: 1,
                     fill: false,
                 });
             });
 
-            console.log("labels: ", labels);
-
-            new Chart(ctx, {
-                type: 'line', // Cambiar a gráfico de líneas
+            latenciaChartInstance = new Chart(ctx, {
+                type: 'line',
                 data: {
                     labels: labels,
                     datasets: datasets,
@@ -93,23 +175,21 @@
                 }
             });
         }
+
         function drawCpuMemoryChart(cpuData, memoryData) {
             const ctxCpu = document.getElementById('cpuChart').getContext('2d');
             const ctxMemory = document.getElementById('memoryChart').getContext('2d');
 
-            // Extraer los datos de CPU
+            destroyChart(cpuChartInstance); // Destruir el gráfico de CPU anterior
+            destroyChart(memoryChartInstance); // Destruir el gráfico de memoria anterior
+
             const cpuTimestamps = cpuData.map(entry => new Date(entry.timestamp).toLocaleTimeString());
             const cpuValues = cpuData.map(entry => entry.cpu);
-            console.log("cpuData: ", cpuData);
-            
 
-            // Extraer los datos de memoria (rss)
             const memoryTimestamps = memoryData.map(entry => new Date(entry.timestamp).toLocaleTimeString());
             const memoryValues = memoryData.map(entry => entry.memory);
-            console.log("memoryValues: ", memoryValues);
-            console.log("memoryTimestamps: ", memoryTimestamps);
-            // Gráfica de CPU
-            new Chart(ctxCpu, {
+
+            cpuChartInstance = new Chart(ctxCpu, {
                 type: 'line',
                 data: {
                     labels: cpuTimestamps,
@@ -142,8 +222,7 @@
                 }
             });
 
-            // Gráfica de Memoria
-            new Chart(ctxMemory, {
+            memoryChartInstance = new Chart(ctxMemory, {
                 type: 'line',
                 data: {
                     labels: memoryTimestamps,
@@ -177,13 +256,12 @@
             });
         }
 
-        async function init() {
-            const latenciaData = await fetchLatencia();
+        async function init(protocolo) {
+            const latenciaData = await fetchLatencia(protocolo);
             drawLatenciaChart(latenciaData);
 
-            const cpuMemoryData = await fetchCpuMemory();
+            const cpuMemoryData = await fetchCpuMemory(protocolo);
 
-            // Separar los datos de CPU y memoria
             const cpuData = cpuMemoryData.map(entry => ({
                 timestamp: entry.timestamp,
                 cpu: entry.cpu
@@ -197,7 +275,7 @@
             drawCpuMemoryChart(cpuData, memoryData);
         }
 
-        init();
+        init("REST");
     </script>
 </body>
 </html>
