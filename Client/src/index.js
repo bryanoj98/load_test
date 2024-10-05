@@ -104,11 +104,11 @@ if (isMainThread) {
 
     // Guardar los resultados en archivos JSON
     fs.writeFileSync(
-      `../latenciaAVGTotal-${tipoDePeticion}-corto.json`,
+      `../latenciaAVGTotal-${tipoDePeticion}.json`,
       JSON.stringify(latenciaAVGTotal, null, 2),
     );
     fs.writeFileSync(
-      `../cpuMemoryUsage-${tipoDePeticion}-corto.json`,
+      `../cpuMemoryUsage-${tipoDePeticion}.json`,
       JSON.stringify(cpuMemoryUsage, null, 2),
     );
 
@@ -129,14 +129,14 @@ function lanzarHilos(numeroDeHilos) {
 
       worker.on("message", (resultado) => {
         if (resultado.latenciaAVG) {
-          console.log("resultado.latenciaAVG: ", resultado.latenciaAVG);
+          // console.log("resultado.latenciaAVG: ", resultado.latenciaAVG);
 
           latenciaAVGRonda = arrayOperations.addPartialValues(
             latenciaAVGRonda,
             resultado.latenciaAVG,
           );
 
-          console.log("latenciaAVGRonda: ", latenciaAVGRonda);
+          // console.log("latenciaAVGRonda: ", latenciaAVGRonda);
           hilosActivos = hilosActivos - 1;
 
           if (hilosActivos <= 0) {
