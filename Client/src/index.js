@@ -32,13 +32,14 @@ const CommunicationService =
   "REST" "WEBSOCKET" "gRPC"
 */
 const tipoDePeticion = "REST";
+const isAscending = false;
 const duracionTest = 2000;
 const maxPayloadSize = 500000;
 // const maxPayloadSize = 6000;
 const maxNumThreads = 3;
 // const maxNumThreads = 1;
 const cycleSleepTime = 2000;
-const decrement = 2000;
+const decrement = 100000;
 
 const monitorTime = 1000;
 
@@ -57,6 +58,13 @@ let latenciaAVGTotal = [];
 let cpuMemoryUsage = [];
 let monitoringInterval;
 
+let payloadDescrement = payload.DATA;
+if (!isAscending) {
+  while (payloadDescrement.length < maxPayloadSize) {
+    payloadDescrement = payloadDescrement + payload.DATA;
+  }
+}
+
 if (isMainThread) {
   // Flujo de trabajo hilo padre
   (async () => {
@@ -66,26 +74,10 @@ if (isMainThread) {
     // Comienza a monitorear CPU y memoria
     monitorUsage(monitorTime);
 
-    let numeroDeHilos = 1; //Ascendente
-    // let numeroDeHilos = maxNumThreads; //Descendente
-    while (numeroDeHilos <= maxNumThreads) {
-      //Ascendente
-      // while (numeroDeHilos > 0) { //Descendente
-      console.log("numeroDeHilos: ", numeroDeHilos);
-
-      await lanzarHilos(numeroDeHilos);
-
-      let latenciaAVG = arrayOperations.calculateAverages(latenciaAVGRonda);
-
-      latenciaAVGTotal.push({ [numeroDeHilos]: latenciaAVG });
-      // console.log(
-      //   "latenciaAVGTotal: ",
-      //   JSON.stringify(latenciaAVGTotal, null, 2),
-      // );
-      latenciaAVGRonda = [];
-
-      numeroDeHilos++;
-      // numeroDeHilos--; //DEcremento
+    if (isAscending) {
+      await cicloAscendente();
+    } else {
+      await cicloDescendente();
     }
 
     // Detener el monitoreo al finalizar
@@ -117,6 +109,47 @@ if (isMainThread) {
 } else {
   // Flujo de trabajo hilos hijos
   ejecutarHilo(workerData);
+}
+
+async function cicloAscendente() {
+  let numeroDeHilos = 1; //Ascendente
+  while (numeroDeHilos <= maxNumThreads) {
+    console.log("numeroDeHilos: ", numeroDeHilos);
+
+    await lanzarHilos(numeroDeHilos);
+
+    let latenciaAVG = arrayOperations.calculateAverages(latenciaAVGRonda);
+
+    latenciaAVGTotal.push({ [numeroDeHilos]: latenciaAVG });
+    // console.log(
+    //   "latenciaAVGTotal: ",
+    //   JSON.stringify(latenciaAVGTotal, null, 2),
+    // );
+    latenciaAVGRonda = [];
+
+    numeroDeHilos++;
+  }
+}
+
+async function cicloDescendente() {
+  let numeroDeHilos = maxNumThreads;
+  while (numeroDeHilos > 0) {
+    console.log("numeroDeHilos: ", numeroDeHilos);
+
+    await lanzarHilos(numeroDeHilos);
+
+    let latenciaAVG =
+      arrayOperations.calculateAveragesDecrement(latenciaAVGRonda);
+
+    latenciaAVGTotal.push({ [numeroDeHilos]: latenciaAVG });
+    // console.log(
+    //   "latenciaAVGTotal: ",
+    //   JSON.stringify(latenciaAVGTotal, null, 2),
+    // );
+    latenciaAVGRonda = [];
+
+    numeroDeHilos--;
+  }
 }
 
 // Función principal para lanzar los hilos
@@ -172,7 +205,27 @@ function ejecutarHilo(workerData) {
   switch (tipoDePeticion) {
     case "REST":
       console.log("Inicio Cliente REST");
-      rest(urlRest, hiloId);
+      if (isAscending) {
+        // rest(urlRest, hiloId);
+        restCall.restIncremento(
+          urlRest,
+          hiloId,
+          payload.DATA,
+          cycleSleepTime,
+          duracionTest,
+          parentPort,
+        );
+      } else {
+        restCall.restDecremeto(
+          urlRest,
+          hiloId,
+          payloadDescrement,
+          decrement,
+          cycleSleepTime,
+          duracionTest,
+          parentPort,
+        );
+      }
       break;
     case "WEBSOCKET":
       console.log("Inicio Cliente WEBSOCKET");
@@ -219,47 +272,45 @@ async function adminMonitorOnServer(isStart) {
 }
 
 // Función para realizar la petición REST
-async function rest(url, hiloId) {
-  const urlMsg = `${url}/status`;
-  let dataToSend = "";
-  let latenciaAVG = [];
-  while (dataToSend.length <= maxPayloadSize) {
-    const tiempoInicio = Date.now();
-    let latenciaList = [];
-    while (Date.now() - tiempoInicio < duracionTest) {
-      try {
-        // console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
+// async function rest(url, hiloId) {
+//   const urlMsg = `${url}/status`;
+//   let dataToSend = "";
+//   let latenciaAVG = [];
+//   while (dataToSend.length <= maxPayloadSize) {
+//     const tiempoInicio = Date.now();
+//     let latenciaList = [];
+//     while (Date.now() - tiempoInicio < duracionTest) {
+//       try {
+//         // console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
 
-        const inicio = performance.now();
-        const respuesta = await axios.post(urlMsg, dataToSend);
-        const fin = performance.now();
+//         const inicio = performance.now();
+//         const respuesta = await axios.post(urlMsg, dataToSend);
+//         const fin = performance.now();
 
-        const latencia = fin - inicio;
-        // console.log(`Latencia: ${latencia} ms`);
+//         const latencia = fin - inicio;
+//         // console.log(`Latencia: ${latencia} ms`);
 
-        latenciaList.push(latencia);
-      } catch (error) {
-        parentPort.postMessage({ hiloId, mensaje: error.message });
-      }
-    }
-    const sumLatencias = latenciaList.reduce((acc, val) => acc + val, 0);
+//         latenciaList.push(latencia);
+//       } catch (error) {
+//         console.error("Error en la comunicacion con el servidor: ", error);
+//       }
+//     }
+//     const sumLatencias = latenciaList.reduce((acc, val) => acc + val, 0);
 
-    let byteLength = dataToSend.length;
-    latenciaAVG.push({
-      [byteLength]: {
-        sumLatencias: sumLatencias,
-        numMuestras: latenciaList.length,
-      },
-    });
+//     let byteLength = dataToSend.length;
+//     latenciaAVG.push({
+//       [byteLength]: {
+//         sumLatencias: sumLatencias,
+//         numMuestras: latenciaList.length,
+//       },
+//     });
 
-    dataToSend = dataToSend + payload.DATA;
-    await sleep(cycleSleepTime);
-  }
+//     dataToSend = dataToSend + payload.DATA;
+//     await sleep(cycleSleepTime);
+//   }
 
-  parentPort.postMessage({ hiloId, latenciaAVG: latenciaAVG });
-
-  parentPort.postMessage({ hiloId, mensaje: "Termino hilo" });
-}
+//   parentPort.postMessage({ hiloId, latenciaAVG: latenciaAVG });
+// }
 
 // Función para realizar la petición websocket
 function websocket(url, hiloId) {

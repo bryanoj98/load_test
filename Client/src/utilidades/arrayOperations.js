@@ -32,11 +32,20 @@ exports.calculateAverages = (resultado) => {
   });
 };
 
-//Si es descendente
-// Ordenar el array en orden descendente según la clave
-// latenciaAVG = latenciaAVG.sort((a, b) => {
-//   const claveA = parseInt(Object.keys(a)[0], 10); // Convertir a número
-//   const claveB = parseInt(Object.keys(b)[0], 10); // Convertir a número
+exports.calculateAveragesDecrement = (resultado) => {
+  let latenciaList = resultado.map((element) => {
+    const clave = Object.keys(element)[0];
+    const { sumLatencias, numMuestras } = element[clave];
 
-//   return claveB - claveA; // Descendente
-// });
+    return {
+      [clave]: sumLatencias / numMuestras,
+    };
+  });
+
+  return latenciaList.sort((a, b) => {
+    const claveA = parseInt(Object.keys(a)[0], 10);
+    const claveB = parseInt(Object.keys(b)[0], 10);
+
+    return claveB - claveA; // Descendente
+  });
+};

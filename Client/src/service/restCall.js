@@ -15,51 +15,104 @@ async function serverMonitor(endpoint) {
   console.log("respuesta Monitor: ", respuesta.data);
 }
 
-// async function restDecremeto(url, hiloId) {
-//     // let dataToSend = "";
-//     // let latenciaAVG = [];
-//     // let byteLength = 0;
+exports.restDecremeto = async (
+  url,
+  hiloId,
+  payloadDescrement,
+  decrement,
+  cycleSleepTime,
+  duracionTest,
+  parentPort,
+) => {
+  const urlStatus = `${url}/status`;
+  let dataToSend = payloadDescrement;
+  let latenciaAVG = [];
 
-//     let dataToSend = payload.DATA;
-//     let latenciaAVG = [];
-//     // let byteLength = dataToSend.length;
+  while (dataToSend.length > 0) {
+    const tiempoInicio = Date.now();
+    let latenciaList = [];
+    while (Date.now() - tiempoInicio < duracionTest) {
+      try {
+        // console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
 
-//     // while (dataToSend.length <= maxPayloadSize) { //Ascendente
-//     while (dataToSend.length > 0) { //descendente
-//       const tiempoInicio = Date.now();
-//       let latenciaList = [];
-//       while (Date.now() - tiempoInicio < duracionTest) {
-//         try {
-//           // console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
+        const inicio = performance.now();
+        const respuesta = await axios.post(urlStatus, dataToSend);
+        const fin = performance.now();
 
-//           const inicio = performance.now();
-//           const respuesta = await axios.post(url, dataToSend);
-//           const fin = performance.now();
+        const latencia = fin - inicio;
+        // console.log(`Latencia: ${latencia} ms`);
 
-//           const latencia = fin - inicio;
-//           // console.log(`Latencia: ${latencia} ms`);
+        latenciaList.push(latencia);
+      } catch (error) {
+        console.error("Error en la comunicacion con el servidor: ", error);
+      }
+    }
+    const sumLatencias = latenciaList.reduce((acc, val) => acc + val, 0);
 
-//           latenciaList.push(latencia);
-//         } catch (error) {
-//           parentPort.postMessage({ hiloId, mensaje: error.message });
-//         }
-//       }
-//       const sumLatencias = latenciaList.reduce((acc, val) => acc + val, 0);
+    let byteLength = dataToSend.length;
+    latenciaAVG.push({
+      [byteLength]: {
+        sumLatencias: sumLatencias,
+        numMuestras: latenciaList.length,
+      },
+    });
 
-//       let byteLength = dataToSend.length;
-//       latenciaAVG.push({
-//         [byteLength]: {
-//           sumLatencias: sumLatencias,
-//           numMuestras: latenciaList.length,
-//         },
-//       });
+    dataToSend = dataToSend.slice(0, byteLength - decrement);
+    await sleep(cycleSleepTime);
+  }
 
-//       // dataToSend = dataToSend + payload.DATA; //Ascendente
-//       dataToSend = dataToSend.slice(0, byteLength - decrement);
-//       await sleep(cycleSleepTime);
-//     }
+  parentPort.postMessage({ hiloId, latenciaAVG: latenciaAVG });
+};
 
-//     parentPort.postMessage({ hiloId, latenciaAVG: latenciaAVG });
+exports.restIncremento = async (
+  url,
+  hiloId,
+  payload,
+  cycleSleepTime,
+  duracionTest,
+  parentPort,
+) => {
+  const urlStatus = `${url}/status`;
+  let dataToSend = "";
+  let latenciaAVG = [];
+  while (dataToSend.length <= maxPayloadSize) {
+    const tiempoInicio = Date.now();
+    let latenciaList = [];
+    while (Date.now() - tiempoInicio < duracionTest) {
+      try {
+        // console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
 
-//     parentPort.postMessage({ hiloId, mensaje: "Termino hilo" });
-//   }
+        const inicio = performance.now();
+        const respuesta = await axios.post(urlStatus, dataToSend);
+        const fin = performance.now();
+
+        const latencia = fin - inicio;
+        // console.log(`Latencia: ${latencia} ms`);
+
+        latenciaList.push(latencia);
+      } catch (error) {
+        console.error("Error en la comunicacion con el servidor: ", error);
+      }
+    }
+    const sumLatencias = latenciaList.reduce((acc, val) => acc + val, 0);
+
+    let byteLength = dataToSend.length;
+    latenciaAVG.push({
+      [byteLength]: {
+        sumLatencias: sumLatencias,
+        numMuestras: latenciaList.length,
+      },
+    });
+
+    dataToSend = dataToSend + payload;
+    await sleep(cycleSleepTime);
+  }
+
+  parentPort.postMessage({ hiloId, latenciaAVG: latenciaAVG });
+};
+
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
