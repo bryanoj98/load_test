@@ -36,10 +36,10 @@ const isAscending = false;
 const duracionTest = 2000;
 const maxPayloadSize = 500000;
 // const maxPayloadSize = 6000;
-const maxNumThreads = 3;
+const maxNumThreads = 50;
 // const maxNumThreads = 1;
 const cycleSleepTime = 2000;
-const decrement = 100000;
+const decrement = 5000;
 
 const monitorTime = 1000;
 
@@ -95,12 +95,20 @@ if (isMainThread) {
     // );
 
     // Guardar los resultados en archivos JSON
+    let fileNameLatencia = `../latenciaAVGTotal-${tipoDePeticion}.json`;
+    let fileNameCPUMemory = `../cpuMemoryUsage-${tipoDePeticion}.json`;
+
+    if (!isAscending) {
+      fileNameLatencia = `../latenciaAVGTotal-${tipoDePeticion}-Descenso.json`;
+      fileNameCPUMemory = `../cpuMemoryUsage-${tipoDePeticion}-Descenso.json`;
+    }
+
     fs.writeFileSync(
-      `../latenciaAVGTotal-${tipoDePeticion}.json`,
+      fileNameLatencia,
       JSON.stringify(latenciaAVGTotal, null, 2),
     );
     fs.writeFileSync(
-      `../cpuMemoryUsage-${tipoDePeticion}.json`,
+      fileNameCPUMemory,
       JSON.stringify(cpuMemoryUsage, null, 2),
     );
 

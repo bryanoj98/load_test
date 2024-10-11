@@ -66,6 +66,33 @@ app.get("/cpu-memoryGRPC", (req, res) => {
   });
 });
 
+//SERVERs
+app.get("/cpu-memoryRESTServer", (req, res) => {
+  fs.readFile("../cpuMemoryUsage-REST-Server.json", "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).send("Error al leer el archivo de CPU y memoria.");
+    }
+    res.json(JSON.parse(data));
+  });
+});
+
+app.get("/cpu-memoryGRPCServer", (req, res) => {
+  fs.readFile("../cpuMemoryUsage-gRPC-Server.json", "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).send("Error al leer el archivo de CPU y memoria.");
+    }
+    res.json(JSON.parse(data));
+  });
+});
+
+app.get("/cpu-memoryWebsocketServer", (req, res) => {
+  fs.readFile("../cpuMemoryUsage-Websocket-Server.json", "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).send("Error al leer el archivo de CPU y memoria.");
+    }
+    res.json(JSON.parse(data));
+  });
+});
 // Iniciar el servidor
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);

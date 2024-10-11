@@ -43,6 +43,9 @@
             <li><button onclick="callDataOfProtocol('REST')">REST</button></li>
             <li><button onclick="callDataOfProtocol('WebSocket')">WebSocket</button></li>
             <li><button onclick="callDataOfProtocol('gRPC')">gRPC</button></li>
+            <li><button onclick="callDataOfProtocol('REST-Server')">REST-Server</button></li>
+            <li><button onclick="callDataOfProtocol('WebSocket-Server')">WebSocket-Server</button></li>
+            <li><button onclick="callDataOfProtocol('gRPC-Server')">gRPC-Server</button></li>
         </ul>
     </nav>
 
@@ -85,6 +88,18 @@
                     break;
                 case 'gRPC':
                     response = await fetch('/cpu-memoryGRPC');
+                    break;
+                case 'REST-Server':
+                    destroyChart(latenciaChartInstance); // Destruir el gráfico anterior
+                    response = await fetch('/cpu-memoryRESTServer');
+                    break;
+                case 'WebSocket-Server':
+                    destroyChart(latenciaChartInstance); // Destruir el gráfico anterior
+                    response = await fetch('/cpu-memoryWebsocketServer');
+                    break;
+                case 'gRPC-Server':
+                    destroyChart(latenciaChartInstance); // Destruir el gráfico anterior
+                    response = await fetch('/cpu-memoryGRPCServer');
                     break;
                 default:
                     break;
@@ -257,8 +272,10 @@
         }
 
         async function init(protocolo) {
-            const latenciaData = await fetchLatencia(protocolo);
-            drawLatenciaChart(latenciaData);
+            if(!protocolo.includes("Server")){
+                const latenciaData = await fetchLatencia(protocolo);
+                drawLatenciaChart(latenciaData);
+            }
 
             const cpuMemoryData = await fetchCpuMemory(protocolo);
 
