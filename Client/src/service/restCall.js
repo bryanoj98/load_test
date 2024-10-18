@@ -15,6 +15,12 @@ async function serverMonitor(endpoint) {
   console.log("respuesta Monitor: ", respuesta.data);
 }
 
+exports.sendNumberOfThreads = async (url, nHilos) => {
+  const urlToSend = `${url}/numberThread`;
+  const respuesta = await axios.post(urlToSend, String(nHilos));
+  console.log("respuesta nHilos: ", respuesta.data);
+};
+
 exports.restDecremeto = async (
   url,
   hiloId,
@@ -68,6 +74,7 @@ exports.restIncremento = async (
   url,
   hiloId,
   payload,
+  maxPayloadSize,
   cycleSleepTime,
   duracionTest,
   parentPort,

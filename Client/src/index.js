@@ -12,8 +12,8 @@ const { log } = require("console");
 
 // const payload = require("./mensages/payload");
 // const payload = require("./mensages/payload4000");
-// const payload = require("./mensages/payload5000");
-const payload = require("./mensages/payload100kB");
+const payload = require("./mensages/payload5000");
+// const payload = require("./mensages/payload100kB");
 
 const arrayOperations = require("./utilidades/arrayOperations");
 const systemInfo = require("./utilidades/systemInfo");
@@ -32,23 +32,26 @@ const CommunicationService =
   "REST" "WEBSOCKET" "gRPC"
 */
 const tipoDePeticion = "REST";
-const isAscending = false;
+const isAscending = true;
 const duracionTest = 2000;
 const maxPayloadSize = 500000;
 // const maxPayloadSize = 6000;
 const maxNumThreads = 50;
 // const maxNumThreads = 1;
 const cycleSleepTime = 2000;
+
+//Decrement
 const decrement = 5000;
+const minNumThreads = 48;
 
 const monitorTime = 1000;
 
-// const urlRest = "http://localhost:4000";
-// const urlgRPC = "localhost:50000";
-// const ipWSocket = "ws://localhost"
-const urlRest = "http://10.42.0.40:4000";
-const urlgRPC = "10.42.0.40:50000";
-const ipWSocket = "ws://10.42.0.40";
+const urlRest = "http://localhost:4000";
+const urlgRPC = "localhost:50000";
+const ipWSocket = "ws://localhost";
+// const urlRest = "http://10.42.0.40:4000";
+// const urlgRPC = "10.42.0.40:50000";
+// const ipWSocket = "ws://10.42.0.40";
 
 const urlWSocket = `${ipWSocket}:8080`;
 const urlWSocketMonitor = `${ipWSocket}:8585`;
@@ -120,9 +123,12 @@ if (isMainThread) {
 }
 
 async function cicloAscendente() {
-  let numeroDeHilos = 1; //Ascendente
+  // let numeroDeHilos = 1; //Ascendente
+  let numeroDeHilos = minNumThreads; //Ascendente arranque alto
   while (numeroDeHilos <= maxNumThreads) {
     console.log("numeroDeHilos: ", numeroDeHilos);
+
+    await restCall.sendNumberOfThreads(urlRest, numeroDeHilos);
 
     await lanzarHilos(numeroDeHilos);
 
@@ -143,6 +149,8 @@ async function cicloDescendente() {
   let numeroDeHilos = maxNumThreads;
   while (numeroDeHilos > 0) {
     console.log("numeroDeHilos: ", numeroDeHilos);
+
+    await restCall.sendNumberOfThreads(urlRest, numeroDeHilos);
 
     await lanzarHilos(numeroDeHilos);
 
@@ -219,6 +227,7 @@ function ejecutarHilo(workerData) {
           urlRest,
           hiloId,
           payload.DATA,
+          maxPayloadSize,
           cycleSleepTime,
           duracionTest,
           parentPort,

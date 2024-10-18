@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráficas de Latencia y Uso de CPU/Memoria</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.3.0"></script> -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -124,6 +125,11 @@
             }
         }
 
+        function getColor(index, data) {
+                const hue = (index * 360 / data.length) % 360;
+                return `hsl(${hue}, 100%, 50%)`;
+            }
+
         function drawLatenciaChart(data) {
             const ctx = document.getElementById('latenciaChart').getContext('2d');
 
@@ -132,10 +138,7 @@
             let labels = [];
             const datasets = [];
 
-            function getColor(index) {
-                const hue = (index * 360 / data.length) % 360;
-                return `hsl(${hue}, 100%, 50%)`;
-            }
+           
 
             data.forEach((item, index) => {
                 const key = Object.keys(item)[0];
@@ -152,8 +155,8 @@
                 datasets.push({
                     label: `${key} Hilos`,
                     data: latencias,
-                    backgroundColor: getColor(index),
-                    borderColor: getColor(index).replace('0.5', '1'),
+                    backgroundColor: getColor(index, data),
+                    borderColor: getColor(index, data).replace('0.5', '1'),
                     borderWidth: 1,
                     fill: false,
                 });
@@ -191,31 +194,80 @@
             });
         }
 
-        function drawCpuMemoryChart(cpuData, memoryData) {
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function drawCpuMemoryChart(data) {
             const ctxCpu = document.getElementById('cpuChart').getContext('2d');
             const ctxMemory = document.getElementById('memoryChart').getContext('2d');
 
             destroyChart(cpuChartInstance); // Destruir el gráfico de CPU anterior
             destroyChart(memoryChartInstance); // Destruir el gráfico de memoria anterior
 
-            const cpuTimestamps = cpuData.map(entry => new Date(entry.timestamp).toLocaleTimeString());
-            const cpuValues = cpuData.map(entry => entry.cpu);
+            const groupedData = {};
 
-            const memoryTimestamps = memoryData.map(entry => new Date(entry.timestamp).toLocaleTimeString());
-            const memoryValues = memoryData.map(entry => entry.memory);
+            data.forEach(entry => {
+                const threads = entry.nOfThreads;
+                const payloadSize = entry.averagePayloadSize;
 
+                if (!groupedData[threads]) {
+                    groupedData[threads] = { cpu: [], memory: [], payloadSizes: [] };
+                }
+
+                groupedData[threads].cpu.push(parseFloat(entry.cpu));
+                groupedData[threads].memory.push(entry.memory.rss);
+                groupedData[threads].payloadSizes.push(payloadSize);
+  
+                
+            });
+            console.log("groupedData: ", groupedData);
+
+            const datasetsCpu = [];
+            const datasetsMemory = [];
+
+            Object.keys(groupedData).forEach(threads => {
+                console.log("threads: ", threads);
+
+                
+                const cpuValues = groupedData[threads].cpu;
+                const memoryValues = groupedData[threads].memory;
+                const payloadSizes = groupedData[threads].payloadSizes;
+                console.log("payloadSizes: ", payloadSizes);
+
+
+                const color = getRandomColor(); // Obtener un color aleatorio
+
+                datasetsCpu.push({
+                    label: `Uso de CPU - Hilos: ${threads}`,
+                    data: cpuValues,
+                    backgroundColor: color,
+                    borderColor: color.replace('0.5', '1'),
+                    borderWidth: 1,
+                    fill: false,
+                });
+
+                datasetsMemory.push({
+                    label: `Uso de Memoria (RSS) - Hilos: ${threads}`,
+                    data: memoryValues,
+                    backgroundColor: color,
+                    borderColor: color.replace('0.5', '1'),
+                    borderWidth: 1,
+                    fill: false,
+                });
+            });
+
+            // Crear el gráfico de CPU
             cpuChartInstance = new Chart(ctxCpu, {
                 type: 'line',
                 data: {
-                    labels: cpuTimestamps,
-                    datasets: [{
-                        label: 'Uso de CPU',
-                        data: cpuValues,
-                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                        borderColor: 'rgba(255, 99, 132, 1)',
-                        borderWidth: 1,
-                        fill: false,
-                    }]
+                    labels: datasetsCpu[0].data.map((_, index) => groupedData[Object.keys(groupedData)[0]].payloadSizes[index]), // Usar payloadSizes del primer conjunto
+                    datasets: datasetsCpu
                 },
                 options: {
                     responsive: true,
@@ -224,31 +276,25 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Uso de CPU (%)'
+                                text: 'Uso (%) CPU'
                             }
                         },
                         x: {
                             title: {
                                 display: true,
-                                text: 'Tiempo'
+                                text: 'Tamaño de Carga Útil'
                             }
                         }
                     }
                 }
             });
 
+            // Crear el gráfico de Memoria
             memoryChartInstance = new Chart(ctxMemory, {
                 type: 'line',
                 data: {
-                    labels: memoryTimestamps,
-                    datasets: [{
-                        label: 'Uso de Memoria (RSS)',
-                        data: memoryValues,
-                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                        borderColor: 'rgba(54, 162, 235, 1)',
-                        borderWidth: 1,
-                        fill: false,
-                    }]
+                    labels: datasetsMemory[0].data.map((_, index) => groupedData[Object.keys(groupedData)[0]].payloadSizes[index]), // Usar payloadSizes del primer conjunto
+                    datasets: datasetsMemory
                 },
                 options: {
                     responsive: true,
@@ -257,13 +303,13 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Memoria ocupada por el proceso (bytes)'
+                                text: 'Memoria (bytes)'
                             }
                         },
                         x: {
                             title: {
                                 display: true,
-                                text: 'Tiempo'
+                                text: 'Tamaño de Carga Útil'
                             }
                         }
                     }
@@ -279,17 +325,18 @@
 
             const cpuMemoryData = await fetchCpuMemory(protocolo);
 
-            const cpuData = cpuMemoryData.map(entry => ({
-                timestamp: entry.timestamp,
-                cpu: entry.cpu
-            }));
+            // const cpuData = cpuMemoryData.map(entry => ({
+            //     timestamp: entry.timestamp,
+            //     cpu: entry.cpu
+            // }));
 
-            const memoryData = cpuMemoryData.map(entry => ({
-                timestamp: entry.timestamp,
-                memory: entry.memory.rss
-            }));
+            // const memoryData = cpuMemoryData.map(entry => ({
+            //     timestamp: entry.timestamp,
+            //     memory: entry.memory.rss
+            // }));
 
-            drawCpuMemoryChart(cpuData, memoryData);
+            // drawCpuMemoryChart(cpuData, memoryData);
+            drawCpuMemoryChart(cpuMemoryData);
         }
 
         init("REST");
