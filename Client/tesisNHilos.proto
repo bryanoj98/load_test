@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+service CommunicationService {
+  rpc transferInformation(Data) returns (Data);
+  rpc monotorON(Data) returns (Data);
+  rpc monotorOFF(Data) returns (Data);
+  rpc numberThread(Data) returns (Data);
+}
+
+message Data {
+  string payload = 1;
+}

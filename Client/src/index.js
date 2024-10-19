@@ -24,25 +24,25 @@ const websocketCall = require("./service/websocketCall");
 const os = require("os");
 const fs = require("fs");
 
-const packageDef = protoLoader.loadSync("tesisMonitor.proto", {});
+const packageDef = protoLoader.loadSync("tesisNHilos.proto", {});
 const CommunicationService =
   grpc.loadPackageDefinition(packageDef).CommunicationService;
 
 /* Tipos de peticiones posibles:
   "REST" "WEBSOCKET" "gRPC"
 */
-const tipoDePeticion = "REST";
+const tipoDePeticion = "gRPC";
 const isAscending = true;
 const duracionTest = 2000;
 const maxPayloadSize = 500000;
 // const maxPayloadSize = 6000;
-const maxNumThreads = 50;
+const maxNumThreads = 3;
 // const maxNumThreads = 1;
 const cycleSleepTime = 2000;
 
 //Decrement
 const decrement = 5000;
-const minNumThreads = 48;
+const minNumThreads = 1;
 
 const monitorTime = 1000;
 
@@ -128,7 +128,7 @@ async function cicloAscendente() {
   while (numeroDeHilos <= maxNumThreads) {
     console.log("numeroDeHilos: ", numeroDeHilos);
 
-    await restCall.sendNumberOfThreads(urlRest, numeroDeHilos);
+    await sendNumberOfThreadsToServer(numeroDeHilos); //Enviar numero de hilos proximo al servidor
 
     await lanzarHilos(numeroDeHilos);
 
@@ -150,7 +150,7 @@ async function cicloDescendente() {
   while (numeroDeHilos > 0) {
     console.log("numeroDeHilos: ", numeroDeHilos);
 
-    await restCall.sendNumberOfThreads(urlRest, numeroDeHilos);
+    await sendNumberOfThreadsToServer(numeroDeHilos); //Enviar numero de hilos proximo al servidor
 
     await lanzarHilos(numeroDeHilos);
 
@@ -250,7 +250,17 @@ function ejecutarHilo(workerData) {
       break;
     case "gRPC":
       console.log("Inicio Cliente gRPC");
-      gRPC(urlgRPC, hiloId);
+      gRPCCall.gRPCIncremento(
+        urlgRPC,
+        hiloId,
+        payload.DATA,
+        CommunicationService,
+        maxPayloadSize,
+        cycleSleepTime,
+        duracionTest,
+        parentPort,
+      );
+      // gRPC(urlgRPC, hiloId);
       break;
     default:
       console.log("Tipo de peticion invalida");
@@ -288,46 +298,23 @@ async function adminMonitorOnServer(isStart) {
   }
 }
 
-// Función para realizar la petición REST
-// async function rest(url, hiloId) {
-//   const urlMsg = `${url}/status`;
-//   let dataToSend = "";
-//   let latenciaAVG = [];
-//   while (dataToSend.length <= maxPayloadSize) {
-//     const tiempoInicio = Date.now();
-//     let latenciaList = [];
-//     while (Date.now() - tiempoInicio < duracionTest) {
-//       try {
-//         // console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
-
-//         const inicio = performance.now();
-//         const respuesta = await axios.post(urlMsg, dataToSend);
-//         const fin = performance.now();
-
-//         const latencia = fin - inicio;
-//         // console.log(`Latencia: ${latencia} ms`);
-
-//         latenciaList.push(latencia);
-//       } catch (error) {
-//         console.error("Error en la comunicacion con el servidor: ", error);
-//       }
-//     }
-//     const sumLatencias = latenciaList.reduce((acc, val) => acc + val, 0);
-
-//     let byteLength = dataToSend.length;
-//     latenciaAVG.push({
-//       [byteLength]: {
-//         sumLatencias: sumLatencias,
-//         numMuestras: latenciaList.length,
-//       },
-//     });
-
-//     dataToSend = dataToSend + payload.DATA;
-//     await sleep(cycleSleepTime);
-//   }
-
-//   parentPort.postMessage({ hiloId, latenciaAVG: latenciaAVG });
-// }
+//Enviar numero de hilos proximo al servidor
+async function sendNumberOfThreadsToServer(nHilos) {
+  switch (tipoDePeticion) {
+    case "REST":
+      await restCall.sendNumberOfThreads(urlRest, nHilos);
+      break;
+    case "WEBSOCKET":
+      //TODO: Completar
+      break;
+    case "gRPC":
+      gRPCCall.sendNumberOfThreads(urlgRPC, CommunicationService, nHilos);
+      break;
+    default:
+      console.log("Tipo de peticion invalida");
+      break;
+  }
+}
 
 // Función para realizar la petición websocket
 function websocket(url, hiloId) {
@@ -407,57 +394,6 @@ function websocket(url, hiloId) {
   ws.on("error", (error) => {
     parentPort.postMessage({ hiloId, mensaje: error.message });
   });
-}
-
-async function gRPC(url, hiloId) {
-  const client = new CommunicationService(
-    url,
-    grpc.credentials.createInsecure(),
-  );
-
-  let dataToSend = "";
-  let latenciaAVG = [];
-
-  while (dataToSend.length <= maxPayloadSize) {
-    const tiempoInicio = Date.now();
-    let latenciaList = [];
-    while (Date.now() - tiempoInicio < duracionTest) {
-      // console.log(`uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `);
-      const inicio = performance.now();
-
-      const respuesta = await new Promise((resolve, reject) => {
-        const message = { payload: dataToSend };
-
-        client.transferInformation(message, (err, response) => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve(response);
-          }
-        });
-      });
-
-      const fin = performance.now();
-      const latencia = fin - inicio;
-      latenciaList.push(latencia);
-    }
-
-    const sumLatencias = latenciaList.reduce((acc, val) => acc + val, 0);
-
-    let payloadSize2 = dataToSend.length;
-    latenciaAVG.push({
-      [payloadSize2]: {
-        sumLatencias: sumLatencias,
-        numMuestras: latenciaList.length,
-      },
-    });
-
-    dataToSend = dataToSend + payload.DATA;
-    await sleep(cycleSleepTime);
-  }
-  parentPort.postMessage({ hiloId, latenciaAVG: latenciaAVG });
-
-  parentPort.postMessage({ hiloId, mensaje: "Termina hilo." });
 }
 
 function sleep(ms) {
