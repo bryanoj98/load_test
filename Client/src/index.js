@@ -1,5 +1,3 @@
-const axios = require("axios");
-const WebSocket = require("ws");
 const grpc = require("@grpc/grpc-js");
 const protoLoader = require("@grpc/proto-loader");
 const {
@@ -31,12 +29,12 @@ const CommunicationService =
 /* Tipos de peticiones posibles:
   "REST" "WEBSOCKET" "gRPC"
 */
-const tipoDePeticion = "gRPC";
+const tipoDePeticion = "WEBSOCKET";
 const isAscending = true;
 const duracionTest = 2000;
 const maxPayloadSize = 500000;
 // const maxPayloadSize = 6000;
-const maxNumThreads = 3;
+const maxNumThreads = 2;
 // const maxNumThreads = 1;
 const cycleSleepTime = 2000;
 
@@ -246,7 +244,16 @@ function ejecutarHilo(workerData) {
       break;
     case "WEBSOCKET":
       console.log("Inicio Cliente WEBSOCKET");
-      websocket(urlWSocket, hiloId);
+      websocketCall.websocketIncremento(
+        urlWSocket,
+        hiloId,
+        payload.DATA,
+        maxPayloadSize,
+        cycleSleepTime,
+        duracionTest,
+        parentPort,
+      );
+      // websocket(urlWSocket, hiloId);
       break;
     case "gRPC":
       console.log("Inicio Cliente gRPC");
@@ -260,7 +267,6 @@ function ejecutarHilo(workerData) {
         duracionTest,
         parentPort,
       );
-      // gRPC(urlgRPC, hiloId);
       break;
     default:
       console.log("Tipo de peticion invalida");
@@ -305,7 +311,7 @@ async function sendNumberOfThreadsToServer(nHilos) {
       await restCall.sendNumberOfThreads(urlRest, nHilos);
       break;
     case "WEBSOCKET":
-      //TODO: Completar
+      await websocketCall.sendNumberOfThreads(urlWSocketMonitor, nHilos);
       break;
     case "gRPC":
       gRPCCall.sendNumberOfThreads(urlgRPC, CommunicationService, nHilos);
@@ -314,90 +320,4 @@ async function sendNumberOfThreadsToServer(nHilos) {
       console.log("Tipo de peticion invalida");
       break;
   }
-}
-
-// Función para realizar la petición websocket
-function websocket(url, hiloId) {
-  const ws = new WebSocket(url);
-
-  ws.on("open", () => {
-    // parentPort.postMessage({
-    //   hiloId,
-    //   mensaje: "Conexión WebSocket abierta...",
-    // });
-
-    const peticionesW = async () => {
-      let dataToSend = "";
-      let latenciaAVG = [];
-
-      while (dataToSend.length <= maxPayloadSize) {
-        const tiempoInicio = Date.now();
-        let latenciaList = [];
-        while (Date.now() - tiempoInicio < duracionTest) {
-          try {
-            // console.log(
-            //   `uploadData:${dataToSend.length} byte(s). Hilo:${hiloId} `,
-            // );
-
-            const inicio = performance.now();
-
-            ws.send(dataToSend);
-
-            await esperarRespuesta(); // Esperar la respuesta del servidor
-
-            const fin = performance.now();
-            const latencia = fin - inicio;
-            latenciaList.push(latencia); // Almacenar la latencia
-          } catch (error) {
-            parentPort.postMessage({ hiloId, mensaje: error.message });
-          }
-        }
-        const sumLatencias = latenciaList.reduce((acc, val) => acc + val, 0);
-
-        let payloadSize2 = dataToSend.length;
-        latenciaAVG.push({
-          [payloadSize2]: {
-            sumLatencias: sumLatencias,
-            numMuestras: latenciaList.length,
-          },
-        });
-
-        dataToSend += payload.DATA;
-        await sleep(cycleSleepTime);
-      }
-
-      ws.close();
-      parentPort.postMessage({ hiloId, latenciaAVG: latenciaAVG });
-
-      parentPort.postMessage({ hiloId, mensaje: "Termino hilo" });
-    };
-
-    const esperarRespuesta = () => {
-      return new Promise((resolve, reject) => {
-        ws.once("message", (mensaje) => {
-          // parentPort.postMessage({
-          //   hiloId,
-          //   mensaje: `Respuesta del servidor: ${mensaje}`,
-          // });
-          resolve();
-        });
-      });
-    };
-
-    peticionesW();
-  });
-
-  ws.on("close", () => {
-    // parentPort.postMessage({ hiloId, mensaje: "Conexión WebSocket cerrada." });
-  });
-
-  ws.on("error", (error) => {
-    parentPort.postMessage({ hiloId, mensaje: error.message });
-  });
-}
-
-function sleep(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
 }

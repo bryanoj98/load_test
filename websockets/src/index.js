@@ -3,9 +3,13 @@ import { WebSocketServer } from 'ws';
 import os from 'os';
 import fs from 'fs';
 
+import {getCpuUsage} from "./utilidades/systemInfo.js"; // Asegúrate de que la extensión .js esté incluida
+import { filterData } from "./utilidades/arrayOperations.js";
 
 let cpuMemoryUsage = [];
+let payloadSizes = []; // Arreglo para almacenar los tamaños de payloads
 let monitoringInterval;
+let numberOfThreads = "1";
 const monitorTime = 1000;
 
 const wss = new WebSocketServer({ port: 8080 });
@@ -16,7 +20,7 @@ wss.on('connection', function connection(ws) {
   ws.on('message', function message(data) {
     // console.log("Servidor 1");
     // console.log('received: %s', data.length);
-
+    payloadSizes.push(data.length);
     ws.send(data);//Envia
   });
  
@@ -33,25 +37,49 @@ wss.on('connection', function connection(ws) {
 wss2.on('connection', function connection(ws2) {
 
   ws2.on('message', function message(data) {
-    console.log("LEGGGGAA: ",data);
+    let dataJson = data.toString('utf-8');
+    dataJson = JSON.parse(dataJson);
+    console.log("LEGGGGAA: ",dataJson);
+
+    switch (dataJson.type) {
+      case "MONITOR":
+        console.log("Entra a monitor");
+        
+        if(dataJson.value == "ON"){
+          console.log("monitorUsage: ON");
+          monitorUsage(monitorTime);
     
-    if(data == "ON"){
-      console.log("monitorUsage: ON");
-      monitorUsage(monitorTime);
+          ws2.send("ON");//Envia
+        }
+        else if (dataJson.value == "OFF") {
+          console.log("monitorUsage: OFF");
+    
+          clearInterval(monitoringInterval);
+          console.log("cpuMemoryUsage: ", cpuMemoryUsage);
+          
 
-      ws2.send("ON");//Envia
-    }
-    else if (data == "OFF") {
-      console.log("monitorUsage: OFF");
+          const resultCPUnRAM = filterData(cpuMemoryUsage);
+          console.log("resultCPUnRAM: ", resultCPUnRAM);
+          
+    
+          fs.writeFileSync(
+            "../cpuMemoryUsage-Websocket-Server.json",
+            JSON.stringify(resultCPUnRAM, null, 2),
+          );
+    
+          ws2.send("OFF");//Envia
+        }
+        break;
+      case "THREADS":
 
-      clearInterval(monitoringInterval);
+        console.log("numberThread: ", dataJson.value);
 
-      fs.writeFileSync(
-        "../cpuMemoryUsage-Websocket-Server.json",
-        JSON.stringify(cpuMemoryUsage, null, 2),
-      );
-
-      ws2.send("OFF");//Envia
+        numberOfThreads = dataJson.value;
+  
+        ws2.send("OK");//Envia
+        break;  
+      default:
+        break;
     }
     
   });
@@ -66,23 +94,16 @@ wss2.on('connection', function connection(ws2) {
 
 });
 
-function getCpuUsage() {
-  const cpus = os.cpus();
-
-  const totalIdle = cpus.reduce((acc, cpu) => acc + cpu.times.idle, 0);
-  const totalTick = cpus.reduce((acc, cpu) => acc + Object.values(cpu.times).reduce((a, b) => a + b, 0), 0);
-
-  const totalUsed = totalTick - totalIdle;
-  const usage = (totalUsed / totalTick) * 100;
-
-  return usage.toFixed(2); // Retorna el uso de CPU con 2 decimales
-}
-
 function monitorUsage(monitorTime) {
   monitoringInterval = setInterval(() => {
-    const cpuUsage = os.loadavg(); // Promedio de carga del CPU por nucleos
-    const cpuPorcen = getCpuUsage(); // porcentaje total de uso de CPU
+    const cpuUsage = os.loadavg(); // Promedio de carga del CPU por núcleos
+    const cpuPorcen = getCpuUsage(); // Porcentaje total de uso de CPU
     const memoryUsage = process.memoryUsage(); // Uso de memoria
+    
+    // Promediar los tamaños de payloads recibidos en el intervalo
+    const averagePayloadSize = payloadSizes.length > 0
+      ? Math.max(...payloadSizes)
+      : 0;
 
     cpuMemoryUsage.push({
       timestamp: Date.now(),
@@ -91,6 +112,11 @@ function monitorUsage(monitorTime) {
       memory: {
         rss: memoryUsage.rss // Resident Set Size
       },
+      averagePayloadSize: averagePayloadSize, // Tamaño promedio del payload
+      nOfThreads: numberOfThreads
     });
+
+    // Limpiar el arreglo para el siguiente intervalo
+    payloadSizes = [];
   }, monitorTime); // Monitorea en milisegundos
 }
