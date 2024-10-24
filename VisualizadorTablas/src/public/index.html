@@ -47,6 +47,7 @@
             <li><button onclick="callDataOfProtocol('REST-Server')">REST-Server</button></li>
             <li><button onclick="callDataOfProtocol('WebSocket-Server')">WebSocket-Server</button></li>
             <li><button onclick="callDataOfProtocol('gRPC-Server')">gRPC-Server</button></li>
+            <li><button onclick="callDataOfProtocol('Comparative-Server')">Comparative-Server</button></li>
         </ul>
     </nav>
 
@@ -83,29 +84,56 @@
             switch (protocolo) {
                 case 'REST':
                     response = await fetch('/cpu-memoryREST');
+                    response = await response.json();
                     break;
                 case 'WebSocket':
                     response = await fetch('/cpu-memoryWebsocket');
+                    response = await response.json();
                     break;
                 case 'gRPC':
                     response = await fetch('/cpu-memoryGRPC');
+                    response = await response.json();
                     break;
                 case 'REST-Server':
                     destroyChart(latenciaChartInstance); // Destruir el gráfico anterior
                     response = await fetch('/cpu-memoryRESTServer');
+                    response = await response.json();
                     break;
                 case 'WebSocket-Server':
                     destroyChart(latenciaChartInstance); // Destruir el gráfico anterior
                     response = await fetch('/cpu-memoryWebsocketServer');
+                    response = await response.json();
                     break;
                 case 'gRPC-Server':
                     destroyChart(latenciaChartInstance); // Destruir el gráfico anterior
                     response = await fetch('/cpu-memoryGRPCServer');
+                    response = await response.json();
+                    break;
+                case 'Comparative-Server':
+                    destroyChart(latenciaChartInstance); // Destruir el gráfico anterior
+                    restServer = await fetch('/cpu-memoryRESTServer');
+                    websocketServer = await fetch('/cpu-memoryWebsocketServer');
+                    gRPCServer = await fetch('/cpu-memoryGRPCServer');
+                    
+                    response = { 
+                        rest: await addFieldProtocolName(restServer, "REST"),
+                        websocket: await addFieldProtocolName(websocketServer, "WEBSOCKET"),
+                        grpc: await addFieldProtocolName(gRPCServer, "GRPC")
+                    };
+                    // console.log("response: ", response);                   
                     break;
                 default:
                     break;
             }
-            return await response.json();
+            return response;
+        }
+
+        async function addFieldProtocolName(data, protocolName) {
+            data = await data.json();
+            data.forEach(item => {
+                item.protocol = protocolName;
+            });
+            return data;
         }
 
         function callDataOfProtocol(protocol) {
@@ -202,7 +230,6 @@
             }
             return color;
         }
-
         function drawCpuMemoryChart(data) {
             const ctxCpu = document.getElementById('cpuChart').getContext('2d');
             const ctxMemory = document.getElementById('memoryChart').getContext('2d');
@@ -210,63 +237,32 @@
             destroyChart(cpuChartInstance); // Destruir el gráfico de CPU anterior
             destroyChart(memoryChartInstance); // Destruir el gráfico de memoria anterior
 
-            const groupedData = {};
+            let datasetsCpu = [];
+            let datasetsMemory = [];
+            let groupedData = {};
 
-            data.forEach(entry => {
-                const threads = entry.nOfThreads;
-                const payloadSize = entry.averagePayloadSize;
-
-                if (!groupedData[threads]) {
-                    groupedData[threads] = { cpu: [], memory: [], payloadSizes: [] };
-                }
-
-                groupedData[threads].cpu.push(parseFloat(entry.cpu));
-                groupedData[threads].memory.push(entry.memory.rss);
-                groupedData[threads].payloadSizes.push(payloadSize);
-  
-                
-            });
-            console.log("groupedData: ", groupedData);
-
-            const datasetsCpu = [];
-            const datasetsMemory = [];
-
-            Object.keys(groupedData).forEach(threads => {
-                console.log("threads: ", threads);
-
-                
-                const cpuValues = groupedData[threads].cpu;
-                const memoryValues = groupedData[threads].memory;
-                const payloadSizes = groupedData[threads].payloadSizes;
-                console.log("payloadSizes: ", payloadSizes);
-
-
-                const color = getRandomColor(); // Obtener un color aleatorio
-
-                datasetsCpu.push({
-                    label: `Uso de CPU - Hilos: ${threads}`,
-                    data: cpuValues,
-                    backgroundColor: color,
-                    borderColor: color.replace('0.5', '1'),
-                    borderWidth: 1,
-                    fill: false,
+            if (data.rest) {
+                // Cuando hay múltiples protocolos
+                Object.entries(data).forEach(([key, value]) => {
+                    let { datasetsCpuP, datasetsMemoryP, groupedDataP } = formartDataForChart(value);
+                    // Concatena datasets y groupedData sin sobrescribir
+                    datasetsCpu = datasetsCpu.concat(datasetsCpuP);
+                    datasetsMemory = datasetsMemory.concat(datasetsMemoryP);
+                    Object.assign(groupedData, groupedDataP);
                 });
-
-                datasetsMemory.push({
-                    label: `Uso de Memoria (RSS) - Hilos: ${threads}`,
-                    data: memoryValues,
-                    backgroundColor: color,
-                    borderColor: color.replace('0.5', '1'),
-                    borderWidth: 1,
-                    fill: false,
-                });
-            });
+            } else {
+                // Cuando es un solo protocolo
+                let { datasetsCpuP, datasetsMemoryP, groupedDataP } = formartDataForChart(data);
+                datasetsCpu = datasetsCpuP;
+                datasetsMemory = datasetsMemoryP;
+                groupedData = groupedDataP;
+            }
 
             // Crear el gráfico de CPU
             cpuChartInstance = new Chart(ctxCpu, {
                 type: 'line',
                 data: {
-                    labels: datasetsCpu[0].data.map((_, index) => groupedData[Object.keys(groupedData)[0]].payloadSizes[index]), // Usar payloadSizes del primer conjunto
+                    labels: datasetsCpu[0].data.map((_, index) => groupedData[Object.keys(groupedData)[0]].payloadSizes[index]),
                     datasets: datasetsCpu
                 },
                 options: {
@@ -293,7 +289,7 @@
             memoryChartInstance = new Chart(ctxMemory, {
                 type: 'line',
                 data: {
-                    labels: datasetsMemory[0].data.map((_, index) => groupedData[Object.keys(groupedData)[0]].payloadSizes[index]), // Usar payloadSizes del primer conjunto
+                    labels: datasetsMemory[0].data.map((_, index) => groupedData[Object.keys(groupedData)[0]].payloadSizes[index]),
                     datasets: datasetsMemory
                 },
                 options: {
@@ -316,6 +312,57 @@
                 }
             });
         }
+
+    function formartDataForChart(data) {
+        const groupedDataP = {};
+        let protocolName = "";
+
+        data.forEach(entry => {
+            const threads = entry.nOfThreads;
+            const payloadSize = entry.averagePayloadSize;
+
+            if (!groupedDataP[threads]) {
+                groupedDataP[threads] = { cpu: [], memory: [], payloadSizes: [] };
+            }
+
+            groupedDataP[threads].cpu.push(parseFloat(entry.cpu));
+            groupedDataP[threads].memory.push(entry.memory.rss);
+            groupedDataP[threads].payloadSizes.push(payloadSize);
+            protocolName = entry.protocol;
+        });
+
+        const datasetsCpuP = [];
+        const datasetsMemoryP = [];
+
+        Object.keys(groupedDataP).forEach(threads => {
+            const cpuValues = groupedDataP[threads].cpu;
+            const memoryValues = groupedDataP[threads].memory;
+            const payloadSizes = groupedDataP[threads].payloadSizes;
+
+            const color = getRandomColor();
+            const testLabel = protocolName ? `${threads}-${protocolName}` : threads;
+
+            datasetsCpuP.push({
+                label: `Uso de CPU - Hilos: ${testLabel}`,
+                data: cpuValues,
+                backgroundColor: color,
+                borderColor: color.replace('0.5', '1'),
+                borderWidth: 1,
+                fill: false,
+            });
+
+            datasetsMemoryP.push({
+                label: `Uso de Memoria (RSS) - Hilos: ${testLabel}`,
+                data: memoryValues,
+                backgroundColor: color,
+                borderColor: color.replace('0.5', '1'),
+                borderWidth: 1,
+                fill: false,
+            });
+        });
+
+        return { datasetsCpuP, datasetsMemoryP, groupedDataP };
+    }
 
         async function init(protocolo) {
             if(!protocolo.includes("Server")){

@@ -68,7 +68,7 @@ app.get("/cpu-memoryGRPC", (req, res) => {
 
 //SERVERs
 app.get("/cpu-memoryRESTServer", (req, res) => {
-  fs.readFile("../cpuMemoryUsage-REST-Server.json", "utf8", (err, data) => {
+  fs.readFile("../cpuMemoryUsage-REST-Server-FINAL.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de CPU y memoria.");
     }
@@ -77,7 +77,7 @@ app.get("/cpu-memoryRESTServer", (req, res) => {
 });
 
 app.get("/cpu-memoryGRPCServer", (req, res) => {
-  fs.readFile("../cpuMemoryUsage-gRPC-Server.json", "utf8", (err, data) => {
+  fs.readFile("../cpuMemoryUsage-gRPC-Server-FINAL.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de CPU y memoria.");
     }
@@ -86,7 +86,7 @@ app.get("/cpu-memoryGRPCServer", (req, res) => {
 });
 
 app.get("/cpu-memoryWebsocketServer", (req, res) => {
-  fs.readFile("../cpuMemoryUsage-Websocket-Server.json", "utf8", (err, data) => {
+  fs.readFile("../cpuMemoryUsage-Websocket-Server-FINAL.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de CPU y memoria.");
     }
