@@ -230,6 +230,26 @@
             }
             return color;
         }
+
+        function getProtocolColor(protocolName) {
+            let color = "";
+            switch (protocolName) {
+                case "REST":
+                    color = "#DB6040";
+                    break;
+                case "WEBSOCKET":
+                    color = "#68DB9C";
+                    break;
+                case "GRPC":
+                    color = "#40B9DB";
+                    break;
+                default:
+                    color = "#000000";
+                    break;
+            }
+            return color;
+        }
+
         function drawCpuMemoryChart(data) {
             const ctxCpu = document.getElementById('cpuChart').getContext('2d');
             const ctxMemory = document.getElementById('memoryChart').getContext('2d');
@@ -278,7 +298,7 @@
                         x: {
                             title: {
                                 display: true,
-                                text: 'Tamaño de Carga Útil'
+                                text: 'Tamaño Carga Útil'
                             }
                         }
                     }
@@ -305,7 +325,7 @@
                         x: {
                             title: {
                                 display: true,
-                                text: 'Tamaño de Carga Útil'
+                                text: 'Tamaño Carga Útil'
                             }
                         }
                     }
@@ -335,30 +355,41 @@
         const datasetsMemoryP = [];
 
         Object.keys(groupedDataP).forEach(threads => {
-            const cpuValues = groupedDataP[threads].cpu;
+            // if(threads == 50 || (protocolName == "REST" && threads == 1)){
+                const cpuValues = groupedDataP[threads].cpu;
             const memoryValues = groupedDataP[threads].memory;
             const payloadSizes = groupedDataP[threads].payloadSizes;
 
-            const color = getRandomColor();
-            const testLabel = protocolName ? `${threads}-${protocolName}` : threads;
+            const color = getProtocolColor(protocolName);
+
+            let fillValue = '+1';
+            let backgroundColorValue = color;
+
+            if (threads == 1) {
+                fillValue = false; // Terminar el fill
+            } else if (threads == 50) {
+                fillValue = '-1';
+            }
 
             datasetsCpuP.push({
-                label: `Uso de CPU - Hilos: ${testLabel}`,
+                label: `${protocolName} - Hilos: ${threads}`,
                 data: cpuValues,
-                backgroundColor: color,
+                backgroundColor: backgroundColorValue,
                 borderColor: color.replace('0.5', '1'),
-                borderWidth: 1,
-                fill: false,
+                borderWidth: 2,
+                fill: fillValue,
             });
 
             datasetsMemoryP.push({
-                label: `Uso de Memoria (RSS) - Hilos: ${testLabel}`,
+                label: `${protocolName} - Hilos: ${threads}`,
                 data: memoryValues,
-                backgroundColor: color,
+                backgroundColor: backgroundColorValue,
                 borderColor: color.replace('0.5', '1'),
-                borderWidth: 1,
-                fill: false,
+                borderWidth: 2,
+                fill: fillValue,
             });
+            // }
+           
         });
 
         return { datasetsCpuP, datasetsMemoryP, groupedDataP };

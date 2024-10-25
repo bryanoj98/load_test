@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 // REST
 app.get("/latenciaREST", (req, res) => {
-  fs.readFile("../latenciaAVGTotal-REST.json", "utf8", (err, data) => {
+  fs.readFile("../latenciaAVGTotal-REST-FINAL.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de latencia.");
     }
@@ -32,7 +32,7 @@ app.get("/cpu-memoryREST", (req, res) => {
 
 // WEBSOCKET
 app.get("/latenciaWebsocket", (req, res) => {
-  fs.readFile("../latenciaAVGTotal-WEBSOCKET.json", "utf8", (err, data) => {
+  fs.readFile("../latenciaAVGTotal-WEBSOCKET-FINAL.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de latencia.");
     }
@@ -50,7 +50,7 @@ app.get("/cpu-memoryWebsocket", (req, res) => {
 
 // gRPC
 app.get("/latenciaGRPC", (req, res) => {
-  fs.readFile("../latenciaAVGTotal-gRPC.json", "utf8", (err, data) => {
+  fs.readFile("../latenciaAVGTotal-gRPC-FINAL.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de latencia.");
     }
