@@ -44,6 +44,7 @@
             <li><button onclick="callDataOfProtocol('REST')">REST</button></li>
             <li><button onclick="callDataOfProtocol('WebSocket')">WebSocket</button></li>
             <li><button onclick="callDataOfProtocol('gRPC')">gRPC</button></li>
+            <li><button onclick="callDataOfProtocol('Comparative-Client')">Comparative-Client</button></li>
             <li><button onclick="callDataOfProtocol('REST-Server')">REST-Server</button></li>
             <li><button onclick="callDataOfProtocol('WebSocket-Server')">WebSocket-Server</button></li>
             <li><button onclick="callDataOfProtocol('gRPC-Server')">gRPC-Server</button></li>
@@ -66,17 +67,32 @@
             switch (protocolo) {
                 case 'REST':
                     response = await fetch('/latenciaREST');
+                    response = await response.json();
                     break;
                 case 'WebSocket':
                     response = await fetch('/latenciaWebsocket');
+                    response = await response.json();
                     break;
                 case 'gRPC':
                     response = await fetch('/latenciaGRPC');
+                    response = await response.json();
+                    break;
+                case 'Comparative-Client':
+                    restClient = await fetch('/latenciaREST');
+                    websocketClient = await fetch('/latenciaWebsocket');
+                    gRPCClient = await fetch('/latenciaGRPC');
+                    
+                    response = { 
+                        rest: await addFieldProtocolName(restClient, "REST"),
+                        websocket: await addFieldProtocolName(websocketClient, "WEBSOCKET"),
+                        grpc: await addFieldProtocolName(gRPCClient, "GRPC")
+                    };
+                    console.log("response: ", response);                   
                     break;
                 default:
                     break;
             }
-            return await response.json();
+            return response;
         }
 
         async function fetchCpuMemory(protocolo) {
@@ -164,31 +180,23 @@
             destroyChart(latenciaChartInstance); // Destruir el gráfico anterior
 
             let labels = [];
-            const datasets = [];
+            let datasets = [];
 
-           
-
-            data.forEach((item, index) => {
-                const key = Object.keys(item)[0];
-                let latencias = [];
+            if(data.rest){
+                Object.entries(data).forEach(([key, value]) => {
+                    let { datasetsP, labelsP } = formatDataForLatenciaChart(value);
+                    // labels = labelsP;
+                    datasets = datasets.concat(datasetsP);;
+                    Object.assign(labels, labelsP);
+                });
+            }else{
+                let {datasetsP, labelsP} = formatDataForLatenciaChart(data);
+                console.log("labelsP: ", labelsP);
                 
-                labels = [];
-                item[key].forEach(latenciaKV => {
-                    const keyL = Object.keys(latenciaKV)[0];
-                    const valueL = latenciaKV[keyL];
-                    labels.push(keyL); 
-                    latencias.push(valueL); 
-                });
-
-                datasets.push({
-                    label: `${key} Hilos`,
-                    data: latencias,
-                    backgroundColor: getColor(index, data),
-                    borderColor: getColor(index, data).replace('0.5', '1'),
-                    borderWidth: 1,
-                    fill: false,
-                });
-            });
+                labels = labelsP;
+                datasets = datasetsP;
+            }
+            
 
             latenciaChartInstance = new Chart(ctx, {
                 type: 'line',
@@ -209,7 +217,7 @@
                         x: {
                             title: {
                                 display: true,
-                                text: 'Variación Carga Util'
+                                text: 'Tamaño Carga Util'
                             }
                         }
                     },
@@ -221,6 +229,49 @@
                 }
             });
         }
+
+        function formatDataForLatenciaChart(data) {
+            let labelsP = [];
+            const datasetsP = [];
+
+            data.forEach((item, index) => {
+                const key = Object.keys(item)[0];
+                let protocolName = item.protocol;
+                // const protocolName = "gRPC ";
+
+                let latencias = [];
+
+                
+                labelsP = [];
+                item[key].forEach(latenciaKV => {
+                    const keyL = Object.keys(latenciaKV)[0];
+                    const valueL = latenciaKV[keyL];
+                    labelsP.push(keyL); 
+                    latencias.push(valueL); 
+                });
+
+                const color = protocolName ? getProtocolColor(protocolName) : getColor(index, data);
+
+                let fillValue = false;
+
+                // if (key == 1) {
+                //     fillValue = false; // Terminar el fill
+                // } else if (key == 50) {
+                //     fillValue = '-1';
+                // }
+                protocolName = "gRPC";
+                datasetsP.push({
+                    label: `${protocolName} - Hilos: ${key}`,
+                    data: latencias,
+                    backgroundColor: color,
+                    borderColor: color.replace('0.5', '1'),
+                    borderWidth: 1,
+                    fill: fillValue,
+                });
+            });
+            return {datasetsP, labelsP};
+        }
+
 
         function getRandomColor() {
             const letters = '0123456789ABCDEF';
@@ -264,7 +315,7 @@
             if (data.rest) {
                 // Cuando hay múltiples protocolos
                 Object.entries(data).forEach(([key, value]) => {
-                    let { datasetsCpuP, datasetsMemoryP, groupedDataP } = formartDataForChart(value);
+                    let { datasetsCpuP, datasetsMemoryP, groupedDataP } = formatDataForCPUnRAMChart(value);
                     // Concatena datasets y groupedData sin sobrescribir
                     datasetsCpu = datasetsCpu.concat(datasetsCpuP);
                     datasetsMemory = datasetsMemory.concat(datasetsMemoryP);
@@ -272,7 +323,7 @@
                 });
             } else {
                 // Cuando es un solo protocolo
-                let { datasetsCpuP, datasetsMemoryP, groupedDataP } = formartDataForChart(data);
+                let { datasetsCpuP, datasetsMemoryP, groupedDataP } = formatDataForCPUnRAMChart(data);
                 datasetsCpu = datasetsCpuP;
                 datasetsMemory = datasetsMemoryP;
                 groupedData = groupedDataP;
@@ -333,7 +384,7 @@
             });
         }
 
-    function formartDataForChart(data) {
+    function formatDataForCPUnRAMChart(data) {
         const groupedDataP = {};
         let protocolName = "";
 
@@ -397,6 +448,8 @@
 
         async function init(protocolo) {
             if(!protocolo.includes("Server")){
+                console.log("ENTRA");
+                
                 const latenciaData = await fetchLatencia(protocolo);
                 drawLatenciaChart(latenciaData);
             }

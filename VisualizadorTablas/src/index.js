@@ -49,8 +49,16 @@ app.get("/cpu-memoryWebsocket", (req, res) => {
 });
 
 // gRPC
+// app.get("/latenciaGRPC", (req, res) => {
+//   fs.readFile("../latenciaAVGTotal-gRPC-FINAL.json", "utf8", (err, data) => {
+//     if (err) {
+//       return res.status(500).send("Error al leer el archivo de latencia.");
+//     }
+//     res.json(JSON.parse(data));
+//   });
+// });
 app.get("/latenciaGRPC", (req, res) => {
-  fs.readFile("../latenciaAVGTotal-gRPC-FINAL.json", "utf8", (err, data) => {
+  fs.readFile("../latenciaAVGTotal-gRPC.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de latencia.");
     }
