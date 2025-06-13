@@ -1,0 +1,8402 @@
+[
+  {
+    "timestamp": 1729561045638,
+    "cpu": "1.64",
+    "cpuNucleos": [
+      0.07,
+      0.58,
+      0.38
+    ],
+    "memory": {
+      "rss": 58129067
+    },
+    "averagePayloadSize": 5000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561049640,
+    "cpu": "1.65",
+    "cpuNucleos": [
+      0.14,
+      0.59,
+      0.38
+    ],
+    "memory": {
+      "rss": 62324736
+    },
+    "averagePayloadSize": 10000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561053641,
+    "cpu": "1.65",
+    "cpuNucleos": [
+      0.13,
+      0.58,
+      0.38
+    ],
+    "memory": {
+      "rss": 64847872
+    },
+    "averagePayloadSize": 15000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561057644,
+    "cpu": "1.66",
+    "cpuNucleos": [
+      0.12,
+      0.57,
+      0.38
+    ],
+    "memory": {
+      "rss": 69910528
+    },
+    "averagePayloadSize": 20000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561061645,
+    "cpu": "1.67",
+    "cpuNucleos": [
+      0.19,
+      0.58,
+      0.38
+    ],
+    "memory": {
+      "rss": 69910528
+    },
+    "averagePayloadSize": 25000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561065648,
+    "cpu": "1.68",
+    "cpuNucleos": [
+      0.19,
+      0.58,
+      0.38
+    ],
+    "memory": {
+      "rss": 70090752
+    },
+    "averagePayloadSize": 30000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561069649,
+    "cpu": "1.69",
+    "cpuNucleos": [
+      0.25,
+      0.59,
+      0.39
+    ],
+    "memory": {
+      "rss": 70180864
+    },
+    "averagePayloadSize": 35000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561073652,
+    "cpu": "1.69",
+    "cpuNucleos": [
+      0.23,
+      0.58,
+      0.38
+    ],
+    "memory": {
+      "rss": 70180864
+    },
+    "averagePayloadSize": 40000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561077654,
+    "cpu": "1.70",
+    "cpuNucleos": [
+      0.21,
+      0.57,
+      0.38
+    ],
+    "memory": {
+      "rss": 70180864
+    },
+    "averagePayloadSize": 45000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561081656,
+    "cpu": "1.71",
+    "cpuNucleos": [
+      0.2,
+      0.56,
+      0.38
+    ],
+    "memory": {
+      "rss": 70180864
+    },
+    "averagePayloadSize": 50000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561085658,
+    "cpu": "1.71",
+    "cpuNucleos": [
+      0.2,
+      0.56,
+      0.38
+    ],
+    "memory": {
+      "rss": 70180864
+    },
+    "averagePayloadSize": 55000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561089660,
+    "cpu": "1.71",
+    "cpuNucleos": [
+      0.26,
+      0.57,
+      0.38
+    ],
+    "memory": {
+      "rss": 70361088
+    },
+    "averagePayloadSize": 60000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561093662,
+    "cpu": "1.72",
+    "cpuNucleos": [
+      0.24,
+      0.56,
+      0.38
+    ],
+    "memory": {
+      "rss": 70451200
+    },
+    "averagePayloadSize": 65000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561097664,
+    "cpu": "1.73",
+    "cpuNucleos": [
+      0.22,
+      0.55,
+      0.38
+    ],
+    "memory": {
+      "rss": 71708672
+    },
+    "averagePayloadSize": 70000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561101665,
+    "cpu": "1.74",
+    "cpuNucleos": [
+      0.28,
+      0.55,
+      0.38
+    ],
+    "memory": {
+      "rss": 71593984
+    },
+    "averagePayloadSize": 75000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561105668,
+    "cpu": "1.75",
+    "cpuNucleos": [
+      0.28,
+      0.55,
+      0.38
+    ],
+    "memory": {
+      "rss": 71599445
+    },
+    "averagePayloadSize": 80000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561109669,
+    "cpu": "1.76",
+    "cpuNucleos": [
+      0.26,
+      0.54,
+      0.38
+    ],
+    "memory": {
+      "rss": 71081984
+    },
+    "averagePayloadSize": 85000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561113671,
+    "cpu": "1.76",
+    "cpuNucleos": [
+      0.24,
+      0.54,
+      0.37
+    ],
+    "memory": {
+      "rss": 71352320
+    },
+    "averagePayloadSize": 90000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561117672,
+    "cpu": "1.77",
+    "cpuNucleos": [
+      0.22,
+      0.53,
+      0.37
+    ],
+    "memory": {
+      "rss": 71352320
+    },
+    "averagePayloadSize": 95000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561121675,
+    "cpu": "1.78",
+    "cpuNucleos": [
+      0.2,
+      0.52,
+      0.37
+    ],
+    "memory": {
+      "rss": 71352320
+    },
+    "averagePayloadSize": 100000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561125676,
+    "cpu": "1.78",
+    "cpuNucleos": [
+      0.2,
+      0.52,
+      0.37
+    ],
+    "memory": {
+      "rss": 71352320
+    },
+    "averagePayloadSize": 105000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561129679,
+    "cpu": "1.78",
+    "cpuNucleos": [
+      0.19,
+      0.51,
+      0.37
+    ],
+    "memory": {
+      "rss": 76035413
+    },
+    "averagePayloadSize": 110000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561133681,
+    "cpu": "1.78",
+    "cpuNucleos": [
+      0.17,
+      0.5,
+      0.37
+    ],
+    "memory": {
+      "rss": 80449536
+    },
+    "averagePayloadSize": 115000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561137684,
+    "cpu": "1.79",
+    "cpuNucleos": [
+      0.16,
+      0.49,
+      0.36
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 120000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561141686,
+    "cpu": "1.79",
+    "cpuNucleos": [
+      0.14,
+      0.48,
+      0.36
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 125000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561145688,
+    "cpu": "1.80",
+    "cpuNucleos": [
+      0.14,
+      0.48,
+      0.36
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 130000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561149689,
+    "cpu": "1.81",
+    "cpuNucleos": [
+      0.13,
+      0.47,
+      0.36
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 135000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561153691,
+    "cpu": "1.82",
+    "cpuNucleos": [
+      0.12,
+      0.47,
+      0.36
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 140000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561157694,
+    "cpu": "1.82",
+    "cpuNucleos": [
+      0.11,
+      0.46,
+      0.35
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 145000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561161695,
+    "cpu": "1.83",
+    "cpuNucleos": [
+      0.1,
+      0.45,
+      0.35
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 150000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561165697,
+    "cpu": "1.84",
+    "cpuNucleos": [
+      0.1,
+      0.45,
+      0.35
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 155000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561169698,
+    "cpu": "1.84",
+    "cpuNucleos": [
+      0.09,
+      0.44,
+      0.35
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 160000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561173701,
+    "cpu": "1.85",
+    "cpuNucleos": [
+      0.09,
+      0.44,
+      0.35
+    ],
+    "memory": {
+      "rss": 80809984
+    },
+    "averagePayloadSize": 165000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561177704,
+    "cpu": "1.85",
+    "cpuNucleos": [
+      0.08,
+      0.43,
+      0.35
+    ],
+    "memory": {
+      "rss": 81080320
+    },
+    "averagePayloadSize": 170000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561181706,
+    "cpu": "1.85",
+    "cpuNucleos": [
+      0.15,
+      0.44,
+      0.35
+    ],
+    "memory": {
+      "rss": 81080320
+    },
+    "averagePayloadSize": 175000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561185709,
+    "cpu": "1.86",
+    "cpuNucleos": [
+      0.15,
+      0.44,
+      0.35
+    ],
+    "memory": {
+      "rss": 81080320
+    },
+    "averagePayloadSize": 180000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561189710,
+    "cpu": "1.86",
+    "cpuNucleos": [
+      0.22,
+      0.45,
+      0.35
+    ],
+    "memory": {
+      "rss": 81080320
+    },
+    "averagePayloadSize": 185000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561193712,
+    "cpu": "1.87",
+    "cpuNucleos": [
+      0.2,
+      0.44,
+      0.35
+    ],
+    "memory": {
+      "rss": 81080320
+    },
+    "averagePayloadSize": 190000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561197715,
+    "cpu": "1.87",
+    "cpuNucleos": [
+      0.19,
+      0.43,
+      0.35
+    ],
+    "memory": {
+      "rss": 81080320
+    },
+    "averagePayloadSize": 195000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561201717,
+    "cpu": "1.88",
+    "cpuNucleos": [
+      0.17,
+      0.43,
+      0.35
+    ],
+    "memory": {
+      "rss": 81080320
+    },
+    "averagePayloadSize": 200000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561205719,
+    "cpu": "1.88",
+    "cpuNucleos": [
+      0.17,
+      0.43,
+      0.35
+    ],
+    "memory": {
+      "rss": 81215488
+    },
+    "averagePayloadSize": 205000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561209721,
+    "cpu": "1.88",
+    "cpuNucleos": [
+      0.24,
+      0.43,
+      0.35
+    ],
+    "memory": {
+      "rss": 81567744
+    },
+    "averagePayloadSize": 210000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561213723,
+    "cpu": "1.88",
+    "cpuNucleos": [
+      0.22,
+      0.43,
+      0.35
+    ],
+    "memory": {
+      "rss": 81829888
+    },
+    "averagePayloadSize": 215000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561217723,
+    "cpu": "1.89",
+    "cpuNucleos": [
+      0.2,
+      0.42,
+      0.35
+    ],
+    "memory": {
+      "rss": 81960960
+    },
+    "averagePayloadSize": 220000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561221726,
+    "cpu": "1.89",
+    "cpuNucleos": [
+      0.18,
+      0.41,
+      0.35
+    ],
+    "memory": {
+      "rss": 81945941
+    },
+    "averagePayloadSize": 225000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561225727,
+    "cpu": "1.89",
+    "cpuNucleos": [
+      0.18,
+      0.41,
+      0.35
+    ],
+    "memory": {
+      "rss": 81843541
+    },
+    "averagePayloadSize": 230000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561229727,
+    "cpu": "1.90",
+    "cpuNucleos": [
+      0.25,
+      0.42,
+      0.35
+    ],
+    "memory": {
+      "rss": 82006016
+    },
+    "averagePayloadSize": 235000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561233730,
+    "cpu": "1.90",
+    "cpuNucleos": [
+      0.23,
+      0.42,
+      0.35
+    ],
+    "memory": {
+      "rss": 81707008
+    },
+    "averagePayloadSize": 240000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561237732,
+    "cpu": "1.91",
+    "cpuNucleos": [
+      0.21,
+      0.41,
+      0.35
+    ],
+    "memory": {
+      "rss": 81816235
+    },
+    "averagePayloadSize": 245000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561241733,
+    "cpu": "1.91",
+    "cpuNucleos": [
+      0.27,
+      0.42,
+      0.35
+    ],
+    "memory": {
+      "rss": 81793024
+    },
+    "averagePayloadSize": 250000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561245737,
+    "cpu": "1.92",
+    "cpuNucleos": [
+      0.27,
+      0.42,
+      0.35
+    ],
+    "memory": {
+      "rss": 81963691
+    },
+    "averagePayloadSize": 255000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561249738,
+    "cpu": "1.91",
+    "cpuNucleos": [
+      0.33,
+      0.43,
+      0.35
+    ],
+    "memory": {
+      "rss": 81850368
+    },
+    "averagePayloadSize": 260000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561253740,
+    "cpu": "1.92",
+    "cpuNucleos": [
+      0.31,
+      0.42,
+      0.35
+    ],
+    "memory": {
+      "rss": 82102955
+    },
+    "averagePayloadSize": 265000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561257743,
+    "cpu": "1.92",
+    "cpuNucleos": [
+      0.28,
+      0.41,
+      0.35
+    ],
+    "memory": {
+      "rss": 81888597
+    },
+    "averagePayloadSize": 270000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561261744,
+    "cpu": "1.92",
+    "cpuNucleos": [
+      0.26,
+      0.41,
+      0.35
+    ],
+    "memory": {
+      "rss": 81970517
+    },
+    "averagePayloadSize": 275000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561265747,
+    "cpu": "1.93",
+    "cpuNucleos": [
+      0.26,
+      0.41,
+      0.35
+    ],
+    "memory": {
+      "rss": 82984960
+    },
+    "averagePayloadSize": 280000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561269748,
+    "cpu": "1.93",
+    "cpuNucleos": [
+      0.24,
+      0.4,
+      0.35
+    ],
+    "memory": {
+      "rss": 81955499
+    },
+    "averagePayloadSize": 285000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561273750,
+    "cpu": "1.94",
+    "cpuNucleos": [
+      0.22,
+      0.39,
+      0.35
+    ],
+    "memory": {
+      "rss": 82276352
+    },
+    "averagePayloadSize": 290000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561277753,
+    "cpu": "1.94",
+    "cpuNucleos": [
+      0.2,
+      0.39,
+      0.34
+    ],
+    "memory": {
+      "rss": 81904981
+    },
+    "averagePayloadSize": 295000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561281754,
+    "cpu": "1.95",
+    "cpuNucleos": [
+      0.18,
+      0.38,
+      0.34
+    ],
+    "memory": {
+      "rss": 97185792
+    },
+    "averagePayloadSize": 300000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561285756,
+    "cpu": "1.95",
+    "cpuNucleos": [
+      0.18,
+      0.38,
+      0.34
+    ],
+    "memory": {
+      "rss": 104845312
+    },
+    "averagePayloadSize": 305000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561289758,
+    "cpu": "1.95",
+    "cpuNucleos": [
+      0.17,
+      0.37,
+      0.34
+    ],
+    "memory": {
+      "rss": 104845312
+    },
+    "averagePayloadSize": 310000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561293760,
+    "cpu": "1.96",
+    "cpuNucleos": [
+      0.16,
+      0.37,
+      0.34
+    ],
+    "memory": {
+      "rss": 104845312
+    },
+    "averagePayloadSize": 315000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561297762,
+    "cpu": "1.96",
+    "cpuNucleos": [
+      0.14,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 104845312
+    },
+    "averagePayloadSize": 320000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561301766,
+    "cpu": "1.96",
+    "cpuNucleos": [
+      0.21,
+      0.37,
+      0.34
+    ],
+    "memory": {
+      "rss": 104935424
+    },
+    "averagePayloadSize": 325000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561305768,
+    "cpu": "1.97",
+    "cpuNucleos": [
+      0.21,
+      0.37,
+      0.34
+    ],
+    "memory": {
+      "rss": 105115648
+    },
+    "averagePayloadSize": 330000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561309769,
+    "cpu": "1.97",
+    "cpuNucleos": [
+      0.28,
+      0.38,
+      0.34
+    ],
+    "memory": {
+      "rss": 105115648
+    },
+    "averagePayloadSize": 335000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561313772,
+    "cpu": "1.97",
+    "cpuNucleos": [
+      0.25,
+      0.37,
+      0.34
+    ],
+    "memory": {
+      "rss": 105115648
+    },
+    "averagePayloadSize": 340000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561317774,
+    "cpu": "1.98",
+    "cpuNucleos": [
+      0.23,
+      0.37,
+      0.34
+    ],
+    "memory": {
+      "rss": 105115648
+    },
+    "averagePayloadSize": 345000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561321777,
+    "cpu": "1.98",
+    "cpuNucleos": [
+      0.21,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 105115648
+    },
+    "averagePayloadSize": 350000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561325780,
+    "cpu": "1.99",
+    "cpuNucleos": [
+      0.21,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 105115648
+    },
+    "averagePayloadSize": 355000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561329783,
+    "cpu": "2.00",
+    "cpuNucleos": [
+      0.28,
+      0.37,
+      0.34
+    ],
+    "memory": {
+      "rss": 105115648
+    },
+    "averagePayloadSize": 360000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561333786,
+    "cpu": "2.00",
+    "cpuNucleos": [
+      0.25,
+      0.37,
+      0.34
+    ],
+    "memory": {
+      "rss": 105115648
+    },
+    "averagePayloadSize": 365000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561337789,
+    "cpu": "2.01",
+    "cpuNucleos": [
+      0.23,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 105182549
+    },
+    "averagePayloadSize": 370000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561341791,
+    "cpu": "2.01",
+    "cpuNucleos": [
+      0.21,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 105250816
+    },
+    "averagePayloadSize": 375000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561345792,
+    "cpu": "2.02",
+    "cpuNucleos": [
+      0.21,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 105172992
+    },
+    "averagePayloadSize": 380000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561349794,
+    "cpu": "2.02",
+    "cpuNucleos": [
+      0.2,
+      0.35,
+      0.33
+    ],
+    "memory": {
+      "rss": 105022805
+    },
+    "averagePayloadSize": 385000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561353797,
+    "cpu": "2.03",
+    "cpuNucleos": [
+      0.18,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 105267200
+    },
+    "averagePayloadSize": 390000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561357801,
+    "cpu": "2.03",
+    "cpuNucleos": [
+      0.17,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 106440021
+    },
+    "averagePayloadSize": 395000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561361802,
+    "cpu": "2.04",
+    "cpuNucleos": [
+      0.15,
+      0.33,
+      0.33
+    ],
+    "memory": {
+      "rss": 105331371
+    },
+    "averagePayloadSize": 400000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561365803,
+    "cpu": "2.04",
+    "cpuNucleos": [
+      0.15,
+      0.33,
+      0.33
+    ],
+    "memory": {
+      "rss": 104509440
+    },
+    "averagePayloadSize": 405000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561369806,
+    "cpu": "2.05",
+    "cpuNucleos": [
+      0.22,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 104551765
+    },
+    "averagePayloadSize": 410000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561373807,
+    "cpu": "2.05",
+    "cpuNucleos": [
+      0.2,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 104624128
+    },
+    "averagePayloadSize": 415000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561377811,
+    "cpu": "2.09",
+    "cpuNucleos": [
+      0.27,
+      0.35,
+      0.33
+    ],
+    "memory": {
+      "rss": 104611840
+    },
+    "averagePayloadSize": 420000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561381812,
+    "cpu": "2.14",
+    "cpuNucleos": [
+      0.33,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 104706048
+    },
+    "averagePayloadSize": 425000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561385813,
+    "cpu": "2.17",
+    "cpuNucleos": [
+      0.33,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 104682837
+    },
+    "averagePayloadSize": 430000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561389814,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.38,
+      0.37,
+      0.34
+    ],
+    "memory": {
+      "rss": 104546304
+    },
+    "averagePayloadSize": 435000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561393816,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.35,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 105473365
+    },
+    "averagePayloadSize": 440000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561397818,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.32,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 104680107
+    },
+    "averagePayloadSize": 445000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561401820,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.29,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 105917099
+    },
+    "averagePayloadSize": 450000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561405822,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.29,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 105132032
+    },
+    "averagePayloadSize": 455000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561409823,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.27,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 104591360
+    },
+    "averagePayloadSize": 460000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561413825,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.25,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 104667819
+    },
+    "averagePayloadSize": 465000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561417828,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.23,
+      0.33,
+      0.33
+    ],
+    "memory": {
+      "rss": 104640512
+    },
+    "averagePayloadSize": 470000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561421831,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.29,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 104667819
+    },
+    "averagePayloadSize": 475000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561425834,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.29,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 104583168
+    },
+    "averagePayloadSize": 480000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561429836,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 104669184
+    },
+    "averagePayloadSize": 485000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561433837,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.32,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 105867947
+    },
+    "averagePayloadSize": 490000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561437840,
+    "cpu": "2.23",
+    "cpuNucleos": [
+      0.29,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 106729472
+    },
+    "averagePayloadSize": 495000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561441865,
+    "cpu": "2.24",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 105538901
+    },
+    "averagePayloadSize": 500000,
+    "nOfThreads": "1"
+  },
+  {
+    "timestamp": 1729561449846,
+    "cpu": "2.25",
+    "cpuNucleos": [
+      0.4,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 107810816
+    },
+    "averagePayloadSize": 5000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561453848,
+    "cpu": "2.25",
+    "cpuNucleos": [
+      0.37,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 10000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561457849,
+    "cpu": "2.26",
+    "cpuNucleos": [
+      0.34,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 15000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561461851,
+    "cpu": "2.27",
+    "cpuNucleos": [
+      0.39,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 20000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561465853,
+    "cpu": "2.28",
+    "cpuNucleos": [
+      0.39,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 25000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561469854,
+    "cpu": "2.29",
+    "cpuNucleos": [
+      0.36,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 30000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561473856,
+    "cpu": "2.30",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 35000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561477857,
+    "cpu": "2.31",
+    "cpuNucleos": [
+      0.31,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 40000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561481858,
+    "cpu": "2.32",
+    "cpuNucleos": [
+      0.28,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 45000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561485860,
+    "cpu": "2.33",
+    "cpuNucleos": [
+      0.28,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 50000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561489863,
+    "cpu": "2.34",
+    "cpuNucleos": [
+      0.34,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 55000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561493863,
+    "cpu": "2.35",
+    "cpuNucleos": [
+      0.31,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 60000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561497864,
+    "cpu": "2.36",
+    "cpuNucleos": [
+      0.29,
+      0.34,
+      0.33
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 65000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561501865,
+    "cpu": "2.37",
+    "cpuNucleos": [
+      0.34,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 70000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561505867,
+    "cpu": "2.37",
+    "cpuNucleos": [
+      0.34,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 107991040
+    },
+    "averagePayloadSize": 75000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561509869,
+    "cpu": "2.38",
+    "cpuNucleos": [
+      0.4,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 108171264
+    },
+    "averagePayloadSize": 80000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561513871,
+    "cpu": "2.39",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 108531712
+    },
+    "averagePayloadSize": 85000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561517873,
+    "cpu": "2.40",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 108711936
+    },
+    "averagePayloadSize": 90000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561521873,
+    "cpu": "2.41",
+    "cpuNucleos": [
+      0.39,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 108802048
+    },
+    "averagePayloadSize": 95000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561525875,
+    "cpu": "2.42",
+    "cpuNucleos": [
+      0.39,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 108802048
+    },
+    "averagePayloadSize": 100000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561529877,
+    "cpu": "2.42",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 108802048
+    },
+    "averagePayloadSize": 105000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561533879,
+    "cpu": "2.43",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 108802048
+    },
+    "averagePayloadSize": 110000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561537880,
+    "cpu": "2.44",
+    "cpuNucleos": [
+      0.3,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 108802048
+    },
+    "averagePayloadSize": 115000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561541881,
+    "cpu": "2.45",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 108802048
+    },
+    "averagePayloadSize": 120000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561545883,
+    "cpu": "2.46",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 108632747
+    },
+    "averagePayloadSize": 125000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561549884,
+    "cpu": "2.47",
+    "cpuNucleos": [
+      0.41,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 108595883
+    },
+    "averagePayloadSize": 130000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561553885,
+    "cpu": "2.48",
+    "cpuNucleos": [
+      0.38,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 108610901
+    },
+    "averagePayloadSize": 135000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561557886,
+    "cpu": "2.49",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 108758357
+    },
+    "averagePayloadSize": 140000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561561888,
+    "cpu": "2.49",
+    "cpuNucleos": [
+      0.4,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 109069653
+    },
+    "averagePayloadSize": 145000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561565890,
+    "cpu": "2.50",
+    "cpuNucleos": [
+      0.4,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 108530347
+    },
+    "averagePayloadSize": 150000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561569892,
+    "cpu": "2.51",
+    "cpuNucleos": [
+      0.45,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 109469696
+    },
+    "averagePayloadSize": 155000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561573893,
+    "cpu": "2.52",
+    "cpuNucleos": [
+      0.41,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 108766549
+    },
+    "averagePayloadSize": 160000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561577895,
+    "cpu": "2.53",
+    "cpuNucleos": [
+      0.38,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 109477888
+    },
+    "averagePayloadSize": 165000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561581897,
+    "cpu": "2.54",
+    "cpuNucleos": [
+      0.43,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 108589056
+    },
+    "averagePayloadSize": 170000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561585898,
+    "cpu": "2.55",
+    "cpuNucleos": [
+      0.43,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 110273877
+    },
+    "averagePayloadSize": 175000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561589901,
+    "cpu": "2.56",
+    "cpuNucleos": [
+      0.47,
+      0.38,
+      0.35
+    ],
+    "memory": {
+      "rss": 109821952
+    },
+    "averagePayloadSize": 180000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561593901,
+    "cpu": "2.57",
+    "cpuNucleos": [
+      0.44,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 110623403
+    },
+    "averagePayloadSize": 185000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561597902,
+    "cpu": "2.58",
+    "cpuNucleos": [
+      0.4,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 108852565
+    },
+    "averagePayloadSize": 190000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561601904,
+    "cpu": "2.58",
+    "cpuNucleos": [
+      0.37,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 109150208
+    },
+    "averagePayloadSize": 195000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561605904,
+    "cpu": "2.59",
+    "cpuNucleos": [
+      0.37,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 109925717
+    },
+    "averagePayloadSize": 200000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561609906,
+    "cpu": "2.60",
+    "cpuNucleos": [
+      0.34,
+      0.36,
+      0.34
+    ],
+    "memory": {
+      "rss": 113254400
+    },
+    "averagePayloadSize": 205000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561613908,
+    "cpu": "2.61",
+    "cpuNucleos": [
+      0.31,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 111138133
+    },
+    "averagePayloadSize": 210000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561617908,
+    "cpu": "2.61",
+    "cpuNucleos": [
+      0.29,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 112332800
+    },
+    "averagePayloadSize": 215000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561621910,
+    "cpu": "2.62",
+    "cpuNucleos": [
+      0.26,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 110269781
+    },
+    "averagePayloadSize": 220000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561625911,
+    "cpu": "2.63",
+    "cpuNucleos": [
+      0.26,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 112365568
+    },
+    "averagePayloadSize": 225000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561629913,
+    "cpu": "2.63",
+    "cpuNucleos": [
+      0.32,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 116543488
+    },
+    "averagePayloadSize": 230000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561633916,
+    "cpu": "2.64",
+    "cpuNucleos": [
+      0.38,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 110903296
+    },
+    "averagePayloadSize": 235000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561637918,
+    "cpu": "2.65",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 114724864
+    },
+    "averagePayloadSize": 240000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561641918,
+    "cpu": "2.66",
+    "cpuNucleos": [
+      0.32,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 115354283
+    },
+    "averagePayloadSize": 245000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561645919,
+    "cpu": "2.66",
+    "cpuNucleos": [
+      0.32,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 111245995
+    },
+    "averagePayloadSize": 250000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561649921,
+    "cpu": "2.67",
+    "cpuNucleos": [
+      0.37,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 110373547
+    },
+    "averagePayloadSize": 255000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561653923,
+    "cpu": "2.67",
+    "cpuNucleos": [
+      0.42,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 111590059
+    },
+    "averagePayloadSize": 260000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561657925,
+    "cpu": "2.68",
+    "cpuNucleos": [
+      0.39,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 117055488
+    },
+    "averagePayloadSize": 265000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561661925,
+    "cpu": "2.68",
+    "cpuNucleos": [
+      0.36,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 112500736
+    },
+    "averagePayloadSize": 270000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561665928,
+    "cpu": "2.69",
+    "cpuNucleos": [
+      0.36,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 118280192
+    },
+    "averagePayloadSize": 275000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561669929,
+    "cpu": "2.70",
+    "cpuNucleos": [
+      0.41,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 116573525
+    },
+    "averagePayloadSize": 280000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561673930,
+    "cpu": "2.70",
+    "cpuNucleos": [
+      0.38,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 113614848
+    },
+    "averagePayloadSize": 285000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561677931,
+    "cpu": "2.71",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 113381376
+    },
+    "averagePayloadSize": 290000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561681934,
+    "cpu": "2.71",
+    "cpuNucleos": [
+      0.32,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 112448853
+    },
+    "averagePayloadSize": 295000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561685935,
+    "cpu": "2.72",
+    "cpuNucleos": [
+      0.32,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 118607872
+    },
+    "averagePayloadSize": 300000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561689935,
+    "cpu": "2.73",
+    "cpuNucleos": [
+      0.37,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 117294421
+    },
+    "averagePayloadSize": 305000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561693937,
+    "cpu": "2.73",
+    "cpuNucleos": [
+      0.34,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 117069141
+    },
+    "averagePayloadSize": 310000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561697938,
+    "cpu": "2.73",
+    "cpuNucleos": [
+      0.32,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 114169173
+    },
+    "averagePayloadSize": 315000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561701939,
+    "cpu": "2.74",
+    "cpuNucleos": [
+      0.29,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 120038741
+    },
+    "averagePayloadSize": 320000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561705942,
+    "cpu": "2.75",
+    "cpuNucleos": [
+      0.29,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 113908395
+    },
+    "averagePayloadSize": 325000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561709944,
+    "cpu": "2.76",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 117622101
+    },
+    "averagePayloadSize": 330000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561713944,
+    "cpu": "2.77",
+    "cpuNucleos": [
+      0.32,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 120160256
+    },
+    "averagePayloadSize": 335000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561717947,
+    "cpu": "2.77",
+    "cpuNucleos": [
+      0.29,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 120868864
+    },
+    "averagePayloadSize": 340000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561721950,
+    "cpu": "2.78",
+    "cpuNucleos": [
+      0.27,
+      0.33,
+      0.34
+    ],
+    "memory": {
+      "rss": 119783424
+    },
+    "averagePayloadSize": 345000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561725952,
+    "cpu": "2.79",
+    "cpuNucleos": [
+      0.27,
+      0.33,
+      0.34
+    ],
+    "memory": {
+      "rss": 118393515
+    },
+    "averagePayloadSize": 350000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561729953,
+    "cpu": "2.80",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 110634325
+    },
+    "averagePayloadSize": 355000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561733954,
+    "cpu": "2.81",
+    "cpuNucleos": [
+      0.38,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 111432704
+    },
+    "averagePayloadSize": 360000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561738954,
+    "cpu": "2.82",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 119726080
+    },
+    "averagePayloadSize": 365000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561742956,
+    "cpu": "2.83",
+    "cpuNucleos": [
+      0.32,
+      0.35,
+      0.34
+    ],
+    "memory": {
+      "rss": 116589909
+    },
+    "averagePayloadSize": 370000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561746958,
+    "cpu": "2.83",
+    "cpuNucleos": [
+      0.38,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 115127637
+    },
+    "averagePayloadSize": 375000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561750961,
+    "cpu": "2.84",
+    "cpuNucleos": [
+      0.38,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 119904939
+    },
+    "averagePayloadSize": 380000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561754964,
+    "cpu": "2.85",
+    "cpuNucleos": [
+      0.43,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 120176640
+    },
+    "averagePayloadSize": 385000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561758966,
+    "cpu": "2.86",
+    "cpuNucleos": [
+      0.39,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 125160107
+    },
+    "averagePayloadSize": 390000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561762970,
+    "cpu": "2.86",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 120097451
+    },
+    "averagePayloadSize": 395000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561766972,
+    "cpu": "2.87",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 124936192
+    },
+    "averagePayloadSize": 400000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561770976,
+    "cpu": "2.88",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 111512235
+    },
+    "averagePayloadSize": 405000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561774978,
+    "cpu": "2.89",
+    "cpuNucleos": [
+      0.39,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 112323243
+    },
+    "averagePayloadSize": 410000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561778983,
+    "cpu": "2.89",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 117166080
+    },
+    "averagePayloadSize": 415000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561782985,
+    "cpu": "2.90",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 123691008
+    },
+    "averagePayloadSize": 420000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561786989,
+    "cpu": "2.91",
+    "cpuNucleos": [
+      0.3,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 117615275
+    },
+    "averagePayloadSize": 425000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561790992,
+    "cpu": "2.92",
+    "cpuNucleos": [
+      0.3,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 122036224
+    },
+    "averagePayloadSize": 430000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561794993,
+    "cpu": "2.92",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 119829845
+    },
+    "averagePayloadSize": 435000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561799013,
+    "cpu": "2.93",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 114626560
+    },
+    "averagePayloadSize": 440000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561802999,
+    "cpu": "2.93",
+    "cpuNucleos": [
+      0.3,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 118804480
+    },
+    "averagePayloadSize": 445000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561807002,
+    "cpu": "2.94",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 121834155
+    },
+    "averagePayloadSize": 450000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561811005,
+    "cpu": "2.95",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 121058645
+    },
+    "averagePayloadSize": 455000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561815008,
+    "cpu": "2.96",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 122642432
+    },
+    "averagePayloadSize": 460000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561819029,
+    "cpu": "2.96",
+    "cpuNucleos": [
+      0.3,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 116772864
+    },
+    "averagePayloadSize": 465000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561823015,
+    "cpu": "2.97",
+    "cpuNucleos": [
+      0.28,
+      0.33,
+      0.34
+    ],
+    "memory": {
+      "rss": 118871381
+    },
+    "averagePayloadSize": 470000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561827017,
+    "cpu": "2.98",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 116715520
+    },
+    "averagePayloadSize": 475000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561831021,
+    "cpu": "2.99",
+    "cpuNucleos": [
+      0.33,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 120987648
+    },
+    "averagePayloadSize": 480000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561835022,
+    "cpu": "2.99",
+    "cpuNucleos": [
+      0.39,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 118057643
+    },
+    "averagePayloadSize": 485000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561839026,
+    "cpu": "2.99",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 114451797
+    },
+    "averagePayloadSize": 490000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561843027,
+    "cpu": "3.00",
+    "cpuNucleos": [
+      0.33,
+      0.34,
+      0.35
+    ],
+    "memory": {
+      "rss": 116813824
+    },
+    "averagePayloadSize": 495000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561847033,
+    "cpu": "3.00",
+    "cpuNucleos": [
+      0.3,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 119549952
+    },
+    "averagePayloadSize": 500000,
+    "nOfThreads": "2"
+  },
+  {
+    "timestamp": 1729561855037,
+    "cpu": "3.01",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 122458112
+    },
+    "averagePayloadSize": 5000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561859039,
+    "cpu": "3.01",
+    "cpuNucleos": [
+      0.33,
+      0.34,
+      0.35
+    ],
+    "memory": {
+      "rss": 122458112
+    },
+    "averagePayloadSize": 10000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561863041,
+    "cpu": "3.02",
+    "cpuNucleos": [
+      0.3,
+      0.34,
+      0.34
+    ],
+    "memory": {
+      "rss": 122458112
+    },
+    "averagePayloadSize": 15000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561867043,
+    "cpu": "3.03",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 122458112
+    },
+    "averagePayloadSize": 20000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561871045,
+    "cpu": "3.04",
+    "cpuNucleos": [
+      0.36,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 122635605
+    },
+    "averagePayloadSize": 25000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561875047,
+    "cpu": "3.05",
+    "cpuNucleos": [
+      0.41,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 122724352
+    },
+    "averagePayloadSize": 30000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561879048,
+    "cpu": "3.06",
+    "cpuNucleos": [
+      0.38,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 123265024
+    },
+    "averagePayloadSize": 35000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561883052,
+    "cpu": "3.06",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "memory": {
+      "rss": 125026304
+    },
+    "averagePayloadSize": 40000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561887054,
+    "cpu": "3.07",
+    "cpuNucleos": [
+      0.4,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 125865984
+    },
+    "averagePayloadSize": 45000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561891056,
+    "cpu": "3.08",
+    "cpuNucleos": [
+      0.4,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 126029824
+    },
+    "averagePayloadSize": 50000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561895057,
+    "cpu": "3.09",
+    "cpuNucleos": [
+      0.45,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 126029824
+    },
+    "averagePayloadSize": 55000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561899059,
+    "cpu": "3.10",
+    "cpuNucleos": [
+      0.41,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 126570496
+    },
+    "averagePayloadSize": 60000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561903059,
+    "cpu": "3.11",
+    "cpuNucleos": [
+      0.38,
+      0.36,
+      0.35
+    ],
+    "memory": {
+      "rss": 126570496
+    },
+    "averagePayloadSize": 65000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561907061,
+    "cpu": "3.12",
+    "cpuNucleos": [
+      0.43,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 126570496
+    },
+    "averagePayloadSize": 70000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561911064,
+    "cpu": "3.13",
+    "cpuNucleos": [
+      0.43,
+      0.37,
+      0.35
+    ],
+    "memory": {
+      "rss": 126225067
+    },
+    "averagePayloadSize": 75000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561915065,
+    "cpu": "3.14",
+    "cpuNucleos": [
+      0.47,
+      0.38,
+      0.36
+    ],
+    "memory": {
+      "rss": 127000576
+    },
+    "averagePayloadSize": 80000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561919066,
+    "cpu": "3.15",
+    "cpuNucleos": [
+      0.52,
+      0.39,
+      0.36
+    ],
+    "memory": {
+      "rss": 126136320
+    },
+    "averagePayloadSize": 85000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561923068,
+    "cpu": "3.16",
+    "cpuNucleos": [
+      0.48,
+      0.38,
+      0.36
+    ],
+    "memory": {
+      "rss": 127300949
+    },
+    "averagePayloadSize": 90000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561927071,
+    "cpu": "3.17",
+    "cpuNucleos": [
+      0.52,
+      0.39,
+      0.36
+    ],
+    "memory": {
+      "rss": 125894656
+    },
+    "averagePayloadSize": 95000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561931073,
+    "cpu": "3.18",
+    "cpuNucleos": [
+      0.52,
+      0.39,
+      0.36
+    ],
+    "memory": {
+      "rss": 126988288
+    },
+    "averagePayloadSize": 100000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561935075,
+    "cpu": "3.19",
+    "cpuNucleos": [
+      0.56,
+      0.4,
+      0.37
+    ],
+    "memory": {
+      "rss": 126752085
+    },
+    "averagePayloadSize": 105000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561939076,
+    "cpu": "3.20",
+    "cpuNucleos": [
+      0.51,
+      0.4,
+      0.37
+    ],
+    "memory": {
+      "rss": 126439424
+    },
+    "averagePayloadSize": 110000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561943078,
+    "cpu": "3.21",
+    "cpuNucleos": [
+      0.47,
+      0.39,
+      0.36
+    ],
+    "memory": {
+      "rss": 125218816
+    },
+    "averagePayloadSize": 115000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561947080,
+    "cpu": "3.21",
+    "cpuNucleos": [
+      0.51,
+      0.4,
+      0.37
+    ],
+    "memory": {
+      "rss": 125949269
+    },
+    "averagePayloadSize": 120000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561951082,
+    "cpu": "3.22",
+    "cpuNucleos": [
+      0.51,
+      0.4,
+      0.37
+    ],
+    "memory": {
+      "rss": 125267968
+    },
+    "averagePayloadSize": 125000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561955085,
+    "cpu": "3.23",
+    "cpuNucleos": [
+      0.55,
+      0.41,
+      0.37
+    ],
+    "memory": {
+      "rss": 126028459
+    },
+    "averagePayloadSize": 130000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561959086,
+    "cpu": "3.24",
+    "cpuNucleos": [
+      0.51,
+      0.4,
+      0.37
+    ],
+    "memory": {
+      "rss": 126809429
+    },
+    "averagePayloadSize": 135000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561963089,
+    "cpu": "3.24",
+    "cpuNucleos": [
+      0.47,
+      0.4,
+      0.37
+    ],
+    "memory": {
+      "rss": 125220181
+    },
+    "averagePayloadSize": 140000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561967091,
+    "cpu": "3.25",
+    "cpuNucleos": [
+      0.43,
+      0.39,
+      0.36
+    ],
+    "memory": {
+      "rss": 130981888
+    },
+    "averagePayloadSize": 145000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561971092,
+    "cpu": "3.26",
+    "cpuNucleos": [
+      0.43,
+      0.39,
+      0.36
+    ],
+    "memory": {
+      "rss": 127447040
+    },
+    "averagePayloadSize": 150000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561975092,
+    "cpu": "3.28",
+    "cpuNucleos": [
+      0.56,
+      0.42,
+      0.37
+    ],
+    "memory": {
+      "rss": 126472192
+    },
+    "averagePayloadSize": 155000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561979095,
+    "cpu": "3.29",
+    "cpuNucleos": [
+      0.51,
+      0.41,
+      0.37
+    ],
+    "memory": {
+      "rss": 128229376
+    },
+    "averagePayloadSize": 160000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561983095,
+    "cpu": "3.29",
+    "cpuNucleos": [
+      0.47,
+      0.4,
+      0.37
+    ],
+    "memory": {
+      "rss": 127662763
+    },
+    "averagePayloadSize": 165000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561987097,
+    "cpu": "3.30",
+    "cpuNucleos": [
+      0.67,
+      0.45,
+      0.38
+    ],
+    "memory": {
+      "rss": 125235200
+    },
+    "averagePayloadSize": 170000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561991097,
+    "cpu": "3.30",
+    "cpuNucleos": [
+      0.67,
+      0.45,
+      0.38
+    ],
+    "memory": {
+      "rss": 127355563
+    },
+    "averagePayloadSize": 175000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561995100,
+    "cpu": "3.31",
+    "cpuNucleos": [
+      0.62,
+      0.44,
+      0.38
+    ],
+    "memory": {
+      "rss": 126494037
+    },
+    "averagePayloadSize": 180000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729561999103,
+    "cpu": "3.31",
+    "cpuNucleos": [
+      0.57,
+      0.43,
+      0.38
+    ],
+    "memory": {
+      "rss": 128729088
+    },
+    "averagePayloadSize": 185000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562003105,
+    "cpu": "3.32",
+    "cpuNucleos": [
+      0.52,
+      0.42,
+      0.37
+    ],
+    "memory": {
+      "rss": 128746837
+    },
+    "averagePayloadSize": 190000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562007108,
+    "cpu": "3.32",
+    "cpuNucleos": [
+      0.56,
+      0.43,
+      0.38
+    ],
+    "memory": {
+      "rss": 131073365
+    },
+    "averagePayloadSize": 195000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562011109,
+    "cpu": "3.32",
+    "cpuNucleos": [
+      0.56,
+      0.43,
+      0.38
+    ],
+    "memory": {
+      "rss": 136724480
+    },
+    "averagePayloadSize": 200000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562015112,
+    "cpu": "3.33",
+    "cpuNucleos": [
+      0.6,
+      0.44,
+      0.38
+    ],
+    "memory": {
+      "rss": 136709461
+    },
+    "averagePayloadSize": 205000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562019113,
+    "cpu": "3.33",
+    "cpuNucleos": [
+      0.55,
+      0.43,
+      0.38
+    ],
+    "memory": {
+      "rss": 129146880
+    },
+    "averagePayloadSize": 210000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562023115,
+    "cpu": "3.34",
+    "cpuNucleos": [
+      0.5,
+      0.43,
+      0.38
+    ],
+    "memory": {
+      "rss": 135072427
+    },
+    "averagePayloadSize": 215000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562027117,
+    "cpu": "3.34",
+    "cpuNucleos": [
+      0.54,
+      0.44,
+      0.38
+    ],
+    "memory": {
+      "rss": 132702208
+    },
+    "averagePayloadSize": 220000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562031119,
+    "cpu": "3.35",
+    "cpuNucleos": [
+      0.54,
+      0.44,
+      0.38
+    ],
+    "memory": {
+      "rss": 126868139
+    },
+    "averagePayloadSize": 225000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562035121,
+    "cpu": "3.36",
+    "cpuNucleos": [
+      0.58,
+      0.45,
+      0.38
+    ],
+    "memory": {
+      "rss": 125030400
+    },
+    "averagePayloadSize": 230000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562039120,
+    "cpu": "3.37",
+    "cpuNucleos": [
+      0.61,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 129631573
+    },
+    "averagePayloadSize": 235000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562043122,
+    "cpu": "3.38",
+    "cpuNucleos": [
+      0.57,
+      0.45,
+      0.38
+    ],
+    "memory": {
+      "rss": 130801664
+    },
+    "averagePayloadSize": 240000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562047123,
+    "cpu": "3.38",
+    "cpuNucleos": [
+      0.6,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 126106283
+    },
+    "averagePayloadSize": 245000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562051127,
+    "cpu": "3.38",
+    "cpuNucleos": [
+      0.6,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 127709184
+    },
+    "averagePayloadSize": 250000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562055128,
+    "cpu": "3.39",
+    "cpuNucleos": [
+      0.63,
+      0.47,
+      0.39
+    ],
+    "memory": {
+      "rss": 130046635
+    },
+    "averagePayloadSize": 255000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562059133,
+    "cpu": "3.39",
+    "cpuNucleos": [
+      0.58,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 127522133
+    },
+    "averagePayloadSize": 260000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562063135,
+    "cpu": "3.40",
+    "cpuNucleos": [
+      0.54,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 126070784
+    },
+    "averagePayloadSize": 265000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562067137,
+    "cpu": "3.40",
+    "cpuNucleos": [
+      0.57,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 130606421
+    },
+    "averagePayloadSize": 270000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562071140,
+    "cpu": "3.41",
+    "cpuNucleos": [
+      0.57,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 126805333
+    },
+    "averagePayloadSize": 275000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562075142,
+    "cpu": "3.41",
+    "cpuNucleos": [
+      0.61,
+      0.47,
+      0.39
+    ],
+    "memory": {
+      "rss": 128307200
+    },
+    "averagePayloadSize": 280000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562079146,
+    "cpu": "3.42",
+    "cpuNucleos": [
+      0.56,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 124611243
+    },
+    "averagePayloadSize": 285000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562083149,
+    "cpu": "3.42",
+    "cpuNucleos": [
+      0.51,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 127621803
+    },
+    "averagePayloadSize": 290000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562087151,
+    "cpu": "3.43",
+    "cpuNucleos": [
+      0.55,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 128562517
+    },
+    "averagePayloadSize": 295000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562091154,
+    "cpu": "3.43",
+    "cpuNucleos": [
+      0.55,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 128824661
+    },
+    "averagePayloadSize": 300000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562095158,
+    "cpu": "3.44",
+    "cpuNucleos": [
+      0.51,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 129160533
+    },
+    "averagePayloadSize": 305000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562099160,
+    "cpu": "3.45",
+    "cpuNucleos": [
+      0.47,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 129187840
+    },
+    "averagePayloadSize": 310000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562103163,
+    "cpu": "3.45",
+    "cpuNucleos": [
+      0.43,
+      0.44,
+      0.38
+    ],
+    "memory": {
+      "rss": 126948693
+    },
+    "averagePayloadSize": 315000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562107165,
+    "cpu": "3.46",
+    "cpuNucleos": [
+      0.48,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 126599168
+    },
+    "averagePayloadSize": 320000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562111167,
+    "cpu": "3.46",
+    "cpuNucleos": [
+      0.48,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 126941867
+    },
+    "averagePayloadSize": 325000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562115169,
+    "cpu": "3.47",
+    "cpuNucleos": [
+      0.52,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 127191723
+    },
+    "averagePayloadSize": 330000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562119174,
+    "cpu": "3.48",
+    "cpuNucleos": [
+      0.48,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 131198976
+    },
+    "averagePayloadSize": 335000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562123177,
+    "cpu": "3.48",
+    "cpuNucleos": [
+      0.44,
+      0.44,
+      0.39
+    ],
+    "memory": {
+      "rss": 132450987
+    },
+    "averagePayloadSize": 340000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562127178,
+    "cpu": "3.49",
+    "cpuNucleos": [
+      0.48,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 129103189
+    },
+    "averagePayloadSize": 345000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562131181,
+    "cpu": "3.49",
+    "cpuNucleos": [
+      0.48,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 126952789
+    },
+    "averagePayloadSize": 350000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562135182,
+    "cpu": "3.49",
+    "cpuNucleos": [
+      0.52,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 128345429
+    },
+    "averagePayloadSize": 355000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562139184,
+    "cpu": "3.50",
+    "cpuNucleos": [
+      0.48,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 124065109
+    },
+    "averagePayloadSize": 360000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562143186,
+    "cpu": "3.50",
+    "cpuNucleos": [
+      0.44,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 124185259
+    },
+    "averagePayloadSize": 365000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562147190,
+    "cpu": "3.50",
+    "cpuNucleos": [
+      0.49,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 124115627
+    },
+    "averagePayloadSize": 370000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562151192,
+    "cpu": "3.51",
+    "cpuNucleos": [
+      0.49,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 129019904
+    },
+    "averagePayloadSize": 375000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562155193,
+    "cpu": "3.51",
+    "cpuNucleos": [
+      0.53,
+      0.47,
+      0.39
+    ],
+    "memory": {
+      "rss": 129549653
+    },
+    "averagePayloadSize": 380000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562159196,
+    "cpu": "3.51",
+    "cpuNucleos": [
+      0.49,
+      0.46,
+      0.39
+    ],
+    "memory": {
+      "rss": 134434816
+    },
+    "averagePayloadSize": 385000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562163198,
+    "cpu": "3.52",
+    "cpuNucleos": [
+      0.45,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 124837888
+    },
+    "averagePayloadSize": 390000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562167200,
+    "cpu": "3.52",
+    "cpuNucleos": [
+      0.41,
+      0.44,
+      0.39
+    ],
+    "memory": {
+      "rss": 131548501
+    },
+    "averagePayloadSize": 395000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562171201,
+    "cpu": "3.52",
+    "cpuNucleos": [
+      0.41,
+      0.44,
+      0.39
+    ],
+    "memory": {
+      "rss": 125674837
+    },
+    "averagePayloadSize": 400000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562175205,
+    "cpu": "3.53",
+    "cpuNucleos": [
+      0.46,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 127496192
+    },
+    "averagePayloadSize": 405000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562179208,
+    "cpu": "3.53",
+    "cpuNucleos": [
+      0.42,
+      0.44,
+      0.39
+    ],
+    "memory": {
+      "rss": 129363968
+    },
+    "averagePayloadSize": 410000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562183212,
+    "cpu": "3.53",
+    "cpuNucleos": [
+      0.39,
+      0.44,
+      0.39
+    ],
+    "memory": {
+      "rss": 124884309
+    },
+    "averagePayloadSize": 415000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562187213,
+    "cpu": "3.54",
+    "cpuNucleos": [
+      0.44,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 131568981
+    },
+    "averagePayloadSize": 420000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562191214,
+    "cpu": "3.54",
+    "cpuNucleos": [
+      0.44,
+      0.45,
+      0.39
+    ],
+    "memory": {
+      "rss": 134856704
+    },
+    "averagePayloadSize": 425000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562195216,
+    "cpu": "3.54",
+    "cpuNucleos": [
+      0.4,
+      0.44,
+      0.39
+    ],
+    "memory": {
+      "rss": 129693013
+    },
+    "averagePayloadSize": 430000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562199218,
+    "cpu": "3.55",
+    "cpuNucleos": [
+      0.37,
+      0.43,
+      0.38
+    ],
+    "memory": {
+      "rss": 127463424
+    },
+    "averagePayloadSize": 435000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562203221,
+    "cpu": "3.55",
+    "cpuNucleos": [
+      0.34,
+      0.42,
+      0.38
+    ],
+    "memory": {
+      "rss": 132030464
+    },
+    "averagePayloadSize": 440000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562207223,
+    "cpu": "3.56",
+    "cpuNucleos": [
+      0.34,
+      0.42,
+      0.38
+    ],
+    "memory": {
+      "rss": 132278955
+    },
+    "averagePayloadSize": 445000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562211224,
+    "cpu": "3.56",
+    "cpuNucleos": [
+      0.39,
+      0.43,
+      0.39
+    ],
+    "memory": {
+      "rss": 132218880
+    },
+    "averagePayloadSize": 450000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562215225,
+    "cpu": "3.57",
+    "cpuNucleos": [
+      0.36,
+      0.43,
+      0.38
+    ],
+    "memory": {
+      "rss": 129048576
+    },
+    "averagePayloadSize": 455000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562219227,
+    "cpu": "3.57",
+    "cpuNucleos": [
+      0.33,
+      0.42,
+      0.38
+    ],
+    "memory": {
+      "rss": 131448832
+    },
+    "averagePayloadSize": 460000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562223232,
+    "cpu": "3.58",
+    "cpuNucleos": [
+      0.31,
+      0.41,
+      0.38
+    ],
+    "memory": {
+      "rss": 129086805
+    },
+    "averagePayloadSize": 465000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562227233,
+    "cpu": "3.58",
+    "cpuNucleos": [
+      0.31,
+      0.41,
+      0.38
+    ],
+    "memory": {
+      "rss": 126070784
+    },
+    "averagePayloadSize": 470000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562231237,
+    "cpu": "3.59",
+    "cpuNucleos": [
+      0.28,
+      0.4,
+      0.38
+    ],
+    "memory": {
+      "rss": 131213995
+    },
+    "averagePayloadSize": 475000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562235242,
+    "cpu": "3.59",
+    "cpuNucleos": [
+      0.34,
+      0.41,
+      0.38
+    ],
+    "memory": {
+      "rss": 134060715
+    },
+    "averagePayloadSize": 480000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562239244,
+    "cpu": "3.59",
+    "cpuNucleos": [
+      0.31,
+      0.41,
+      0.38
+    ],
+    "memory": {
+      "rss": 134303744
+    },
+    "averagePayloadSize": 485000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562243247,
+    "cpu": "3.60",
+    "cpuNucleos": [
+      0.29,
+      0.4,
+      0.37
+    ],
+    "memory": {
+      "rss": 132629845
+    },
+    "averagePayloadSize": 490000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562247248,
+    "cpu": "3.60",
+    "cpuNucleos": [
+      0.29,
+      0.4,
+      0.37
+    ],
+    "memory": {
+      "rss": 127351467
+    },
+    "averagePayloadSize": 495000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729562251249,
+    "cpu": "3.61",
+    "cpuNucleos": [
+      0.34,
+      0.41,
+      0.38
+    ],
+    "memory": {
+      "rss": 127395157
+    },
+    "averagePayloadSize": 500000,
+    "nOfThreads": "3"
+  },
+  {
+    "timestamp": 1729564007814,
+    "cpu": "1.27",
+    "cpuNucleos": [
+      0.08,
+      0.3,
+      0.24
+    ],
+    "memory": {
+      "rss": 77971456
+    },
+    "averagePayloadSize": 5000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564011815,
+    "cpu": "1.36",
+    "cpuNucleos": [
+      0.16,
+      0.31,
+      0.24
+    ],
+    "memory": {
+      "rss": 96286720
+    },
+    "averagePayloadSize": 10000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564015817,
+    "cpu": "1.46",
+    "cpuNucleos": [
+      0.23,
+      0.32,
+      0.25
+    ],
+    "memory": {
+      "rss": 107709440
+    },
+    "averagePayloadSize": 15000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564019818,
+    "cpu": "1.56",
+    "cpuNucleos": [
+      0.23,
+      0.32,
+      0.25
+    ],
+    "memory": {
+      "rss": 108274688
+    },
+    "averagePayloadSize": 20000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564023819,
+    "cpu": "1.65",
+    "cpuNucleos": [
+      0.29,
+      0.33,
+      0.25
+    ],
+    "memory": {
+      "rss": 108242944
+    },
+    "averagePayloadSize": 25000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564027820,
+    "cpu": "1.74",
+    "cpuNucleos": [
+      0.35,
+      0.35,
+      0.26
+    ],
+    "memory": {
+      "rss": 110540800
+    },
+    "averagePayloadSize": 30000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564031819,
+    "cpu": "1.83",
+    "cpuNucleos": [
+      0.4,
+      0.36,
+      0.26
+    ],
+    "memory": {
+      "rss": 113784832
+    },
+    "averagePayloadSize": 35000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564035820,
+    "cpu": "1.92",
+    "cpuNucleos": [
+      0.45,
+      0.37,
+      0.27
+    ],
+    "memory": {
+      "rss": 117264384
+    },
+    "averagePayloadSize": 40000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564039820,
+    "cpu": "2.01",
+    "cpuNucleos": [
+      0.45,
+      0.37,
+      0.27
+    ],
+    "memory": {
+      "rss": 120391680
+    },
+    "averagePayloadSize": 45000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564043820,
+    "cpu": "2.09",
+    "cpuNucleos": [
+      0.49,
+      0.38,
+      0.27
+    ],
+    "memory": {
+      "rss": 124889088
+    },
+    "averagePayloadSize": 50000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564047820,
+    "cpu": "2.17",
+    "cpuNucleos": [
+      0.53,
+      0.39,
+      0.28
+    ],
+    "memory": {
+      "rss": 127253504
+    },
+    "averagePayloadSize": 55000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564051820,
+    "cpu": "2.25",
+    "cpuNucleos": [
+      0.57,
+      0.4,
+      0.28
+    ],
+    "memory": {
+      "rss": 133338112
+    },
+    "averagePayloadSize": 60000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564055821,
+    "cpu": "2.33",
+    "cpuNucleos": [
+      0.6,
+      0.41,
+      0.28
+    ],
+    "memory": {
+      "rss": 142928896
+    },
+    "averagePayloadSize": 65000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564059820,
+    "cpu": "2.41",
+    "cpuNucleos": [
+      0.6,
+      0.41,
+      0.28
+    ],
+    "memory": {
+      "rss": 151903232
+    },
+    "averagePayloadSize": 70000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564063821,
+    "cpu": "2.48",
+    "cpuNucleos": [
+      0.64,
+      0.42,
+      0.29
+    ],
+    "memory": {
+      "rss": 150999040
+    },
+    "averagePayloadSize": 75000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564067821,
+    "cpu": "2.55",
+    "cpuNucleos": [
+      0.66,
+      0.43,
+      0.29
+    ],
+    "memory": {
+      "rss": 150050816
+    },
+    "averagePayloadSize": 80000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564071839,
+    "cpu": "2.61",
+    "cpuNucleos": [
+      0.69,
+      0.44,
+      0.29
+    ],
+    "memory": {
+      "rss": 149102592
+    },
+    "averagePayloadSize": 85000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564075839,
+    "cpu": "2.68",
+    "cpuNucleos": [
+      0.72,
+      0.45,
+      0.3
+    ],
+    "memory": {
+      "rss": 149102592
+    },
+    "averagePayloadSize": 90000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564079841,
+    "cpu": "2.75",
+    "cpuNucleos": [
+      0.72,
+      0.45,
+      0.3
+    ],
+    "memory": {
+      "rss": 149102592
+    },
+    "averagePayloadSize": 95000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564083842,
+    "cpu": "2.82",
+    "cpuNucleos": [
+      0.74,
+      0.46,
+      0.3
+    ],
+    "memory": {
+      "rss": 148213760
+    },
+    "averagePayloadSize": 100000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564087843,
+    "cpu": "2.90",
+    "cpuNucleos": [
+      0.76,
+      0.47,
+      0.31
+    ],
+    "memory": {
+      "rss": 148213760
+    },
+    "averagePayloadSize": 105000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564091844,
+    "cpu": "2.97",
+    "cpuNucleos": [
+      0.78,
+      0.48,
+      0.31
+    ],
+    "memory": {
+      "rss": 148213760
+    },
+    "averagePayloadSize": 110000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564095844,
+    "cpu": "3.03",
+    "cpuNucleos": [
+      0.8,
+      0.49,
+      0.31
+    ],
+    "memory": {
+      "rss": 148213760
+    },
+    "averagePayloadSize": 115000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564099866,
+    "cpu": "3.10",
+    "cpuNucleos": [
+      0.8,
+      0.49,
+      0.31
+    ],
+    "memory": {
+      "rss": 148213760
+    },
+    "averagePayloadSize": 120000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564103847,
+    "cpu": "3.17",
+    "cpuNucleos": [
+      0.81,
+      0.49,
+      0.32
+    ],
+    "memory": {
+      "rss": 147647488
+    },
+    "averagePayloadSize": 125000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564107849,
+    "cpu": "3.23",
+    "cpuNucleos": [
+      0.83,
+      0.5,
+      0.32
+    ],
+    "memory": {
+      "rss": 147369984
+    },
+    "averagePayloadSize": 130000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564111851,
+    "cpu": "3.29",
+    "cpuNucleos": [
+      0.84,
+      0.51,
+      0.33
+    ],
+    "memory": {
+      "rss": 147369984
+    },
+    "averagePayloadSize": 135000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564115851,
+    "cpu": "3.35",
+    "cpuNucleos": [
+      0.86,
+      0.52,
+      0.33
+    ],
+    "memory": {
+      "rss": 147369984
+    },
+    "averagePayloadSize": 140000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564119851,
+    "cpu": "3.40",
+    "cpuNucleos": [
+      0.86,
+      0.52,
+      0.33
+    ],
+    "memory": {
+      "rss": 147558400
+    },
+    "averagePayloadSize": 145000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564123851,
+    "cpu": "3.45",
+    "cpuNucleos": [
+      0.95,
+      0.54,
+      0.34
+    ],
+    "memory": {
+      "rss": 147558400
+    },
+    "averagePayloadSize": 150000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564127852,
+    "cpu": "3.49",
+    "cpuNucleos": [
+      0.95,
+      0.55,
+      0.34
+    ],
+    "memory": {
+      "rss": 147558400
+    },
+    "averagePayloadSize": 155000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564131853,
+    "cpu": "3.54",
+    "cpuNucleos": [
+      0.96,
+      0.56,
+      0.35
+    ],
+    "memory": {
+      "rss": 148319232
+    },
+    "averagePayloadSize": 160000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564135856,
+    "cpu": "3.58",
+    "cpuNucleos": [
+      0.88,
+      0.55,
+      0.35
+    ],
+    "memory": {
+      "rss": 147603456
+    },
+    "averagePayloadSize": 165000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564139856,
+    "cpu": "3.62",
+    "cpuNucleos": [
+      0.88,
+      0.55,
+      0.35
+    ],
+    "memory": {
+      "rss": 147603456
+    },
+    "averagePayloadSize": 170000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564143861,
+    "cpu": "3.65",
+    "cpuNucleos": [
+      0.89,
+      0.56,
+      0.35
+    ],
+    "memory": {
+      "rss": 152165376
+    },
+    "averagePayloadSize": 175000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564147863,
+    "cpu": "3.70",
+    "cpuNucleos": [
+      0.9,
+      0.57,
+      0.35
+    ],
+    "memory": {
+      "rss": 156676096
+    },
+    "averagePayloadSize": 180000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564151863,
+    "cpu": "3.73",
+    "cpuNucleos": [
+      0.91,
+      0.57,
+      0.36
+    ],
+    "memory": {
+      "rss": 154827776
+    },
+    "averagePayloadSize": 185000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564155865,
+    "cpu": "3.76",
+    "cpuNucleos": [
+      0.83,
+      0.56,
+      0.35
+    ],
+    "memory": {
+      "rss": 149282816
+    },
+    "averagePayloadSize": 190000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564159866,
+    "cpu": "3.80",
+    "cpuNucleos": [
+      0.83,
+      0.56,
+      0.35
+    ],
+    "memory": {
+      "rss": 149282816
+    },
+    "averagePayloadSize": 195000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564164867,
+    "cpu": "3.83",
+    "cpuNucleos": [
+      0.85,
+      0.57,
+      0.36
+    ],
+    "memory": {
+      "rss": 149428224
+    },
+    "averagePayloadSize": 200000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564168867,
+    "cpu": "3.87",
+    "cpuNucleos": [
+      0.94,
+      0.59,
+      0.37
+    ],
+    "memory": {
+      "rss": 149706752
+    },
+    "averagePayloadSize": 205000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564172873,
+    "cpu": "3.90",
+    "cpuNucleos": [
+      0.95,
+      0.6,
+      0.37
+    ],
+    "memory": {
+      "rss": 150683648
+    },
+    "averagePayloadSize": 210000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564176881,
+    "cpu": "3.92",
+    "cpuNucleos": [
+      0.87,
+      0.59,
+      0.37
+    ],
+    "memory": {
+      "rss": 151442432
+    },
+    "averagePayloadSize": 215000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564180882,
+    "cpu": "3.95",
+    "cpuNucleos": [
+      0.88,
+      0.6,
+      0.37
+    ],
+    "memory": {
+      "rss": 151535616
+    },
+    "averagePayloadSize": 220000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564184882,
+    "cpu": "3.98",
+    "cpuNucleos": [
+      0.88,
+      0.6,
+      0.37
+    ],
+    "memory": {
+      "rss": 152248320
+    },
+    "averagePayloadSize": 225000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564188882,
+    "cpu": "4.01",
+    "cpuNucleos": [
+      0.89,
+      0.6,
+      0.38
+    ],
+    "memory": {
+      "rss": 153120768
+    },
+    "averagePayloadSize": 230000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564192883,
+    "cpu": "4.03",
+    "cpuNucleos": [
+      0.9,
+      0.61,
+      0.38
+    ],
+    "memory": {
+      "rss": 154750976
+    },
+    "averagePayloadSize": 235000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564196885,
+    "cpu": "4.05",
+    "cpuNucleos": [
+      0.83,
+      0.6,
+      0.38
+    ],
+    "memory": {
+      "rss": 154711040
+    },
+    "averagePayloadSize": 240000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564200887,
+    "cpu": "4.09",
+    "cpuNucleos": [
+      0.84,
+      0.61,
+      0.38
+    ],
+    "memory": {
+      "rss": 152893440
+    },
+    "averagePayloadSize": 245000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564204889,
+    "cpu": "4.12",
+    "cpuNucleos": [
+      0.84,
+      0.61,
+      0.38
+    ],
+    "memory": {
+      "rss": 151038976
+    },
+    "averagePayloadSize": 250000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564208910,
+    "cpu": "4.15",
+    "cpuNucleos": [
+      0.85,
+      0.62,
+      0.38
+    ],
+    "memory": {
+      "rss": 155676672
+    },
+    "averagePayloadSize": 255000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564212908,
+    "cpu": "4.19",
+    "cpuNucleos": [
+      0.87,
+      0.62,
+      0.39
+    ],
+    "memory": {
+      "rss": 165735424
+    },
+    "averagePayloadSize": 260000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564216912,
+    "cpu": "4.22",
+    "cpuNucleos": [
+      0.88,
+      0.63,
+      0.39
+    ],
+    "memory": {
+      "rss": 164855808
+    },
+    "averagePayloadSize": 265000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564220922,
+    "cpu": "4.25",
+    "cpuNucleos": [
+      0.81,
+      0.62,
+      0.39
+    ],
+    "memory": {
+      "rss": 163842048
+    },
+    "averagePayloadSize": 270000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564224929,
+    "cpu": "4.29",
+    "cpuNucleos": [
+      0.81,
+      0.62,
+      0.39
+    ],
+    "memory": {
+      "rss": 163909632
+    },
+    "averagePayloadSize": 275000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564228931,
+    "cpu": "4.33",
+    "cpuNucleos": [
+      0.82,
+      0.62,
+      0.39
+    ],
+    "memory": {
+      "rss": 163878912
+    },
+    "averagePayloadSize": 280000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564232935,
+    "cpu": "4.38",
+    "cpuNucleos": [
+      0.92,
+      0.65,
+      0.4
+    ],
+    "memory": {
+      "rss": 168125440
+    },
+    "averagePayloadSize": 285000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564236937,
+    "cpu": "4.43",
+    "cpuNucleos": [
+      1.72,
+      0.82,
+      0.46
+    ],
+    "memory": {
+      "rss": 163186688
+    },
+    "averagePayloadSize": 290000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564240937,
+    "cpu": "4.50",
+    "cpuNucleos": [
+      1.67,
+      0.82,
+      0.46
+    ],
+    "memory": {
+      "rss": 163225600
+    },
+    "averagePayloadSize": 295000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564244937,
+    "cpu": "4.55",
+    "cpuNucleos": [
+      1.67,
+      0.82,
+      0.46
+    ],
+    "memory": {
+      "rss": 163139584
+    },
+    "averagePayloadSize": 300000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564248948,
+    "cpu": "4.57",
+    "cpuNucleos": [
+      1.61,
+      0.83,
+      0.46
+    ],
+    "memory": {
+      "rss": 163221504
+    },
+    "averagePayloadSize": 305000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564252948,
+    "cpu": "4.59",
+    "cpuNucleos": [
+      1.56,
+      0.83,
+      0.47
+    ],
+    "memory": {
+      "rss": 163345203
+    },
+    "averagePayloadSize": 310000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564257950,
+    "cpu": "4.61",
+    "cpuNucleos": [
+      1.52,
+      0.83,
+      0.47
+    ],
+    "memory": {
+      "rss": 163555328
+    },
+    "averagePayloadSize": 315000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564261950,
+    "cpu": "4.63",
+    "cpuNucleos": [
+      1.4,
+      0.82,
+      0.47
+    ],
+    "memory": {
+      "rss": 164140032
+    },
+    "averagePayloadSize": 320000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564265953,
+    "cpu": "4.65",
+    "cpuNucleos": [
+      1.28,
+      0.8,
+      0.46
+    ],
+    "memory": {
+      "rss": 164067328
+    },
+    "averagePayloadSize": 325000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564269965,
+    "cpu": "4.66",
+    "cpuNucleos": [
+      1.28,
+      0.8,
+      0.46
+    ],
+    "memory": {
+      "rss": 167393280
+    },
+    "averagePayloadSize": 330000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564274050,
+    "cpu": "4.67",
+    "cpuNucleos": [
+      1.26,
+      0.81,
+      0.47
+    ],
+    "memory": {
+      "rss": 166057984
+    },
+    "averagePayloadSize": 335000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564278070,
+    "cpu": "4.69",
+    "cpuNucleos": [
+      1.24,
+      0.81,
+      0.47
+    ],
+    "memory": {
+      "rss": 171352064
+    },
+    "averagePayloadSize": 340000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564282088,
+    "cpu": "4.72",
+    "cpuNucleos": [
+      1.14,
+      0.8,
+      0.47
+    ],
+    "memory": {
+      "rss": 169650176
+    },
+    "averagePayloadSize": 345000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564286092,
+    "cpu": "4.74",
+    "cpuNucleos": [
+      1.05,
+      0.78,
+      0.46
+    ],
+    "memory": {
+      "rss": 165132288
+    },
+    "averagePayloadSize": 350000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564290093,
+    "cpu": "4.77",
+    "cpuNucleos": [
+      1.05,
+      0.78,
+      0.46
+    ],
+    "memory": {
+      "rss": 164737024
+    },
+    "averagePayloadSize": 355000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564294099,
+    "cpu": "4.79",
+    "cpuNucleos": [
+      1.04,
+      0.79,
+      0.47
+    ],
+    "memory": {
+      "rss": 165138432
+    },
+    "averagePayloadSize": 360000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564298101,
+    "cpu": "4.81",
+    "cpuNucleos": [
+      1.04,
+      0.79,
+      0.47
+    ],
+    "memory": {
+      "rss": 164292608
+    },
+    "averagePayloadSize": 365000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564302102,
+    "cpu": "4.84",
+    "cpuNucleos": [
+      1.04,
+      0.8,
+      0.47
+    ],
+    "memory": {
+      "rss": 166553600
+    },
+    "averagePayloadSize": 370000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564306102,
+    "cpu": "4.87",
+    "cpuNucleos": [
+      0.95,
+      0.78,
+      0.47
+    ],
+    "memory": {
+      "rss": 167766016
+    },
+    "averagePayloadSize": 375000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564310112,
+    "cpu": "4.89",
+    "cpuNucleos": [
+      0.95,
+      0.78,
+      0.47
+    ],
+    "memory": {
+      "rss": 167645184
+    },
+    "averagePayloadSize": 380000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564314116,
+    "cpu": "4.92",
+    "cpuNucleos": [
+      0.88,
+      0.77,
+      0.47
+    ],
+    "memory": {
+      "rss": 166514688
+    },
+    "averagePayloadSize": 385000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564319115,
+    "cpu": "4.94",
+    "cpuNucleos": [
+      0.89,
+      0.77,
+      0.47
+    ],
+    "memory": {
+      "rss": 167867733
+    },
+    "averagePayloadSize": 390000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564323120,
+    "cpu": "4.96",
+    "cpuNucleos": [
+      0.9,
+      0.78,
+      0.47
+    ],
+    "memory": {
+      "rss": 166241280
+    },
+    "averagePayloadSize": 395000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564327128,
+    "cpu": "4.98",
+    "cpuNucleos": [
+      0.82,
+      0.76,
+      0.47
+    ],
+    "memory": {
+      "rss": 168867840
+    },
+    "averagePayloadSize": 400000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564331129,
+    "cpu": "5.00",
+    "cpuNucleos": [
+      0.84,
+      0.77,
+      0.47
+    ],
+    "memory": {
+      "rss": 169120768
+    },
+    "averagePayloadSize": 405000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564335137,
+    "cpu": "5.02",
+    "cpuNucleos": [
+      0.84,
+      0.77,
+      0.47
+    ],
+    "memory": {
+      "rss": 166493184
+    },
+    "averagePayloadSize": 410000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564339140,
+    "cpu": "5.04",
+    "cpuNucleos": [
+      0.85,
+      0.77,
+      0.47
+    ],
+    "memory": {
+      "rss": 167640064
+    },
+    "averagePayloadSize": 415000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564343144,
+    "cpu": "5.06",
+    "cpuNucleos": [
+      1.18,
+      0.84,
+      0.5
+    ],
+    "memory": {
+      "rss": 164140032
+    },
+    "averagePayloadSize": 420000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564347149,
+    "cpu": "5.08",
+    "cpuNucleos": [
+      1.09,
+      0.83,
+      0.5
+    ],
+    "memory": {
+      "rss": 162738176
+    },
+    "averagePayloadSize": 425000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564351151,
+    "cpu": "5.10",
+    "cpuNucleos": [
+      1.08,
+      0.83,
+      0.5
+    ],
+    "memory": {
+      "rss": 167619584
+    },
+    "averagePayloadSize": 430000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564355157,
+    "cpu": "5.12",
+    "cpuNucleos": [
+      1.08,
+      0.83,
+      0.5
+    ],
+    "memory": {
+      "rss": 161171456
+    },
+    "averagePayloadSize": 435000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564359158,
+    "cpu": "5.13",
+    "cpuNucleos": [
+      1.07,
+      0.83,
+      0.5
+    ],
+    "memory": {
+      "rss": 160575488
+    },
+    "averagePayloadSize": 440000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564363159,
+    "cpu": "5.15",
+    "cpuNucleos": [
+      1.07,
+      0.84,
+      0.51
+    ],
+    "memory": {
+      "rss": 164563968
+    },
+    "averagePayloadSize": 445000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564367164,
+    "cpu": "5.17",
+    "cpuNucleos": [
+      1.06,
+      0.84,
+      0.51
+    ],
+    "memory": {
+      "rss": 161882112
+    },
+    "averagePayloadSize": 450000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564371177,
+    "cpu": "5.19",
+    "cpuNucleos": [
+      0.98,
+      0.83,
+      0.51
+    ],
+    "memory": {
+      "rss": 166519808
+    },
+    "averagePayloadSize": 455000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564375187,
+    "cpu": "5.20",
+    "cpuNucleos": [
+      0.98,
+      0.83,
+      0.51
+    ],
+    "memory": {
+      "rss": 166938624
+    },
+    "averagePayloadSize": 460000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564380187,
+    "cpu": "5.21",
+    "cpuNucleos": [
+      0.98,
+      0.83,
+      0.51
+    ],
+    "memory": {
+      "rss": 156411221
+    },
+    "averagePayloadSize": 465000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564384189,
+    "cpu": "5.22",
+    "cpuNucleos": [
+      0.98,
+      0.83,
+      0.51
+    ],
+    "memory": {
+      "rss": 160518144
+    },
+    "averagePayloadSize": 470000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564388191,
+    "cpu": "5.23",
+    "cpuNucleos": [
+      0.98,
+      0.83,
+      0.51
+    ],
+    "memory": {
+      "rss": 156266496
+    },
+    "averagePayloadSize": 475000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564392191,
+    "cpu": "5.24",
+    "cpuNucleos": [
+      0.9,
+      0.82,
+      0.51
+    ],
+    "memory": {
+      "rss": 155089920
+    },
+    "averagePayloadSize": 480000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564396193,
+    "cpu": "5.25",
+    "cpuNucleos": [
+      0.83,
+      0.81,
+      0.51
+    ],
+    "memory": {
+      "rss": 162788352
+    },
+    "averagePayloadSize": 485000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564400199,
+    "cpu": "5.25",
+    "cpuNucleos": [
+      0.83,
+      0.81,
+      0.51
+    ],
+    "memory": {
+      "rss": 164791296
+    },
+    "averagePayloadSize": 490000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564404202,
+    "cpu": "5.26",
+    "cpuNucleos": [
+      0.84,
+      0.81,
+      0.51
+    ],
+    "memory": {
+      "rss": 166354944
+    },
+    "averagePayloadSize": 495000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564408202,
+    "cpu": "5.27",
+    "cpuNucleos": [
+      0.94,
+      0.83,
+      0.52
+    ],
+    "memory": {
+      "rss": 162397184
+    },
+    "averagePayloadSize": 500000,
+    "nOfThreads": "48"
+  },
+  {
+    "timestamp": 1729564418205,
+    "cpu": "5.28",
+    "cpuNucleos": [
+      0.87,
+      0.82,
+      0.52
+    ],
+    "memory": {
+      "rss": 185837568
+    },
+    "averagePayloadSize": 5000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564422205,
+    "cpu": "5.30",
+    "cpuNucleos": [
+      0.88,
+      0.82,
+      0.52
+    ],
+    "memory": {
+      "rss": 176502784
+    },
+    "averagePayloadSize": 10000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564426205,
+    "cpu": "5.33",
+    "cpuNucleos": [
+      0.89,
+      0.83,
+      0.53
+    ],
+    "memory": {
+      "rss": 166694912
+    },
+    "averagePayloadSize": 15000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564430205,
+    "cpu": "5.35",
+    "cpuNucleos": [
+      0.89,
+      0.83,
+      0.53
+    ],
+    "memory": {
+      "rss": 166894592
+    },
+    "averagePayloadSize": 20000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564434205,
+    "cpu": "5.38",
+    "cpuNucleos": [
+      0.9,
+      0.83,
+      0.53
+    ],
+    "memory": {
+      "rss": 166961152
+    },
+    "averagePayloadSize": 25000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564438205,
+    "cpu": "5.41",
+    "cpuNucleos": [
+      0.91,
+      0.83,
+      0.53
+    ],
+    "memory": {
+      "rss": 166961152
+    },
+    "averagePayloadSize": 30000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564442205,
+    "cpu": "5.44",
+    "cpuNucleos": [
+      0.92,
+      0.83,
+      0.53
+    ],
+    "memory": {
+      "rss": 166961152
+    },
+    "averagePayloadSize": 35000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564446204,
+    "cpu": "5.46",
+    "cpuNucleos": [
+      0.92,
+      0.84,
+      0.54
+    ],
+    "memory": {
+      "rss": 166961152
+    },
+    "averagePayloadSize": 40000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564450214,
+    "cpu": "5.47",
+    "cpuNucleos": [
+      0.92,
+      0.84,
+      0.54
+    ],
+    "memory": {
+      "rss": 166961152
+    },
+    "averagePayloadSize": 45000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564454229,
+    "cpu": "5.47",
+    "cpuNucleos": [
+      1.01,
+      0.86,
+      0.55
+    ],
+    "memory": {
+      "rss": 168380416
+    },
+    "averagePayloadSize": 50000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564458248,
+    "cpu": "5.49",
+    "cpuNucleos": [
+      1.01,
+      0.86,
+      0.55
+    ],
+    "memory": {
+      "rss": 171286528
+    },
+    "averagePayloadSize": 55000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564462247,
+    "cpu": "5.50",
+    "cpuNucleos": [
+      0.93,
+      0.84,
+      0.54
+    ],
+    "memory": {
+      "rss": 176625664
+    },
+    "averagePayloadSize": 60000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564466278,
+    "cpu": "5.51",
+    "cpuNucleos": [
+      0.93,
+      0.85,
+      0.55
+    ],
+    "memory": {
+      "rss": 186019840
+    },
+    "averagePayloadSize": 65000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564470304,
+    "cpu": "5.53",
+    "cpuNucleos": [
+      0.93,
+      0.85,
+      0.55
+    ],
+    "memory": {
+      "rss": 189677568
+    },
+    "averagePayloadSize": 70000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564474332,
+    "cpu": "5.53",
+    "cpuNucleos": [
+      0.94,
+      0.85,
+      0.55
+    ],
+    "memory": {
+      "rss": 189677568
+    },
+    "averagePayloadSize": 75000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564478373,
+    "cpu": "5.54",
+    "cpuNucleos": [
+      0.95,
+      0.85,
+      0.55
+    ],
+    "memory": {
+      "rss": 189677568
+    },
+    "averagePayloadSize": 80000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564482412,
+    "cpu": "5.55",
+    "cpuNucleos": [
+      0.95,
+      0.86,
+      0.56
+    ],
+    "memory": {
+      "rss": 189677568
+    },
+    "averagePayloadSize": 85000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564486412,
+    "cpu": "5.57",
+    "cpuNucleos": [
+      0.95,
+      0.86,
+      0.56
+    ],
+    "memory": {
+      "rss": 188192768
+    },
+    "averagePayloadSize": 90000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564490411,
+    "cpu": "5.60",
+    "cpuNucleos": [
+      0.95,
+      0.86,
+      0.56
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 95000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564494412,
+    "cpu": "5.62",
+    "cpuNucleos": [
+      0.96,
+      0.86,
+      0.56
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 100000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564498412,
+    "cpu": "5.65",
+    "cpuNucleos": [
+      0.96,
+      0.86,
+      0.56
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 105000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564503413,
+    "cpu": "5.67",
+    "cpuNucleos": [
+      0.96,
+      0.87,
+      0.56
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 110000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564507413,
+    "cpu": "5.69",
+    "cpuNucleos": [
+      0.97,
+      0.87,
+      0.57
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 115000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564511417,
+    "cpu": "5.71",
+    "cpuNucleos": [
+      0.97,
+      0.87,
+      0.57
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 120000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564515417,
+    "cpu": "5.73",
+    "cpuNucleos": [
+      0.97,
+      0.87,
+      0.57
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 125000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564519446,
+    "cpu": "5.75",
+    "cpuNucleos": [
+      0.97,
+      0.87,
+      0.57
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 130000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564523461,
+    "cpu": "5.76",
+    "cpuNucleos": [
+      0.98,
+      0.88,
+      0.57
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 135000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564527466,
+    "cpu": "5.78",
+    "cpuNucleos": [
+      0.98,
+      0.88,
+      0.58
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 140000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564531465,
+    "cpu": "5.80",
+    "cpuNucleos": [
+      0.98,
+      0.88,
+      0.58
+    ],
+    "memory": {
+      "rss": 186707968
+    },
+    "averagePayloadSize": 145000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564535466,
+    "cpu": "5.82",
+    "cpuNucleos": [
+      0.98,
+      0.88,
+      0.58
+    ],
+    "memory": {
+      "rss": 186302464
+    },
+    "averagePayloadSize": 150000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564539466,
+    "cpu": "5.84",
+    "cpuNucleos": [
+      0.98,
+      0.88,
+      0.58
+    ],
+    "memory": {
+      "rss": 185896960
+    },
+    "averagePayloadSize": 155000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564543468,
+    "cpu": "5.86",
+    "cpuNucleos": [
+      0.98,
+      0.88,
+      0.58
+    ],
+    "memory": {
+      "rss": 185896960
+    },
+    "averagePayloadSize": 160000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564547468,
+    "cpu": "5.87",
+    "cpuNucleos": [
+      0.9,
+      0.87,
+      0.58
+    ],
+    "memory": {
+      "rss": 177642496
+    },
+    "averagePayloadSize": 165000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564551469,
+    "cpu": "5.89",
+    "cpuNucleos": [
+      0.83,
+      0.85,
+      0.58
+    ],
+    "memory": {
+      "rss": 174891008
+    },
+    "averagePayloadSize": 170000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564555469,
+    "cpu": "5.91",
+    "cpuNucleos": [
+      0.83,
+      0.85,
+      0.58
+    ],
+    "memory": {
+      "rss": 174891008
+    },
+    "averagePayloadSize": 175000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564559475,
+    "cpu": "5.92",
+    "cpuNucleos": [
+      0.85,
+      0.86,
+      0.58
+    ],
+    "memory": {
+      "rss": 179396608
+    },
+    "averagePayloadSize": 180000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564563476,
+    "cpu": "5.94",
+    "cpuNucleos": [
+      0.86,
+      0.86,
+      0.58
+    ],
+    "memory": {
+      "rss": 180883456
+    },
+    "averagePayloadSize": 185000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564567477,
+    "cpu": "5.95",
+    "cpuNucleos": [
+      0.87,
+      0.86,
+      0.58
+    ],
+    "memory": {
+      "rss": 180883456
+    },
+    "averagePayloadSize": 190000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564571479,
+    "cpu": "5.96",
+    "cpuNucleos": [
+      0.8,
+      0.85,
+      0.58
+    ],
+    "memory": {
+      "rss": 171575296
+    },
+    "averagePayloadSize": 195000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564575502,
+    "cpu": "5.98",
+    "cpuNucleos": [
+      0.8,
+      0.85,
+      0.58
+    ],
+    "memory": {
+      "rss": 168292352
+    },
+    "averagePayloadSize": 200000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564579483,
+    "cpu": "5.99",
+    "cpuNucleos": [
+      0.82,
+      0.85,
+      0.58
+    ],
+    "memory": {
+      "rss": 172971008
+    },
+    "averagePayloadSize": 205000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564583484,
+    "cpu": "6.00",
+    "cpuNucleos": [
+      0.83,
+      0.85,
+      0.59
+    ],
+    "memory": {
+      "rss": 170780672
+    },
+    "averagePayloadSize": 210000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564587485,
+    "cpu": "6.00",
+    "cpuNucleos": [
+      0.84,
+      0.86,
+      0.59
+    ],
+    "memory": {
+      "rss": 168668160
+    },
+    "averagePayloadSize": 215000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564591484,
+    "cpu": "6.00",
+    "cpuNucleos": [
+      0.78,
+      0.84,
+      0.59
+    ],
+    "memory": {
+      "rss": 175096832
+    },
+    "averagePayloadSize": 220000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564595485,
+    "cpu": "6.01",
+    "cpuNucleos": [
+      0.78,
+      0.84,
+      0.59
+    ],
+    "memory": {
+      "rss": 173244416
+    },
+    "averagePayloadSize": 225000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564599491,
+    "cpu": "6.01",
+    "cpuNucleos": [
+      0.71,
+      0.83,
+      0.58
+    ],
+    "memory": {
+      "rss": 172221440
+    },
+    "averagePayloadSize": 230000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564604496,
+    "cpu": "6.02",
+    "cpuNucleos": [
+      0.66,
+      0.81,
+      0.58
+    ],
+    "memory": {
+      "rss": 171775317
+    },
+    "averagePayloadSize": 235000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564608498,
+    "cpu": "6.03",
+    "cpuNucleos": [
+      0.68,
+      0.82,
+      0.58
+    ],
+    "memory": {
+      "rss": 170616149
+    },
+    "averagePayloadSize": 240000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564612499,
+    "cpu": "6.03",
+    "cpuNucleos": [
+      0.63,
+      0.8,
+      0.58
+    ],
+    "memory": {
+      "rss": 172244992
+    },
+    "averagePayloadSize": 245000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564616523,
+    "cpu": "6.03",
+    "cpuNucleos": [
+      0.66,
+      0.81,
+      0.58
+    ],
+    "memory": {
+      "rss": 169398272
+    },
+    "averagePayloadSize": 250000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564620504,
+    "cpu": "6.03",
+    "cpuNucleos": [
+      0.66,
+      0.81,
+      0.58
+    ],
+    "memory": {
+      "rss": 172380160
+    },
+    "averagePayloadSize": 255000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564624505,
+    "cpu": "6.03",
+    "cpuNucleos": [
+      0.69,
+      0.81,
+      0.58
+    ],
+    "memory": {
+      "rss": 166574763
+    },
+    "averagePayloadSize": 260000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564628508,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.63,
+      0.8,
+      0.58
+    ],
+    "memory": {
+      "rss": 170770432
+    },
+    "averagePayloadSize": 265000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564632510,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.58,
+      0.78,
+      0.58
+    ],
+    "memory": {
+      "rss": 173157376
+    },
+    "averagePayloadSize": 270000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564636525,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.53,
+      0.77,
+      0.57
+    ],
+    "memory": {
+      "rss": 174988288
+    },
+    "averagePayloadSize": 275000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564640554,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.53,
+      0.77,
+      0.57
+    ],
+    "memory": {
+      "rss": 171774976
+    },
+    "averagePayloadSize": 280000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564644539,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.57,
+      0.77,
+      0.57
+    ],
+    "memory": {
+      "rss": 176480256
+    },
+    "averagePayloadSize": 285000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564648544,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.61,
+      0.78,
+      0.58
+    ],
+    "memory": {
+      "rss": 179613696
+    },
+    "averagePayloadSize": 290000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564652544,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.56,
+      0.76,
+      0.57
+    ],
+    "memory": {
+      "rss": 179339264
+    },
+    "averagePayloadSize": 295000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564656545,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.51,
+      0.75,
+      0.57
+    ],
+    "memory": {
+      "rss": 178797568
+    },
+    "averagePayloadSize": 300000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564661548,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.47,
+      0.74,
+      0.57
+    ],
+    "memory": {
+      "rss": 173012309
+    },
+    "averagePayloadSize": 305000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564665549,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.47,
+      0.74,
+      0.57
+    ],
+    "memory": {
+      "rss": 177030485
+    },
+    "averagePayloadSize": 310000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564669552,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.51,
+      0.74,
+      0.57
+    ],
+    "memory": {
+      "rss": 177214805
+    },
+    "averagePayloadSize": 315000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564673555,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.55,
+      0.75,
+      0.57
+    ],
+    "memory": {
+      "rss": 179975509
+    },
+    "averagePayloadSize": 320000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564677555,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.51,
+      0.73,
+      0.57
+    ],
+    "memory": {
+      "rss": 178316629
+    },
+    "averagePayloadSize": 325000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564681556,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.47,
+      0.72,
+      0.56
+    ],
+    "memory": {
+      "rss": 178719403
+    },
+    "averagePayloadSize": 330000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564685578,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.47,
+      0.72,
+      0.56
+    ],
+    "memory": {
+      "rss": 184445611
+    },
+    "averagePayloadSize": 335000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564689563,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.51,
+      0.73,
+      0.57
+    ],
+    "memory": {
+      "rss": 180991317
+    },
+    "averagePayloadSize": 340000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564693563,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.55,
+      0.73,
+      0.57
+    ],
+    "memory": {
+      "rss": 181907456
+    },
+    "averagePayloadSize": 345000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564697564,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.5,
+      0.72,
+      0.57
+    ],
+    "memory": {
+      "rss": 175794859
+    },
+    "averagePayloadSize": 350000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564701566,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.46,
+      0.71,
+      0.56
+    ],
+    "memory": {
+      "rss": 179115349
+    },
+    "averagePayloadSize": 355000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564705567,
+    "cpu": "6.04",
+    "cpuNucleos": [
+      0.46,
+      0.71,
+      0.56
+    ],
+    "memory": {
+      "rss": 180519936
+    },
+    "averagePayloadSize": 360000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564709567,
+    "cpu": "6.05",
+    "cpuNucleos": [
+      0.51,
+      0.71,
+      0.57
+    ],
+    "memory": {
+      "rss": 174823424
+    },
+    "averagePayloadSize": 365000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564713568,
+    "cpu": "6.05",
+    "cpuNucleos": [
+      0.55,
+      0.72,
+      0.57
+    ],
+    "memory": {
+      "rss": 176257024
+    },
+    "averagePayloadSize": 370000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564717570,
+    "cpu": "6.05",
+    "cpuNucleos": [
+      0.5,
+      0.7,
+      0.56
+    ],
+    "memory": {
+      "rss": 181836800
+    },
+    "averagePayloadSize": 375000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564721571,
+    "cpu": "6.05",
+    "cpuNucleos": [
+      0.46,
+      0.69,
+      0.56
+    ],
+    "memory": {
+      "rss": 180750336
+    },
+    "averagePayloadSize": 380000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564725575,
+    "cpu": "6.05",
+    "cpuNucleos": [
+      0.46,
+      0.69,
+      0.56
+    ],
+    "memory": {
+      "rss": 178094080
+    },
+    "averagePayloadSize": 385000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564730576,
+    "cpu": "6.05",
+    "cpuNucleos": [
+      0.43,
+      0.68,
+      0.56
+    ],
+    "memory": {
+      "rss": 181755904
+    },
+    "averagePayloadSize": 390000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564734577,
+    "cpu": "6.06",
+    "cpuNucleos": [
+      0.47,
+      0.69,
+      0.56
+    ],
+    "memory": {
+      "rss": 170132821
+    },
+    "averagePayloadSize": 395000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564738578,
+    "cpu": "6.06",
+    "cpuNucleos": [
+      0.51,
+      0.69,
+      0.56
+    ],
+    "memory": {
+      "rss": 182994261
+    },
+    "averagePayloadSize": 400000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564742581,
+    "cpu": "6.06",
+    "cpuNucleos": [
+      0.47,
+      0.68,
+      0.56
+    ],
+    "memory": {
+      "rss": 178576043
+    },
+    "averagePayloadSize": 405000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564746588,
+    "cpu": "6.06",
+    "cpuNucleos": [
+      0.52,
+      0.69,
+      0.56
+    ],
+    "memory": {
+      "rss": 182095872
+    },
+    "averagePayloadSize": 410000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564750614,
+    "cpu": "6.06",
+    "cpuNucleos": [
+      0.52,
+      0.69,
+      0.56
+    ],
+    "memory": {
+      "rss": 179161771
+    },
+    "averagePayloadSize": 415000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564754598,
+    "cpu": "6.07",
+    "cpuNucleos": [
+      0.55,
+      0.69,
+      0.56
+    ],
+    "memory": {
+      "rss": 177179307
+    },
+    "averagePayloadSize": 420000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564758601,
+    "cpu": "6.07",
+    "cpuNucleos": [
+      0.59,
+      0.7,
+      0.57
+    ],
+    "memory": {
+      "rss": 183988224
+    },
+    "averagePayloadSize": 425000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564762602,
+    "cpu": "6.07",
+    "cpuNucleos": [
+      0.54,
+      0.68,
+      0.56
+    ],
+    "memory": {
+      "rss": 181104640
+    },
+    "averagePayloadSize": 430000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564766604,
+    "cpu": "6.07",
+    "cpuNucleos": [
+      0.5,
+      0.67,
+      0.56
+    ],
+    "memory": {
+      "rss": 175477760
+    },
+    "averagePayloadSize": 435000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564770610,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.5,
+      0.67,
+      0.56
+    ],
+    "memory": {
+      "rss": 176483328
+    },
+    "averagePayloadSize": 440000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564774613,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.54,
+      0.68,
+      0.56
+    ],
+    "memory": {
+      "rss": 175698944
+    },
+    "averagePayloadSize": 445000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564778638,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.58,
+      0.68,
+      0.56
+    ],
+    "memory": {
+      "rss": 179804160
+    },
+    "averagePayloadSize": 450000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564783623,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.53,
+      0.67,
+      0.56
+    ],
+    "memory": {
+      "rss": 173968043
+    },
+    "averagePayloadSize": 455000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564787627,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.49,
+      0.66,
+      0.56
+    ],
+    "memory": {
+      "rss": 184116565
+    },
+    "averagePayloadSize": 460000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564791632,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.53,
+      0.67,
+      0.56
+    ],
+    "memory": {
+      "rss": 169125205
+    },
+    "averagePayloadSize": 465000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564795635,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.53,
+      0.67,
+      0.56
+    ],
+    "memory": {
+      "rss": 183077547
+    },
+    "averagePayloadSize": 470000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564799639,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.57,
+      0.67,
+      0.56
+    ],
+    "memory": {
+      "rss": 177934336
+    },
+    "averagePayloadSize": 475000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564803641,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.6,
+      0.68,
+      0.56
+    ],
+    "memory": {
+      "rss": 175217323
+    },
+    "averagePayloadSize": 480000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564807644,
+    "cpu": "6.09",
+    "cpuNucleos": [
+      0.55,
+      0.67,
+      0.56
+    ],
+    "memory": {
+      "rss": 179247104
+    },
+    "averagePayloadSize": 485000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564811647,
+    "cpu": "6.09",
+    "cpuNucleos": [
+      0.51,
+      0.66,
+      0.56
+    ],
+    "memory": {
+      "rss": 172064768
+    },
+    "averagePayloadSize": 490000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564815655,
+    "cpu": "6.09",
+    "cpuNucleos": [
+      0.51,
+      0.66,
+      0.56
+    ],
+    "memory": {
+      "rss": 177423360
+    },
+    "averagePayloadSize": 495000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564820656,
+    "cpu": "6.09",
+    "cpuNucleos": [
+      0.55,
+      0.66,
+      0.56
+    ],
+    "memory": {
+      "rss": 170897408
+    },
+    "averagePayloadSize": 500000,
+    "nOfThreads": "49"
+  },
+  {
+    "timestamp": 1729564829660,
+    "cpu": "6.08",
+    "cpuNucleos": [
+      0.54,
+      0.66,
+      0.56
+    ],
+    "memory": {
+      "rss": 180885504
+    },
+    "averagePayloadSize": 5000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564833660,
+    "cpu": "6.10",
+    "cpuNucleos": [
+      0.58,
+      0.66,
+      0.56
+    ],
+    "memory": {
+      "rss": 173228032
+    },
+    "averagePayloadSize": 10000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564837663,
+    "cpu": "6.10",
+    "cpuNucleos": [
+      0.61,
+      0.67,
+      0.56
+    ],
+    "memory": {
+      "rss": 165232640
+    },
+    "averagePayloadSize": 15000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564841671,
+    "cpu": "6.11",
+    "cpuNucleos": [
+      0.64,
+      0.67,
+      0.57
+    ],
+    "memory": {
+      "rss": 165232640
+    },
+    "averagePayloadSize": 20000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564845671,
+    "cpu": "6.12",
+    "cpuNucleos": [
+      0.64,
+      0.67,
+      0.57
+    ],
+    "memory": {
+      "rss": 165365760
+    },
+    "averagePayloadSize": 25000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564849684,
+    "cpu": "6.13",
+    "cpuNucleos": [
+      0.67,
+      0.68,
+      0.57
+    ],
+    "memory": {
+      "rss": 165498880
+    },
+    "averagePayloadSize": 30000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564853684,
+    "cpu": "6.15",
+    "cpuNucleos": [
+      0.7,
+      0.69,
+      0.57
+    ],
+    "memory": {
+      "rss": 165768192
+    },
+    "averagePayloadSize": 35000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564857684,
+    "cpu": "6.17",
+    "cpuNucleos": [
+      0.72,
+      0.69,
+      0.57
+    ],
+    "memory": {
+      "rss": 166035456
+    },
+    "averagePayloadSize": 40000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564861684,
+    "cpu": "6.19",
+    "cpuNucleos": [
+      0.74,
+      0.7,
+      0.58
+    ],
+    "memory": {
+      "rss": 166035456
+    },
+    "averagePayloadSize": 45000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564865684,
+    "cpu": "6.20",
+    "cpuNucleos": [
+      0.74,
+      0.7,
+      0.58
+    ],
+    "memory": {
+      "rss": 166237184
+    },
+    "averagePayloadSize": 50000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564869707,
+    "cpu": "6.20",
+    "cpuNucleos": [
+      0.76,
+      0.7,
+      0.58
+    ],
+    "memory": {
+      "rss": 170688512
+    },
+    "averagePayloadSize": 55000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564873717,
+    "cpu": "6.20",
+    "cpuNucleos": [
+      0.78,
+      0.71,
+      0.58
+    ],
+    "memory": {
+      "rss": 178704384
+    },
+    "averagePayloadSize": 60000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564877745,
+    "cpu": "6.20",
+    "cpuNucleos": [
+      0.8,
+      0.71,
+      0.58
+    ],
+    "memory": {
+      "rss": 183524352
+    },
+    "averagePayloadSize": 65000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564881764,
+    "cpu": "6.21",
+    "cpuNucleos": [
+      0.82,
+      0.72,
+      0.59
+    ],
+    "memory": {
+      "rss": 183463936
+    },
+    "averagePayloadSize": 70000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564885769,
+    "cpu": "6.22",
+    "cpuNucleos": [
+      0.82,
+      0.72,
+      0.59
+    ],
+    "memory": {
+      "rss": 183463936
+    },
+    "averagePayloadSize": 75000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564889769,
+    "cpu": "6.24",
+    "cpuNucleos": [
+      0.75,
+      0.7,
+      0.58
+    ],
+    "memory": {
+      "rss": 183463936
+    },
+    "averagePayloadSize": 80000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564893768,
+    "cpu": "6.25",
+    "cpuNucleos": [
+      0.77,
+      0.71,
+      0.59
+    ],
+    "memory": {
+      "rss": 183463936
+    },
+    "averagePayloadSize": 85000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564897769,
+    "cpu": "6.26",
+    "cpuNucleos": [
+      0.71,
+      0.7,
+      0.58
+    ],
+    "memory": {
+      "rss": 181244928
+    },
+    "averagePayloadSize": 90000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564901769,
+    "cpu": "6.27",
+    "cpuNucleos": [
+      0.65,
+      0.69,
+      0.58
+    ],
+    "memory": {
+      "rss": 174587904
+    },
+    "averagePayloadSize": 95000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564905809,
+    "cpu": "6.28",
+    "cpuNucleos": [
+      0.65,
+      0.69,
+      0.58
+    ],
+    "memory": {
+      "rss": 174587904
+    },
+    "averagePayloadSize": 100000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564909824,
+    "cpu": "6.28",
+    "cpuNucleos": [
+      0.6,
+      0.67,
+      0.58
+    ],
+    "memory": {
+      "rss": 174587904
+    },
+    "averagePayloadSize": 105000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564913859,
+    "cpu": "6.29",
+    "cpuNucleos": [
+      0.63,
+      0.68,
+      0.58
+    ],
+    "memory": {
+      "rss": 174149632
+    },
+    "averagePayloadSize": 110000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564917859,
+    "cpu": "6.30",
+    "cpuNucleos": [
+      0.66,
+      0.69,
+      0.58
+    ],
+    "memory": {
+      "rss": 173711360
+    },
+    "averagePayloadSize": 115000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564921859,
+    "cpu": "6.32",
+    "cpuNucleos": [
+      0.69,
+      0.69,
+      0.58
+    ],
+    "memory": {
+      "rss": 173711360
+    },
+    "averagePayloadSize": 120000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564925863,
+    "cpu": "6.33",
+    "cpuNucleos": [
+      0.69,
+      0.69,
+      0.58
+    ],
+    "memory": {
+      "rss": 173711360
+    },
+    "averagePayloadSize": 125000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564930890,
+    "cpu": "6.35",
+    "cpuNucleos": [
+      0.71,
+      0.7,
+      0.58
+    ],
+    "memory": {
+      "rss": 174261248
+    },
+    "averagePayloadSize": 130000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564934874,
+    "cpu": "6.36",
+    "cpuNucleos": [
+      0.74,
+      0.7,
+      0.59
+    ],
+    "memory": {
+      "rss": 174444544
+    },
+    "averagePayloadSize": 135000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564938873,
+    "cpu": "6.37",
+    "cpuNucleos": [
+      0.76,
+      0.71,
+      0.59
+    ],
+    "memory": {
+      "rss": 174444544
+    },
+    "averagePayloadSize": 140000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564942894,
+    "cpu": "6.38",
+    "cpuNucleos": [
+      0.7,
+      0.69,
+      0.59
+    ],
+    "memory": {
+      "rss": 173848576
+    },
+    "averagePayloadSize": 145000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564946879,
+    "cpu": "6.38",
+    "cpuNucleos": [
+      0.72,
+      0.7,
+      0.59
+    ],
+    "memory": {
+      "rss": 173649920
+    },
+    "averagePayloadSize": 150000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564950881,
+    "cpu": "6.39",
+    "cpuNucleos": [
+      0.72,
+      0.7,
+      0.59
+    ],
+    "memory": {
+      "rss": 173649920
+    },
+    "averagePayloadSize": 155000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564954882,
+    "cpu": "6.39",
+    "cpuNucleos": [
+      0.74,
+      0.71,
+      0.59
+    ],
+    "memory": {
+      "rss": 173626368
+    },
+    "averagePayloadSize": 160000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564958884,
+    "cpu": "6.40",
+    "cpuNucleos": [
+      0.77,
+      0.71,
+      0.59
+    ],
+    "memory": {
+      "rss": 164548608
+    },
+    "averagePayloadSize": 165000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564962885,
+    "cpu": "6.41",
+    "cpuNucleos": [
+      0.78,
+      0.72,
+      0.6
+    ],
+    "memory": {
+      "rss": 164751360
+    },
+    "averagePayloadSize": 170000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564966887,
+    "cpu": "6.41",
+    "cpuNucleos": [
+      0.72,
+      0.7,
+      0.59
+    ],
+    "memory": {
+      "rss": 171075584
+    },
+    "averagePayloadSize": 175000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564970889,
+    "cpu": "6.42",
+    "cpuNucleos": [
+      0.72,
+      0.7,
+      0.59
+    ],
+    "memory": {
+      "rss": 177491968
+    },
+    "averagePayloadSize": 180000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564974889,
+    "cpu": "6.42",
+    "cpuNucleos": [
+      0.74,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 177491968
+    },
+    "averagePayloadSize": 185000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564978890,
+    "cpu": "6.43",
+    "cpuNucleos": [
+      0.76,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 173209600
+    },
+    "averagePayloadSize": 190000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564982891,
+    "cpu": "6.44",
+    "cpuNucleos": [
+      0.78,
+      0.72,
+      0.6
+    ],
+    "memory": {
+      "rss": 170305536
+    },
+    "averagePayloadSize": 195000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564986892,
+    "cpu": "6.44",
+    "cpuNucleos": [
+      0.72,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 165335040
+    },
+    "averagePayloadSize": 200000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564990893,
+    "cpu": "6.44",
+    "cpuNucleos": [
+      0.72,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 165341184
+    },
+    "averagePayloadSize": 205000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564994895,
+    "cpu": "6.45",
+    "cpuNucleos": [
+      0.74,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 167941120
+    },
+    "averagePayloadSize": 210000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729564998897,
+    "cpu": "6.45",
+    "cpuNucleos": [
+      0.76,
+      0.72,
+      0.6
+    ],
+    "memory": {
+      "rss": 172355584
+    },
+    "averagePayloadSize": 215000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565002897,
+    "cpu": "6.45",
+    "cpuNucleos": [
+      0.78,
+      0.72,
+      0.6
+    ],
+    "memory": {
+      "rss": 172622848
+    },
+    "averagePayloadSize": 220000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565006898,
+    "cpu": "6.45",
+    "cpuNucleos": [
+      0.72,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 169458688
+    },
+    "averagePayloadSize": 225000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565010899,
+    "cpu": "6.46",
+    "cpuNucleos": [
+      0.72,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 164749312
+    },
+    "averagePayloadSize": 230000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565014900,
+    "cpu": "6.46",
+    "cpuNucleos": [
+      0.74,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 164890624
+    },
+    "averagePayloadSize": 235000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565018903,
+    "cpu": "6.46",
+    "cpuNucleos": [
+      0.76,
+      0.72,
+      0.61
+    ],
+    "memory": {
+      "rss": 165580800
+    },
+    "averagePayloadSize": 240000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565022903,
+    "cpu": "6.46",
+    "cpuNucleos": [
+      0.78,
+      0.72,
+      0.61
+    ],
+    "memory": {
+      "rss": 171031552
+    },
+    "averagePayloadSize": 245000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565026902,
+    "cpu": "6.46",
+    "cpuNucleos": [
+      0.72,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 174610432
+    },
+    "averagePayloadSize": 250000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565030905,
+    "cpu": "6.46",
+    "cpuNucleos": [
+      0.72,
+      0.71,
+      0.6
+    ],
+    "memory": {
+      "rss": 168715264
+    },
+    "averagePayloadSize": 255000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565035907,
+    "cpu": "6.47",
+    "cpuNucleos": [
+      0.66,
+      0.7,
+      0.6
+    ],
+    "memory": {
+      "rss": 169152512
+    },
+    "averagePayloadSize": 260000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565039909,
+    "cpu": "6.47",
+    "cpuNucleos": [
+      0.69,
+      0.7,
+      0.6
+    ],
+    "memory": {
+      "rss": 165685931
+    },
+    "averagePayloadSize": 265000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565043911,
+    "cpu": "6.47",
+    "cpuNucleos": [
+      0.71,
+      0.71,
+      0.61
+    ],
+    "memory": {
+      "rss": 177213440
+    },
+    "averagePayloadSize": 270000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565047916,
+    "cpu": "6.47",
+    "cpuNucleos": [
+      0.66,
+      0.7,
+      0.6
+    ],
+    "memory": {
+      "rss": 170072064
+    },
+    "averagePayloadSize": 275000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565051917,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.6,
+      0.69,
+      0.6
+    ],
+    "memory": {
+      "rss": 173960192
+    },
+    "averagePayloadSize": 280000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565055918,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.6,
+      0.69,
+      0.6
+    ],
+    "memory": {
+      "rss": 169135104
+    },
+    "averagePayloadSize": 285000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565059919,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.64,
+      0.69,
+      0.6
+    ],
+    "memory": {
+      "rss": 177838080
+    },
+    "averagePayloadSize": 290000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565063921,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.66,
+      0.7,
+      0.6
+    ],
+    "memory": {
+      "rss": 178608128
+    },
+    "averagePayloadSize": 295000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565067923,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.69,
+      0.7,
+      0.61
+    ],
+    "memory": {
+      "rss": 176225280
+    },
+    "averagePayloadSize": 300000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565071923,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.64,
+      0.69,
+      0.6
+    ],
+    "memory": {
+      "rss": 172007424
+    },
+    "averagePayloadSize": 305000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565075926,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.64,
+      0.69,
+      0.6
+    ],
+    "memory": {
+      "rss": 177649664
+    },
+    "averagePayloadSize": 310000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565079929,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.58,
+      0.68,
+      0.6
+    ],
+    "memory": {
+      "rss": 179602432
+    },
+    "averagePayloadSize": 315000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565084931,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.62,
+      0.68,
+      0.6
+    ],
+    "memory": {
+      "rss": 179593216
+    },
+    "averagePayloadSize": 320000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565088931,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.65,
+      0.69,
+      0.6
+    ],
+    "memory": {
+      "rss": 174058155
+    },
+    "averagePayloadSize": 325000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565092932,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.6,
+      0.68,
+      0.6
+    ],
+    "memory": {
+      "rss": 177134251
+    },
+    "averagePayloadSize": 330000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565096934,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.55,
+      0.67,
+      0.6
+    ],
+    "memory": {
+      "rss": 177381376
+    },
+    "averagePayloadSize": 335000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565100936,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.55,
+      0.67,
+      0.6
+    ],
+    "memory": {
+      "rss": 173296299
+    },
+    "averagePayloadSize": 340000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565104946,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.59,
+      0.67,
+      0.6
+    ],
+    "memory": {
+      "rss": 179219115
+    },
+    "averagePayloadSize": 345000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565108947,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.62,
+      0.68,
+      0.6
+    ],
+    "memory": {
+      "rss": 182977877
+    },
+    "averagePayloadSize": 350000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565112949,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.57,
+      0.67,
+      0.6
+    ],
+    "memory": {
+      "rss": 181269845
+    },
+    "averagePayloadSize": 355000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565116950,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.52,
+      0.65,
+      0.6
+    ],
+    "memory": {
+      "rss": 174584832
+    },
+    "averagePayloadSize": 360000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565120952,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.52,
+      0.65,
+      0.6
+    ],
+    "memory": {
+      "rss": 176878592
+    },
+    "averagePayloadSize": 365000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565124954,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.56,
+      0.66,
+      0.6
+    ],
+    "memory": {
+      "rss": 180417536
+    },
+    "averagePayloadSize": 370000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565128960,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.6,
+      0.67,
+      0.6
+    ],
+    "memory": {
+      "rss": 180954112
+    },
+    "averagePayloadSize": 375000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565132962,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.55,
+      0.66,
+      0.6
+    ],
+    "memory": {
+      "rss": 176024576
+    },
+    "averagePayloadSize": 380000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565137965,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.5,
+      0.64,
+      0.59
+    ],
+    "memory": {
+      "rss": 174945621
+    },
+    "averagePayloadSize": 385000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565141967,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.54,
+      0.65,
+      0.6
+    ],
+    "memory": {
+      "rss": 177569792
+    },
+    "averagePayloadSize": 390000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565145969,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.54,
+      0.65,
+      0.6
+    ],
+    "memory": {
+      "rss": 182382592
+    },
+    "averagePayloadSize": 395000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565149972,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.58,
+      0.66,
+      0.6
+    ],
+    "memory": {
+      "rss": 174473216
+    },
+    "averagePayloadSize": 400000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565153976,
+    "cpu": "6.49",
+    "cpuNucleos": [
+      0.61,
+      0.66,
+      0.6
+    ],
+    "memory": {
+      "rss": 183114411
+    },
+    "averagePayloadSize": 405000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565157977,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.57,
+      0.65,
+      0.6
+    ],
+    "memory": {
+      "rss": 177415509
+    },
+    "averagePayloadSize": 410000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565161978,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.52,
+      0.64,
+      0.59
+    ],
+    "memory": {
+      "rss": 174637056
+    },
+    "averagePayloadSize": 415000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565166014,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.52,
+      0.64,
+      0.59
+    ],
+    "memory": {
+      "rss": 175707477
+    },
+    "averagePayloadSize": 420000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565169997,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.56,
+      0.65,
+      0.6
+    ],
+    "memory": {
+      "rss": 182528683
+    },
+    "averagePayloadSize": 425000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565174001,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.59,
+      0.65,
+      0.6
+    ],
+    "memory": {
+      "rss": 183895040
+    },
+    "averagePayloadSize": 430000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565178003,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.55,
+      0.64,
+      0.6
+    ],
+    "memory": {
+      "rss": 183389184
+    },
+    "averagePayloadSize": 435000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565182023,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.5,
+      0.63,
+      0.59
+    ],
+    "memory": {
+      "rss": 179943424
+    },
+    "averagePayloadSize": 440000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565186008,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.5,
+      0.63,
+      0.59
+    ],
+    "memory": {
+      "rss": 177612800
+    },
+    "averagePayloadSize": 445000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565190010,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.46,
+      0.62,
+      0.59
+    ],
+    "memory": {
+      "rss": 177491968
+    },
+    "averagePayloadSize": 450000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565194012,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.51,
+      0.63,
+      0.59
+    ],
+    "memory": {
+      "rss": 179625984
+    },
+    "averagePayloadSize": 455000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565199014,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.55,
+      0.63,
+      0.59
+    ],
+    "memory": {
+      "rss": 180189867
+    },
+    "averagePayloadSize": 460000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565203015,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.5,
+      0.62,
+      0.59
+    ],
+    "memory": {
+      "rss": 179601408
+    },
+    "averagePayloadSize": 465000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565207016,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.46,
+      0.61,
+      0.59
+    ],
+    "memory": {
+      "rss": 185670315
+    },
+    "averagePayloadSize": 470000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565211018,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.46,
+      0.61,
+      0.59
+    ],
+    "memory": {
+      "rss": 186242389
+    },
+    "averagePayloadSize": 475000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565215019,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.5,
+      0.62,
+      0.59
+    ],
+    "memory": {
+      "rss": 183835307
+    },
+    "averagePayloadSize": 480000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565219020,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.54,
+      0.62,
+      0.59
+    ],
+    "memory": {
+      "rss": 175408469
+    },
+    "averagePayloadSize": 485000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565223022,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.5,
+      0.61,
+      0.59
+    ],
+    "memory": {
+      "rss": 181016576
+    },
+    "averagePayloadSize": 490000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565227023,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.46,
+      0.6,
+      0.58
+    ],
+    "memory": {
+      "rss": 170912768
+    },
+    "averagePayloadSize": 495000,
+    "nOfThreads": "50"
+  },
+  {
+    "timestamp": 1729565231031,
+    "cpu": "6.48",
+    "cpuNucleos": [
+      0.46,
+      0.6,
+      0.58
+    ],
+    "memory": {
+      "rss": 185996288
+    },
+    "averagePayloadSize": 500000,
+    "nOfThreads": "50"
+  }
+]

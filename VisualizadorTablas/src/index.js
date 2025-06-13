@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require('path')
 const fs = require("fs");
+const { log } = require("console");
 
 const app = express();
 const port = 3100;
@@ -8,13 +9,13 @@ const port = 3100;
 // Servir archivos estáticos (como el HTML)
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+app.get("/", (req, res) => {  
   res.sendFile(path.join(__dirname, './public/index.html'))
 });
 
 // REST
 app.get("/latenciaREST", (req, res) => {
-  fs.readFile("../latenciaAVGTotal-REST-FINAL.json", "utf8", (err, data) => {
+  fs.readFile("../latenciaAVGTotal-REST.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de latencia.");
     }
@@ -32,7 +33,7 @@ app.get("/cpu-memoryREST", (req, res) => {
 
 // WEBSOCKET
 app.get("/latenciaWebsocket", (req, res) => {
-  fs.readFile("../latenciaAVGTotal-WEBSOCKET-FINAL.json", "utf8", (err, data) => {
+  fs.readFile("../latenciaAVGTotal-WEBSOCKET.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de latencia.");
     }
@@ -48,15 +49,6 @@ app.get("/cpu-memoryWebsocket", (req, res) => {
   });
 });
 
-// gRPC
-// app.get("/latenciaGRPC", (req, res) => {
-//   fs.readFile("../latenciaAVGTotal-gRPC-FINAL.json", "utf8", (err, data) => {
-//     if (err) {
-//       return res.status(500).send("Error al leer el archivo de latencia.");
-//     }
-//     res.json(JSON.parse(data));
-//   });
-// });
 app.get("/latenciaGRPC", (req, res) => {
   fs.readFile("../latenciaAVGTotal-gRPC.json", "utf8", (err, data) => {
     if (err) {
@@ -75,8 +67,8 @@ app.get("/cpu-memoryGRPC", (req, res) => {
 });
 
 //SERVERs
-app.get("/cpu-memoryRESTServer", (req, res) => {
-  fs.readFile("../cpuMemoryUsage-REST-Server-FINAL.json", "utf8", (err, data) => {
+app.get("/cpu-memoryRESTServer", (req, res) => {  
+  fs.readFile("../cpuMemoryUsage-REST-Server.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de CPU y memoria.");
     }
@@ -85,7 +77,7 @@ app.get("/cpu-memoryRESTServer", (req, res) => {
 });
 
 app.get("/cpu-memoryGRPCServer", (req, res) => {
-  fs.readFile("../cpuMemoryUsage-gRPC-Server-FINAL.json", "utf8", (err, data) => {
+  fs.readFile("../cpuMemoryUsage-gRPC-Server.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de CPU y memoria.");
     }
@@ -94,7 +86,7 @@ app.get("/cpu-memoryGRPCServer", (req, res) => {
 });
 
 app.get("/cpu-memoryWebsocketServer", (req, res) => {
-  fs.readFile("../cpuMemoryUsage-Websocket-Server-FINAL.json", "utf8", (err, data) => {
+  fs.readFile("../cpuMemoryUsage-Websocket-Server.json", "utf8", (err, data) => {
     if (err) {
       return res.status(500).send("Error al leer el archivo de CPU y memoria.");
     }

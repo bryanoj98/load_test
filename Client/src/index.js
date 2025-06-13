@@ -8,11 +8,6 @@ const {
 } = require("worker_threads");
 const { log } = require("console");
 
-// const payload = require("./mensages/payload");
-// const payload = require("./mensages/payload4000");
-const payload = require("./mensages/payload5000");
-// const payload = require("./mensages/payload100kB");
-
 const arrayOperations = require("./utilidades/arrayOperations");
 const systemInfo = require("./utilidades/systemInfo");
 const restCall = require("./service/restCall");
@@ -26,30 +21,60 @@ const packageDef = protoLoader.loadSync("tesisNHilos.proto", {});
 const CommunicationService =
   grpc.loadPackageDefinition(packageDef).CommunicationService;
 
-/* Tipos de peticiones posibles:
-  "REST" "WEBSOCKET" "gRPC"
+/*
+  Seleccione el tamaño minimo de la carga util:
 */
-const tipoDePeticion = "WEBSOCKET";
-const isAscending = true;
-const duracionTest = 2000;
-const maxPayloadSize = 500000;
-// const maxPayloadSize = 6000;
-const maxNumThreads = 50;
-// const maxNumThreads = 1;
-const cycleSleepTime = 2000;
+const payload = require("./mensages/payload"); //payload2000
+// const payload = require("./mensages/payload4000");
+// const payload = require("./mensages/payload5000");
+// const payload = require("./mensages/payload100kB");
 
-//Decrement
+/* 
+  Seleccione el protocolo a utilizar en la prueba:
+  Tipos de protocolos posibles: "REST" "WEBSOCKET" "gRPC"
+*/
+const tipoDePeticion = "REST"; // protocolo a utilizar
+const isAscending = true; // Test ascendente o desendente
+const duracionTest = 2000; // Tiempo durante el cual se envian peticiones
+const cycleSleepTime = 2000; // Tiempo de reposo antes de continuar con el siguiente envio de peticiones
+const monitorTime = 1000; // Intervalo de medicion uso de CPU y RAM en el cliente
+
+/*
+  Si isAscending == True:
+  entonces el test es incremental y es neceario configurar los parametros: 
+  maxNumThreads: Numero de hilos maximo al que llegara el test
+  payload: Carga util inicial y a la que ira incrementando
+*/
+const maxPayloadSize = 10000; // Tamaño maximo de la carga util a la que llegara la prueba
+const maxNumThreads = 2; // Numero maximo de hilos (usuarios recurrentes) a la que llegara le prueba
+
+/*
+  Si isAscending == false:
+  entonces el test es decremental y es neceario configurar los parametros: 
+  maxNumThreads: Numero de hilos inicial
+  minNumThreads: Numero de hilos final
+  payload: Se recomienda elegir payload100kB
+  decrement: El valor de decremento del payload
+  
+  **Si isAscending no es relevante el valor de decrement y minNumThreads
+*/
 const decrement = 5000;
 const minNumThreads = 48;
 
-const monitorTime = 1000;
 
-// const urlRest = "http://localhost:4000";
-// const urlgRPC = "localhost:50000";
-// const ipWSocket = "ws://localhost";
-const urlRest = "http://10.42.0.40:4000";
+/* 
+  Apuntamiento servidor local
+*/
+const urlRest = "http://localhost:4000";
+const urlgRPC = "localhost:50000";
+const ipWSocket = "ws://localhost";
+
+/* 
+  Apuntamiento servidor remoto
+*/
+/*const urlRest = "http://10.42.0.40:4000";
 const urlgRPC = "10.42.0.40:50000";
-const ipWSocket = "ws://10.42.0.40";
+const ipWSocket = "ws://10.42.0.40";*/
 
 const urlWSocket = `${ipWSocket}:8080`;
 const urlWSocketMonitor = `${ipWSocket}:8585`;
@@ -121,8 +146,8 @@ if (isMainThread) {
 }
 
 async function cicloAscendente() {
-  // let numeroDeHilos = 1; //Ascendente
-  let numeroDeHilos = minNumThreads; //Ascendente arranque alto
+  let numeroDeHilos = 1; //Ascendente
+  //let numeroDeHilos = minNumThreads; //Ascendente arranque alto
   while (numeroDeHilos <= maxNumThreads) {
     console.log("numeroDeHilos: ", numeroDeHilos);
 

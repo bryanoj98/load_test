@@ -130,5 +130,3 @@ dist
 .pnp.*
 
 */node_modules
-cpuMemoryUsage*.json
-latenciaAVGTotal*.json
